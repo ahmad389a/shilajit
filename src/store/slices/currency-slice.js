@@ -11,9 +11,9 @@ const currencySlice = createSlice({
         setCurrency(state, action) {
             const currencyName = action.payload;
 
-            if (currencyName === "USD") {
+            if (currencyName === "NOK") {
                 return state = {
-                    currencySymbol: "$",
+                    currencySymbol: "Kr",
                     currencyRate: 1,
                     currencyName
                 };
