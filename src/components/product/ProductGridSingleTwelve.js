@@ -29,7 +29,7 @@ const ProductGridSingleTwo = ({
 
     return (
         <Fragment>
-            <div className={clsx("product-wrap-2", spaceBottomClass, colorClass)}>
+            {/* <div className={clsx("product-wrap-2", spaceBottomClass, colorClass)}>
                 <div className="product-img">
                     <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
                     <img
@@ -159,7 +159,7 @@ const ProductGridSingleTwo = ({
                     </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* product modal */}
             <ProductModal
                 show={modalShow}

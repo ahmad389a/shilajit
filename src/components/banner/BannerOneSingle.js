@@ -18,6 +18,7 @@ const BannerOneSingle = ({ data, spaceBottomClass }) => {
           </Link>
         </div>
       </div>
+      
   );
 };
 

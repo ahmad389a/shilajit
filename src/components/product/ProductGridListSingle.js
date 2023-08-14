@@ -29,7 +29,7 @@ const ProductGridListSingle = ({
   return (
     <Fragment>
         <div className={clsx("product-wrap", spaceBottomClass)}>
-          <div className="product-img">
+          {/* <div className="product-img">
             <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
               <img
                 className="default-img"
@@ -119,7 +119,7 @@ const ProductGridListSingle = ({
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="product-content text-center">
             <h3>
               <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>

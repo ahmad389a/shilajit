@@ -13,7 +13,7 @@ const NewProductGrid = ({ category, limit }) => {
           positionClass="text-center"
           spaceClass="mb-60"
         />
-        <div className="row five-column">
+        <div className="row eight-column">
           <ProductGridTwo
             category={category}
             type="new"

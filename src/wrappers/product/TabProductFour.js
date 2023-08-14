@@ -24,7 +24,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 <h4>New Arrivals</h4>
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link eventKey="bestSeller">
                 <h4>Best Sellers</h4>
               </Nav.Link>
@@ -33,15 +33,16 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
               <Nav.Link eventKey="saleItems">
                 <h4>Sale Items</h4>
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="newArrival">
               <div className="row">
+                <div></div>
                 <ProductGridTwo
                   category={category}
                   type="new"
-                  limit={3}
+                  limit={1}
                   spaceBottomClass="mb-25"
                 />
               </div>
@@ -51,7 +52,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 <ProductGridTwo
                   category={category}
                   type="bestSeller"
-                  limit={3}
+                  limit={1}
                   spaceBottomClass="mb-25"
                 />
               </div>
@@ -61,21 +62,21 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 <ProductGridTwo
                   category={category}
                   type="saleItems"
-                  limit={3}
+                  limit={1}
                   spaceBottomClass="mb-25"
                 />
               </div>
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
-        <div className="view-more text-center mt-20 toggle-btn6 col-12">
+        {/* <div className="view-more text-center mt-20 toggle-btn6 col-12">
           <Link
             className="loadMore6"
             to={process.env.PUBLIC_URL + "/shop-grid-standard"}
           >
             VIEW MORE PRODUCTS
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

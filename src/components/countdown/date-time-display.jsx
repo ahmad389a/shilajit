@@ -5,6 +5,7 @@ const DateTimeDisplay = ({ value, type }) => {
         <span className="cdown">
             {value} <p>{type}</p>
         </span>
+        
     );
 };
 

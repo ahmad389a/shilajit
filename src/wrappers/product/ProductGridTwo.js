@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { getProducts } from "../../helpers/product";
 import ProductGridSingleTwo from "../../components/product/ProductGridSingleTwo";
 
+
 const ProductGridTwo = ({
   spaceBottomClass,
   colorClass,
@@ -22,9 +23,12 @@ const ProductGridTwo = ({
   
   return (
     <Fragment>
+      <div className="col-md-3 col-lg-3 col-xl-3"></div>
       {prods?.map((product) => {
         return (
-          <div className="col-xl-4 col-md-6 col-lg-4 col-sm-6" key={product.id}>
+
+          
+          <div className="col-xl-6 col-md-6 col-lg-6 col-sm-6" style={{justifyContent:'center',}} key={product.id}>
             <ProductGridSingleTwo
               spaceBottomClass={spaceBottomClass}
               colorClass={colorClass}

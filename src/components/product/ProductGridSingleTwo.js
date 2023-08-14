@@ -118,6 +118,7 @@ const ProductGridSingleTwo = ({
             </button>
           </div>
         </div>
+      
         <div className="product-content-2">
           <div
             className={`title-price-wrap-2 ${
@@ -144,6 +145,7 @@ const ProductGridSingleTwo = ({
               )}
             </div>
           </div>
+         
           <div className="pro-wishlist-2">
             <button
               className={wishlistItem !== undefined ? "active" : ""}
@@ -160,6 +162,7 @@ const ProductGridSingleTwo = ({
           </div>
         </div>
       </div>
+
       {/* product modal */}
       <ProductModal
         show={modalShow}

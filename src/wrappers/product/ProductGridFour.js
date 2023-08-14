@@ -15,7 +15,7 @@ const ProductGridFour = ({ spaceBottomClass, category, type, limit }) => {
   return (
     <Fragment>
       {prods?.map(product => (
-        <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6" key={product.id}>
+        <div className="col-xl-4 col-md-6 col-lg-4 col-sm-6" key={product.id}>
           <ProductGridSingleFour
             spaceBottomClass={spaceBottomClass}
             product={product}

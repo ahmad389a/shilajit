@@ -16,6 +16,7 @@ const CountdownTimer = ({ date, className }) => {
             <DateTimeDisplay value={minutes} type="minutes" />
             <DateTimeDisplay value={seconds} type="secs" />
         </div>
+        
     );
 };
 
