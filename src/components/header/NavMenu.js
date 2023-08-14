@@ -253,10 +253,10 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul> */}
           </li>
-          <li>
+          {/* <li>
             <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
               {" "}
-              {t("shop")}
+              {t("shop")} */}
               {/* {sidebarMenu ? (
                 <span>
                   <i className="fa fa-angle-right"></i>
@@ -264,7 +264,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
               ) : (
                 <i className="fa fa-angle-down" />
               )} */}
-            </Link>
+            {/* </Link> */}
             {/* <ul className="mega-menu">
               <li>
                 <ul>
@@ -394,7 +394,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                 </ul>
               </li>
             </ul> */}
-          </li>
+          {/* </li> */}
           {/* <li>
             <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
               {t("collection")}
