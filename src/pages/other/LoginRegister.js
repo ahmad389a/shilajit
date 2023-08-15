@@ -5,9 +5,11 @@ import Nav from "react-bootstrap/Nav";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+import { useTranslation } from "react-i18next";
 
 const LoginRegister = () => {
   let { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>
@@ -32,12 +34,12 @@ const LoginRegister = () => {
                     <Nav variant="pills" className="login-register-tab-list">
                       <Nav.Item>
                         <Nav.Link eventKey="login">
-                          <h4>Login</h4>
+                          <h4>{t("Login")}</h4>
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="register">
-                          <h4>Register</h4>
+                          <h4>{t("Register")}</h4>
                         </Nav.Link>
                       </Nav.Item>
                     </Nav>
@@ -59,13 +61,13 @@ const LoginRegister = () => {
                               <div className="button-box">
                                 <div className="login-toggle-btn">
                                   <input type="checkbox" />
-                                  <label className="ml-10">Remember me</label>
+                                  <label className="ml-10">{t("Remember me")}</label>
                                   <Link to={process.env.PUBLIC_URL + "/"}>
-                                    Forgot Password?
+                                   {t("Forgot Password?")}
                                   </Link>
                                 </div>
                                 <button type="submit">
-                                  <span>Login</span>
+                                  <span>{t("Login")}</span>
                                 </button>
                               </div>
                             </form>
@@ -93,7 +95,7 @@ const LoginRegister = () => {
                               />
                               <div className="button-box">
                                 <button type="submit">
-                                  <span>Register</span>
+                                  <span>{t("Register")}</span>
                                 </button>
                               </div>
                             </form>
