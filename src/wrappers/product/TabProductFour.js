@@ -5,14 +5,17 @@ import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
 import SectionTitleThree from "../../components/section-title/SectionTitleThree";
 import ProductGridTwo from "./ProductGridTwo";
+import { useTranslation } from "react-i18next";
 
 const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
+
+  const { t }  = useTranslation();
   return (
     <div className={clsx("product-area", spaceBottomClass)}>
       <div className="container">
         <SectionTitleThree
           titleText="Featured Product"
-          positionClass="text-center"
+          positionClass="text-center" 
         />
         <Tab.Container defaultActiveKey="bestSeller">
           <Nav
@@ -21,7 +24,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
           >
             <Nav.Item>
               <Nav.Link eventKey="newArrival">
-                <h4>New Arrivals</h4>
+                <h4>{t("New Arrivals")}</h4>
               </Nav.Link>
             </Nav.Item>
             {/* <Nav.Item>

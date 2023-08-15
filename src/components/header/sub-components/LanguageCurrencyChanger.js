@@ -5,6 +5,7 @@ import { setCurrency } from "../../../store/slices/currency-slice"
 
 const LanguageCurrencyChanger = ({ currency }) => {
   const { i18n } = useTranslation();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const changeLanguageTrigger = e => {
     const languageCode = e.target.value;
@@ -23,7 +24,7 @@ const LanguageCurrencyChanger = ({ currency }) => {
           {i18n.resolvedLanguage === "en"
             ? "English"
             : i18n.resolvedLanguage === "nn"
-            ? "Nynorsk"
+            ? "Norwegian"
             : i18n.resolvedLanguage === "de"
             ? "Germany"
             : ""}{" "}
@@ -38,7 +39,7 @@ const LanguageCurrencyChanger = ({ currency }) => {
             </li>
             <li>
               <button value="nn" onClick={e => changeLanguageTrigger(e)}>
-              Nynorsk
+              Norwegian
               </button>
             </li>
             <li>
@@ -74,7 +75,7 @@ const LanguageCurrencyChanger = ({ currency }) => {
         </div>
       </div>
       <div className="same-language-currency">
-        <p>Call Us +923425708479</p>
+        <p>{t("Call Us")} +923425708479</p>
       </div>
     </div>
   );
