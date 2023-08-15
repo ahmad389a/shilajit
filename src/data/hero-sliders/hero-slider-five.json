@@ -2,15 +2,15 @@
   {
     "id": 1,
     "title": "Natural & Healthy",
-    "subtitle": "100% Organic Fruits Collection",
-    "image": "/assets/img/slider/slider-8.jpg",
+    "subtitle": "100% Pure Shilajit",
+    "image": "/assets/img/slider/himalayan-cover.png",
     "url": "/shop-grid-standard"
   },
   {
     "id": 2,
     "title": "Natural & Healthy",
-    "subtitle": "100% Organic Veg Collection",
-    "image": "/assets/img/slider/slider-8-2.jpg",
+    "subtitle": "Himalayan Treasure",
+    "image": "/assets/img/slider/himalayan-cover-2.png",
     "url": "/shop-grid-standard"
   }
 ]
