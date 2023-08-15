@@ -22,8 +22,8 @@ const LanguageCurrencyChanger = ({ currency }) => {
         <span>
           {i18n.resolvedLanguage === "en"
             ? "English"
-            : i18n.resolvedLanguage === "fn"
-            ? "French"
+            : i18n.resolvedLanguage === "nn"
+            ? "Nynorsk"
             : i18n.resolvedLanguage === "de"
             ? "Germany"
             : ""}{" "}
@@ -37,8 +37,8 @@ const LanguageCurrencyChanger = ({ currency }) => {
               </button>
             </li>
             <li>
-              <button value="fn" onClick={e => changeLanguageTrigger(e)}>
-                French
+              <button value="nn" onClick={e => changeLanguageTrigger(e)}>
+              Nynorsk
               </button>
             </li>
             <li>
