@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { useTranslation } from "react-i18next";
 
 const CustomForm = ({
   status,
@@ -19,6 +20,8 @@ const CustomForm = ({
 
     email.value = "";
   };
+
+const { t } = useTranslation();
 
   return (
     <div className={clsx("subscribe-form-3", spaceTopClass)}>
@@ -51,7 +54,7 @@ const CustomForm = ({
           className={`clear-3 ${subscribeBtnClass ? subscribeBtnClass : ""}`}
         >
           <button className="button" onClick={submit}>
-            SUBSCRIBE
+            {t("Subscribe")}
           </button>
         </div>
       </div>

@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+
 const HeroSliderFiveSingle = ({ data }) => {
 
   const { t } = useTranslation();
@@ -15,7 +16,10 @@ const HeroSliderFiveSingle = ({ data }) => {
           <div className="col-xl-6 col-lg-6 col-md-7 ms-auto">
             <div className="slider-content-2 slider-content-fruits slider-animated-1">
               <h3 className="animated">{t(data.title)}</h3>
-              <h1 className="animated"  style={{color:'white'}}>{t(data.subtitle)}</h1>
+              <h1 className="animated" style={{ color: data.subtitle === "Himalayan Treasure" ? "black" : "white" }}>
+             {t(data.subtitle)}
+               </h1>
+
               <div className="slider-btn btn-hover">
                 <Link
                   className="animated"
