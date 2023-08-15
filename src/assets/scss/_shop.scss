@@ -93,7 +93,7 @@
       a {
         color: #010101;
         &:hover {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -202,7 +202,7 @@
           padding: 10px 20px 11px;
         }
         &:hover {
-          border: 1px solid $theme-color;
+          border: 1px solid #6EAB49;
         }
       }
     }
@@ -239,19 +239,19 @@
 
         text-align: center;
 
-        color: $theme-color;
+        color: #6EAB49;
         border: none;
         border-radius: 100% !important;
         background: none;
         box-shadow: 0 0 12px 0.8px rgba(0, 0, 0, 0.1);
         &:hover {
           color: #fff;
-          background-color: $theme-color;
+          background-color: #6EAB49;
         }
       }
       a.active {
         color: #fff;
-        background-color: $theme-color;
+        background-color: #6EAB49;
         box-shadow: none;
         &:hover {
           background-color: #333;
@@ -261,12 +261,12 @@
       a.next {
         font-size: 17px;
 
-        color: $theme-color;
+        color: #6EAB49;
         background-color: #f6f6f6;
         box-shadow: none;
         &:hover {
           color: #fff;
-          background-color: $theme-color;
+          background-color: #6EAB49;
         }
       }
 
@@ -274,8 +274,8 @@
         &.active {
           .page-link {
             --bs-pagination-active-color: #ffffff;
-            border-color: $theme-color;
-            background-color: $theme-color;
+            border-color: #6EAB49;
+            background-color: #6EAB49;
             box-shadow: 0 0 12px 0.8px rgba(0, 0, 0, 0.1) !important;
             &:focus {
               box-shadow: none;
@@ -418,7 +418,7 @@
     background: none;
     &:hover,
     &.active {
-      color: $theme-color;
+      color: #6EAB49;
     }
   }
 }
