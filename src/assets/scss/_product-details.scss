@@ -48,7 +48,7 @@
 
       color: #000000;
       &:hover {
-        color: $theme-color;
+        color: #6EAB49;
       }
     }
   }
@@ -243,7 +243,7 @@
         border: none;
         background: none;
         &:hover {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -328,8 +328,8 @@
         text-transform: uppercase;
 
         color: #fff;
-        border: 1px solid $theme-color;
-        background-color: $theme-color;
+        border: 1px solid #6EAB49;
+        background-color: #6EAB49;
         &:hover {
           border: 1px solid #333;
           background-color: #333;
@@ -553,7 +553,7 @@
 
         color: #333;
         &:hover {
-          color: $theme-color;
+          color: #6EAB49;
         }
         &.owl-next {
           right: 20px;
@@ -589,10 +589,10 @@
       color: #fff;
       border-radius: 3px;
       &.pink {
-        background-color: #fa6bff;
+        background-color: #6EAB49;
       }
       &.purple {
-        background-color: #a749ff;
+        background-color: #6EAB49;
       }
     }
   }

@@ -50,11 +50,11 @@ const ProductGridSingleTwo = ({
           {product.discount || product.new ? (
             <div className="product-img-badges">
               {product.discount ? (
-                <span className="pink">-{product.discount}%</span>
+                <span style={{color:'#6EAB49'}}>-{product.discount}%</span>
               ) : (
                 ""
               )}
-              {product.new ? <span className="purple">New</span> : ""}
+              {product.new ? <span style={{color:'#6EAB49'}}>New</span> : ""}
             </div>
           ) : (
             ""

@@ -89,8 +89,8 @@
       }
       &:hover {
         color: #fff;
-        border: 1px solid $theme-color;
-        background-color: $theme-color;
+        border: 1px solid #6EAB49;
+        background-color: #6EAB49;
       }
       &.swiper-button-prev {
         right: 40px;
@@ -273,7 +273,7 @@
           background-color: #fa6bff;
         }
         &.purple {
-          background-color: $theme-color;
+          background-color: #6EAB49;
         }
 
         &:last-child {
@@ -319,7 +319,7 @@
         transform: translateY(20px);
 
         opacity: 0;
-        background-color: $theme-color;
+        background-color: #6EAB49;
         // &:hover {
         //     background-color: #000;
         // }
@@ -465,7 +465,7 @@
       opacity: 1;
       color: #333;
       &:hover {
-        color: $theme-color;
+        color: #6EAB49;
       }
     }
   }
@@ -567,7 +567,7 @@
       a {
         font-size: 15px;
 
-        color: $theme-color;
+        color: #6EAB49;
         &:hover {
           color: #000;
         }
@@ -802,7 +802,7 @@
               background-color: #f1f2f6;
               &:hover {
                 color: #fff;
-                background-color: $theme-color;
+                background-color: #6EAB49;
               }
             }
           }
@@ -823,7 +823,7 @@
           background-color: #f1f2f6;
           &:hover {
             color: #fff;
-            background-color: $theme-color;
+            background-color: #6EAB49;
           }
           input {
             position: absolute;
@@ -839,7 +839,7 @@
             &:checked {
               & ~ .size-name {
                 color: $white;
-                background-color: $theme-color;
+                background-color: #6EAB49;
               }
             }
           }
@@ -975,7 +975,7 @@
         background: none;
         &:hover,
         &.active {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -994,7 +994,7 @@
         }
         &:hover,
         &.active {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -1023,7 +1023,7 @@
             font-size: 14px;
           }
           &:hover {
-            color: $theme-color;
+            color: #6EAB49;
           }
         }
       }
@@ -1043,7 +1043,7 @@
 
           color: #343538;
           &:hover {
-            color: $theme-color;
+            color: #6EAB49;
           }
         }
       }
@@ -1108,7 +1108,7 @@
 
     color: #333;
     &:hover {
-      color: $theme-color;
+      color: #6EAB49;
     }
     &.owl-next {
       right: 0;
@@ -1210,7 +1210,7 @@
     background: none;
     &:hover,
     &.active {
-      color: $theme-color;
+      color: #6EAB49;
     }
     i {
       font-size: 14px;
@@ -1301,7 +1301,7 @@
           background: none;
           &:hover,
           &.active {
-            color: $theme-color;
+            color: #6EAB49;
           }
         }
       }
@@ -1319,7 +1319,7 @@
 
             border: 1px solid #e6e6e6;
             &:hover {
-              border-color: $theme-color;
+              border-color: #6EAB49;
             }
           }
         }
@@ -1427,7 +1427,7 @@
         color: #ff3d2a;
       }
       &.purple {
-        color: $theme-color;
+        color: #6EAB49;
       }
     }
     & .default-img {
@@ -1476,17 +1476,17 @@
         border: none;
         border-radius: 50px;
         background: none;
-        background-color: $theme-color;
+        background-color: #6EAB49;
         &:hover,
         &.active {
-          background-color: #fa6bff;
+          background-color: #334443;
         }
       }
       &.product-action-2-red {
         a {
           background-color: #df262b;
           &:hover {
-            background-color: $theme-color;
+            background-color: #6EAB49;
           }
         }
       }
@@ -1513,7 +1513,7 @@
           color: #fa6bff;
         }
         &.purple {
-          color: $theme-color;
+          color: #6EAB49;
         }
 
         &:last-child {
@@ -1537,7 +1537,7 @@
 
           color: #000000;
           &:hover {
-            color: $theme-color;
+            color: #6EAB49;
           }
         }
       }
@@ -1549,11 +1549,11 @@
 
           margin-right: 17px;
 
-          color: #000000;
+          color:#6EAB49;
           &.old {
             text-decoration: line-through;
 
-            color: #fa6bff;
+            color: #6EAB49;
             &.red {
               color: #ff3d2a;
             }
@@ -1581,7 +1581,7 @@
           a {
             color: #fff;
             &:hover {
-              color: $theme-color;
+              color: #6EAB49;
             }
           }
         }
@@ -1611,7 +1611,7 @@
         background: none;
         &:hover,
         &.active {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -1771,8 +1771,8 @@
     color: #555;
     border-bottom: 1px solid #cccccc;
     &:hover {
-      color: $theme-color;
-      border-bottom: 1px solid $theme-color;
+      color: #6EAB49;
+      border-bottom: 1px solid #6EAB49;
     }
   }
   @media #{$xs-layout} {
@@ -1797,7 +1797,7 @@
       background-color: #c61a32;
 
       &:hover {
-        background-color: $theme-color;
+        background-color: #6EAB49;
       }
     }
   }
@@ -1861,7 +1861,7 @@
         color: #fff;
         border-radius: 3px;
         &.purple {
-          background-color: $theme-color;
+          background-color: #6EAB49;
         }
         &.pink {
           background-color: #fa6bff;
@@ -2218,7 +2218,7 @@
 
         color: #000000;
         &:hover {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -2258,7 +2258,7 @@
 
       &:hover {
         color: $white;
-        border-color: $theme-color;
+        border-color: #6EAB49;
         background-color: transparent;
         &:after {
           right: auto;
@@ -2266,7 +2266,7 @@
 
           width: 100%;
 
-          background-color: $theme-color;
+          background-color: #6EAB49;
         }
       }
     }
@@ -2304,7 +2304,7 @@
       color: #fff;
       border-radius: 3px;
       &.purple {
-        background-color: $theme-color;
+        background-color: #6EAB49;
       }
       &.pink {
         background-color: #fa6bff;
@@ -2370,7 +2370,7 @@
       a {
         color: #000;
         &:hover {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }
@@ -3268,7 +3268,7 @@
         background: none;
         &:hover,
         &.active {
-          color: $theme-color;
+          color: #6EAB49;
         }
       }
     }

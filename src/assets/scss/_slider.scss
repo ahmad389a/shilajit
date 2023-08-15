@@ -305,7 +305,7 @@
       color: $theme-color;
     }
     &.swiper-button-next {
-      right: 80px;
+      right: 40px;
       left: auto;
       @media #{$xl-layout} {
         right: 30px;
@@ -851,7 +851,7 @@
       color: #010101;
       border: 1px solid #333;
       &:hover {
-        color: #fff;
+        color: 334443;
         border: 1px solid $theme-color;
       }
     }
@@ -1312,7 +1312,7 @@
   border: none;
   background-color: #fff;
   &.swiper-button-prev {
-    right: 65px;
+    right: 10px;
   }
   @media #{$xs-layout} {
     font-size: 45px;
@@ -1320,7 +1320,7 @@
     width: 50px;
     height: 60px;
     &.swiper-button-prev {
-      right: 50px;
+      right: 10px;
     }
   }
   &:hover {
@@ -1632,7 +1632,7 @@
       border: 1px solid #333;
       &:hover {
         color: #fff;
-        border: 1px solid #a749ff;
+        border: 1px solid #6EAB49;
       }
       @media #{$md-layout} {
         padding: 15px 35px 15px;
