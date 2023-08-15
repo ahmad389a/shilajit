@@ -38,6 +38,7 @@ const ProductSliderTwo = ({ spaceBottomClass, category }) => {
   return (
     <div className={clsx("related-product-area", spaceBottomClass)}>
       <div className="container">
+        
         <SectionTitle
           titleText="Our Products"
           positionClass="text-center"
