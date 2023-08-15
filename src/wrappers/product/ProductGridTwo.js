@@ -23,12 +23,12 @@ const ProductGridTwo = ({
   
   return (
     <Fragment>
-      <div className="col-md-3 col-lg-3 col-xl-3"></div>
+      <div className="col-md-1 col-lg-1 col-xl-1"></div>
       {prods?.map((product) => {
         return (
 
           
-          <div className="col-xl-6 col-md-6 col-lg-6 col-sm-6" style={{justifyContent:'center',}} key={product.id}>
+          <div className="col-xl-5 col-md-5 col-lg-5 col-sm-6" style={{justifyContent:'center',}} key={product.id}>
             <ProductGridSingleTwo
               spaceBottomClass={spaceBottomClass}
               colorClass={colorClass}

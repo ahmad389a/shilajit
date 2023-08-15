@@ -42,7 +42,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 <ProductGridTwo
                   category={category}
                   type="new"
-                  limit={1}
+                  limit={2}
                   spaceBottomClass="mb-25"
                 />
               </div>
@@ -52,7 +52,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 <ProductGridTwo
                   category={category}
                   type="bestSeller"
-                  limit={1}
+                  limit={2}
                   spaceBottomClass="mb-25"
                 />
               </div>
