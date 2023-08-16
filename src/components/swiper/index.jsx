@@ -56,16 +56,15 @@ const SwiperSlider = forwardRef(
                 {sliderOptions?.navigation && (
                     <>
                         <button
+                           
                             type="button"
                             className={`swiper-button-prev ht-swiper-button-nav ${prevClass}`}
-                            style={{color:'black' , marginLeft:'-5.5rem'}}
                         >
-                            <i className={cn(prevIcon, "icon")} />
+                            <i className={cn(prevIcon, "icon")} style={{marginleft:'-40px'}}/>
                         </button>
                         <button
                             type="button"
                             className={`swiper-button-next ht-swiper-button-nav ${nextClass}`}
-                            style={{color:'black', marginRight:'-3rem'}}
                         >
                             <i className={cn(nextIcon, "icon")}  />
                         </button>
