@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import '../customcss/heroslidercustom.css';
 
 
 const HeroSliderFiveSingle = ({ data }) => {
@@ -15,8 +16,16 @@ const HeroSliderFiveSingle = ({ data }) => {
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-7 ms-auto">
             <div className="slider-content-2 slider-content-fruits slider-animated-1">
+<<<<<<< HEAD
               <h3 className="animated">{t(data.title)}</h3>
               <h1 className="animated"  style={{color:'white'}}>{t(data.subtitle)}</h1>
+=======
+              <h3 className="animated" style={{color: data.title === "Natural &Healthy" ? "black" : "white"}}>{t(data.title)}</h3>
+              <h1 className="animated" style={{ color: data.subtitle === "Himalayan Treasure" ? "black" : "white" }}>
+             {t(data.subtitle)}
+               </h1>
+
+>>>>>>> 3cb1073b9ee89fd0351a2179511367f2e8ec5ac3
               <div className="slider-btn btn-hover">
                 <Link
                   className="animated"
