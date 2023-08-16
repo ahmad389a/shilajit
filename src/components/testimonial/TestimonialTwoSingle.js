@@ -12,6 +12,7 @@ const TestimonialTwoSingle = ({ data, sliderClass }) => {
         <span>{data.title}</span>
       </div>
     </div>
+    
   );
 };
 

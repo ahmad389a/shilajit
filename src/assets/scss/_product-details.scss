@@ -48,7 +48,7 @@
 
       color: #000000;
       &:hover {
-        color: #6EAB49;
+        color: $theme-color;
       }
     }
   }
@@ -243,7 +243,7 @@
         border: none;
         background: none;
         &:hover {
-          color: #6EAB49;
+          color: $theme-color;
         }
       }
     }
@@ -328,8 +328,8 @@
         text-transform: uppercase;
 
         color: #fff;
-        border: 1px solid #6EAB49;
-        background-color: #6EAB49;
+        border: 1px solid $theme-color;
+        background-color: $theme-color;
         &:hover {
           border: 1px solid #333;
           background-color: #333;
