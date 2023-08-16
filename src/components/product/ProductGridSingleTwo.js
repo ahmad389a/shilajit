@@ -47,7 +47,7 @@ const ProductGridSingleTwo = ({
               ""
             )}
           </Link>
-          {product.discount || product.new ? (
+          {/* {product.discount || product.new ? (
             <div className="product-img-badges">
               {product.discount ? (
                 <span style={{color:'#6EAB49'}}>-{product.discount}%</span>
@@ -58,7 +58,7 @@ const ProductGridSingleTwo = ({
             </div>
           ) : (
             ""
-          )}
+          )} */}
 
           <div className="product-action-2">
             {product.affiliateLink ? (

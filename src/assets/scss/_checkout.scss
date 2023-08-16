@@ -93,7 +93,7 @@
       color: #fff;
       border: medium none;
       border-radius: 50px;
-      background-color: #6EAB49;
+      background-color: $theme-color;
       &:hover {
         background-color: #333;
       }
@@ -223,7 +223,7 @@
 
             list-style: outside none none;
 
-            color: #6EAB49;
+            color: $theme-color;
           }
         }
       }
@@ -247,7 +247,7 @@
 
         color: #212121;
         &:hover {
-          color: #6EAB49;
+          color: $theme-color;
         }
       }
     }
@@ -282,7 +282,7 @@
     border: none;
     border-radius: 50px;
     background: none;
-    background-color: #6EAB49;
+    background-color: $theme-color;
     &:hover {
       background-color: #333;
     }
