@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Fragment } from "react";
 import HeaderOne from "../wrappers/header/HeaderOne";
-import FooterOne from "../wrappers/footer/FooterOne";
+import FooterTwo from "../wrappers/footer/FooterTwo";
 import ScrollToTop from "../components/scroll-to-top"
 
 const LayoutOne = ({
@@ -20,10 +20,15 @@ const LayoutOne = ({
         headerPositionClass={headerPositionClass}
       />
       {children}
-      <FooterOne
-        backgroundColorClass="bg-gray"
-        spaceTopClass="pt-100"
-        spaceBottomClass="pb-70"
+      <FooterTwo
+        backgroundColorClass="footer-white"
+        spaceLeftClass="ml-70"
+        spaceRightClass="mr-70"
+        footerTopBackgroundColorClass="bg-gray-2"
+        footerTopSpaceTopClass="pt-80"
+        footerTopSpaceBottomClass="pb-60"
+        copyrightColorClass="copyright-gray"
+        footerLogo="/assets/img/logo/Himalya.png"
       />
       <ScrollToTop/>
     </Fragment>
