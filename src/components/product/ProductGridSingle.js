@@ -27,6 +27,8 @@ const ProductGridSingle = ({
 
   return (
     <Fragment>
+      
+
       <div className={clsx("product-wrap", spaceBottomClass)}>
         <div className="product-img">
           <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
@@ -146,8 +148,9 @@ const ProductGridSingle = ({
           </div>
         </div>
       </div>
+      <div className="col-md-2 col-lg-3"></div>
       {/* product modal */}
-      <ProductModal
+      {/* <ProductModal
         show={modalShow}
         onHide={() => setModalShow(false)}
         product={product}
@@ -157,7 +160,7 @@ const ProductGridSingle = ({
         finalDiscountedPrice={finalDiscountedPrice}
         wishlistItem={wishlistItem}
         compareItem={compareItem}
-      />
+      /> */}
     </Fragment>
   );
 };

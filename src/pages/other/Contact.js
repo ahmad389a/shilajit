@@ -28,8 +28,8 @@ const Contact = () => {
               <GoogleMap lat={47.444} lng={-122.176} />
             </div> */}
             <div className="custom-row-2">
-              <div className="col-12 col-lg-2 col-md-2">
-                {/* <div className="contact-info-wrap">
+              {/* <div className="col-12 ">
+                <div className="contact-info-wrap">
                   <div className="single-contact-info">
                     <div className="contact-icon">
                       <i className="fa fa-phone" />
@@ -95,12 +95,12 @@ const Contact = () => {
                       </li>
                     </ul>
                   </div>
-                </div> */}
-              </div>
+                </div>
+              </div> */}
               {/* ====Contact Form====== */}
-              <div className="col-12 col-lg-8 col-md-7">
+              <div className="col-12 col-lg-12 col-md-12">
                 <div className="contact-form">
-                  <div className="contact-title mb-30">
+                  <div className="contact-title mb-30 ">
                     <h2>Get In Touch</h2>
                   </div>
                   <form className="contact-form-style">

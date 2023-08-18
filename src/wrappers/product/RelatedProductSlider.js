@@ -34,16 +34,18 @@ const RelatedProductSlider = ({ spaceBottomClass, category }) => {
   const { cartItems } = useSelector((state) => state.cart);
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
-  const prods = getProducts(products, category, null, 6);
+  const prods = getProducts(products, category, null, 4);
   
   return (
     <div className={clsx("related-product-area", spaceBottomClass)}>
-      <div className="container">
         <SectionTitle
           titleText="Related Products"
           positionClass="text-center"
           spaceClass="mb-50"
         />
+      <div className="container "  >
+      <div className="col-md-12 col-lg-12 "  >
+    
         {prods?.length ? (
           <Swiper options={settings}>
               {prods.map(product => (
@@ -69,6 +71,7 @@ const RelatedProductSlider = ({ spaceBottomClass, category }) => {
               ))}
           </Swiper>
         ) : null}
+     </div>
       </div>
     </div>
   );
