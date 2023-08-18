@@ -3,6 +3,7 @@ import SEO from "../../components/seo";
 import LayoutThree from "../../layouts/LayoutThree";
 import HeroSliderFive from "../../wrappers/hero-slider/HeroSliderFive";
 import FeatureIconFour from "../../wrappers/feature-icon/FeatureIconFour";
+import FeatureBlog from "../../wrappers/feature-icon/Featureblog";
 import TabProductFour from "../../wrappers/product/TabProductFour";
 import BannerFive from "../../wrappers/banner/BannerFive";
 import CountDownTwo from "../../wrappers/countdown/CountDownTwo";
@@ -55,6 +56,13 @@ const HomeOrganicFood = () => {
           bgColorClass="bg-gray-3"
         />
         {/* newsletter */}
+        <FeatureBlog
+          spaceTopClass="pt-10"
+          spaceBottomClass="pb-90"
+          containerClass="container-fluid"
+          gutterClass="padding-10-row-col"
+        />
+
         <NewsletterTwo
           spaceTopClass="pt-100"
           spaceBottomClass="pb-100"

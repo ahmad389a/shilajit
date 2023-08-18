@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "titleImage": "MEMORY & BRAIN FUNCTIONS",
+      "title": "Salajeet is very helpful in proper brain functioning. Researches also say that salajeet may prevent cognitive disorders.",
+      "iconImage": "/assets/img/icon-img/support-5.png",
+      "backgroundColor": "#ccfbe9"
+    },
+    {
+      "id": 2,
+      "titleImage": "PAIN RELIEF",
+      "title": "Salajeet is also found to be very beneficial in rheumatoid arthritis, osteoarthritis, and gout as it nourishes the joints and reduces the inflammation and pain.",
+      "iconImage": "/assets/img/icon-img/support-6.png",
+      "backgroundColor": "#ccfbe9"
+    },
+    {
+        "id": 3,
+        "titleImage": "ANTI AGING",
+        "title": "Salajeet contains beneficial anti oxidants including fulvic acid which is good in protecting cellular damage, benefiting in longevity and slowing down aging process.",
+        "iconImage": "/assets/img/icon-img/support-6.png",
+        "backgroundColor": "#ccfbe9"
+    },
+    {
+        "id": 4,
+        "titleImage": "HEALTHY SKIN, BONES & NAILS",
+        "title": "Salajeet has natural ingredients that keeps skin glowing and fresh also protecting skin tissues. It helps in removing the blockages in skin pores by removing toxins and radicals present in these pores.",
+        "iconImage": "/assets/img/icon-img/support-6.png",
+        "backgroundColor": "#ccfbe9"
+    },
+    {
+        "id": 5,
+        "titleImage": "HEART HEALTH",
+        "title": "Salajeet helps in heart functioning, protecting it, and stabilizing its health. A study noted that salajeet has protective effects on heart. Salajeet can also reduce the blood pressure so it should not be taken by heart patients.",
+        "iconImage": "/assets/img/icon-img/support-6.png",
+        "backgroundColor": "#ccfbe9"
+    },
+    {
+        "id": 6,
+        "titleImage": "MALE FERTILITY",
+        "title": "Salajeet a natural substance from the Himalayas, is believed to enhance fertility. It may improve energy levels, act as an aphrodisiac, support hormone balance, protect reproductive organs, and aid detoxification.",
+        "iconImage": "/assets/img/icon-img/support-6.png",
+        "backgroundColor": "#ccfbe9"
+    }
+  ]
+  

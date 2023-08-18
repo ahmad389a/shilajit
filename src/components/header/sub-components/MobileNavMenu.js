@@ -432,6 +432,11 @@ const MobileNavMenu = () => {
             {t("contact_us")}
           </Link>
         </li>
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/contact"}>
+            {t("Benefits")}
+          </Link>
+        </li>
       </ul>
     </nav>
   );
