@@ -52,6 +52,11 @@ const FooterTwo = ({
                 </a>
               </li>
               <li>
+                <a href="//www.instagram.com">
+                  <i className="fa fa-instagram" />
+                </a>
+              </li>
+              {/*<li>
                 <a href="//www.dribbble.com">
                   <i className="fa fa-dribbble" />
                 </a>
@@ -70,7 +75,7 @@ const FooterTwo = ({
                 <a href="//www.linkedin.com">
                   <i className="fa fa-linkedin" />
                 </a>
-              </li>
+              </li>*/}
             </ul>
           </div>
         </div>

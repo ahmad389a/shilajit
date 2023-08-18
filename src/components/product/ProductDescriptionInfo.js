@@ -263,7 +263,7 @@ const ProductDescriptionInfo = ({
         ""
       )}
 
-      <div className="pro-details-social">
+      {/*<div className="pro-details-social">
         <ul>
           <li>
             <a href="//facebook.com">
@@ -291,8 +291,8 @@ const ProductDescriptionInfo = ({
             </a>
           </li>
         </ul>
+      </div>*/}
       </div>
-    </div>
   );
 };
 

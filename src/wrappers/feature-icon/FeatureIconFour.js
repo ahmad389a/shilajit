@@ -11,17 +11,18 @@ const FeatureIconFour = ({
   responsiveClass,
   bgImg
 }) => {
+  const screenWidth = window.innerWidth;
   return (
     <div
       className={clsx("support-area hm9-section-padding", spaceTopClass, spaceBottomClass, responsiveClass)}
-      style={
-        bgImg
-          ? { backgroundImage: `url(${process.env.PUBLIC_URL + bgImg})` }
-          : {}
-      }
+      style={ bgImg ? { 
+        backgroundImage: `url(${process.env.PUBLIC_URL + bgImg})`} : {} }
+    
     >
       <div className={clsx(containerClass, gutterClass)}>
-        <div className="row">
+        <div className="row" style={{
+      ...(screenWidth >= 992 ? { marginLeft: "25%" } : {}),
+    }}>
           {featureIconData?.map((single, key) => (
             <div className="col-lg-4 col-md-6 col-sm-6" key={key}>
               <FeatureIconFourSingle

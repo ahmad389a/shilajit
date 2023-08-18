@@ -12,12 +12,5 @@
     "title": "Back guarantee under 5 days",
     "iconImage": "/assets/img/icon-img/support-6.png",
     "backgroundColor": "#f2fbcc"
-  },
-  {
-    "id": 3,
-    "titleImage": "/assets/img/icon-img/support-10.png",
-    "title": "On every order over $150",
-    "iconImage": "/assets/img/icon-img/support-7.png",
-    "backgroundColor": "#ddfbcc"
   }
 ]
