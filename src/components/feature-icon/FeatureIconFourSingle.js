@@ -16,7 +16,7 @@ const FeatureIconFourSingle = ({ data, spaceBottomClass }) => {
         </div>
         <div className="support-content-3">
           <img src={process.env.PUBLIC_URL + data.titleImage} alt="" />
-          <p>{data.title}</p>
+          <p style={{textAlign:"center"}}>{data.title}</p>
         </div>
       </div>
   );
