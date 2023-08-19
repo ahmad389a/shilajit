@@ -20,9 +20,7 @@ const FeatureIconFour = ({
     
     >
       <div className={clsx(containerClass, gutterClass)}>
-        <div className="row" style={{
-      ...(screenWidth >= 992 ? { marginLeft: "25%" } : {}),
-    }}>
+        <div className="row" style={{...(screenWidth >= 992 ? { marginLeft: "25%" } : {}),}}>
           {featureIconData?.map((single, key) => (
             <div className="col-lg-4 col-md-6 col-sm-6" key={key}>
               <FeatureIconFourSingle

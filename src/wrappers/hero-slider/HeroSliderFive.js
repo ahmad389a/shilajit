@@ -12,9 +12,13 @@ const params = {
   },
   modules: [EffectFade],
   loop: true,
-  speed: 1000,
+  speed: 3000,
   navigation: true,
-  autoHeight: false
+  autoHeight: false,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false 
+  }
 };
 
 const HeroSliderFive = ({ spaceLeftClass, spaceRightClass }) => {
@@ -22,7 +26,7 @@ const HeroSliderFive = ({ spaceLeftClass, spaceRightClass }) => {
     <div className={clsx("slider-area", spaceLeftClass, spaceRightClass)}>
       <div className="slider-active nav-style-1">
         {sliderData && (
-          <Swiper options={params}>
+          <Swiper options={params} autoplay>
             {sliderData.map((single, key) => (
               <SwiperSlide key={key}>
                 <HeroSliderFiveSingle
