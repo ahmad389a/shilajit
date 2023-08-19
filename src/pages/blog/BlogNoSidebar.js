@@ -20,7 +20,7 @@ const BlogNoSidebar = () => {
         <Breadcrumb 
           pages={[
             {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Blog", path: process.env.PUBLIC_URL + pathname }
+            {label: "Benefits", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="blog-area pt-100 pb-100 blog-no-sidebar">
@@ -34,7 +34,7 @@ const BlogNoSidebar = () => {
                   </div>
 
                   {/* blog pagination */}
-                  <BlogPagination />
+                 {/* <BlogPagination />*/}
                 </div>
               </div>
             </div>

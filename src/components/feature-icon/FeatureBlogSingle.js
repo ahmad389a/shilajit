@@ -10,7 +10,7 @@ const FeatureBlogSingle = ({ data, spaceBottomClass }) => {
         
         <div className="support-content-3"  >
            <h3 style={{color:"green"}}>{data.titleImage}</h3>
-          <p>{data.title}</p>
+          <p>{data.title}</p> 
         </div>
       </div>
   );

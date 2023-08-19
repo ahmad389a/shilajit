@@ -16,12 +16,12 @@ const BlogPostsNoSidebar = () => {
           <div className="blog-content-2">
             <div className="blog-meta-2">
               <ul>
-                <li>22 April, 2024</li>
+               {/* <li>22 April, 2024</li>
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/blog-details-standard"}>
                     4 <i className="fa fa-comments-o" />
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
             <h4>
@@ -39,7 +39,7 @@ const BlogPostsNoSidebar = () => {
                   read more
                 </Link>
               </div>
-              <div className="blog-share">
+             { /*<div className="blog-share">
                 <span>share :</span>
                 <div className="share-social">
                   <ul>
@@ -60,7 +60,7 @@ const BlogPostsNoSidebar = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
@@ -78,12 +78,12 @@ const BlogPostsNoSidebar = () => {
           <div className="blog-content-2">
             <div className="blog-meta-2">
               <ul>
-                <li>22 April, 2024</li>
+                {/*<li>22 April, 2024</li>
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/blog-details-standard"}>
                     4 <i className="fa fa-comments-o" />
                   </Link>
-                </li>
+            </li>*/}
               </ul>
             </div>
             <h4>
@@ -101,7 +101,7 @@ const BlogPostsNoSidebar = () => {
                   read more
                 </Link>
               </div>
-              <div className="blog-share">
+              {/*<div className="blog-share">
                 <span>share :</span>
                 <div className="share-social">
                   <ul>
@@ -122,7 +122,7 @@ const BlogPostsNoSidebar = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+            </div>*/}
             </div>
           </div>
         </div>
@@ -140,12 +140,12 @@ const BlogPostsNoSidebar = () => {
           <div className="blog-content-2">
             <div className="blog-meta-2">
               <ul>
-                <li>22 April, 2024</li>
+                {/*<li>22 April, 2024</li>
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/blog-details-standard"}>
                     4 <i className="fa fa-comments-o" />
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
             <h4>
@@ -163,7 +163,7 @@ const BlogPostsNoSidebar = () => {
                   read more
                 </Link>
               </div>
-              <div className="blog-share">
+              {/*<div className="blog-share">
                 <span>share :</span>
                 <div className="share-social">
                   <ul>
@@ -184,12 +184,12 @@ const BlogPostsNoSidebar = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+          </div>*/}
             </div>
           </div>
         </div>
       </div>
-      <div className="col-lg-4 col-md-6 col-sm-12">
+      {/*<div className="col-lg-4 col-md-6 col-sm-12">
         <div className="blog-wrap-2 mb-30">
           <div className="blog-img-2">
             <Link to={process.env.PUBLIC_URL + "/blog-details-standard"}>
@@ -374,7 +374,7 @@ const BlogPostsNoSidebar = () => {
             </div>
           </div>
         </div>
-      </div>
+            </div>*/}
     </Fragment>
   );
 };

@@ -348,7 +348,7 @@ const App = () => {
                 element={<BlogStandard/>}
               />
               <Route
-                path={process.env.PUBLIC_URL + "/blog-no-sidebar"}
+                path={process.env.PUBLIC_URL + "/benefits"}
                 element={<BlogNoSidebar/>}
               />
               <Route
