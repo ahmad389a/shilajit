@@ -581,7 +581,7 @@
     h3 {
       color: #6eab49;
       &::before {
-        background-color: #6eab49;
+        background-color: #fff;
         @media #{$sm-layout} {
           left: 45px;
         }
