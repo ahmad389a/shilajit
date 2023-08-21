@@ -13,10 +13,10 @@ const HeaderTop = ({ borderStyle }) => {
       <LanguageCurrencyChanger currency={currency} />
       <div className="header-offer">
         <p>
-          {t("Free delivery on order over ")}
-          <span>
+          {t("")}
+          {/* <span>
             {currency.currencySymbol + (200 * currency.currencyRate).toFixed(2)}
-          </span>
+          </span> */}
         </p>
       </div>
     </div>

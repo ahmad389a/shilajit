@@ -493,7 +493,12 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul>
           </li> */}
-          
+            <li>
+            <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
+              {t("Return policy")}
+            </Link>
+          </li>
+        
           <li>
             <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
               {t("Benefits")}
