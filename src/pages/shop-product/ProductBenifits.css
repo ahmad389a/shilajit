@@ -1,0 +1,12 @@
+.product-description{
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 4%;
+  }
+  .mainhead{
+    text-align: center;
+    padding-top: 7%;
+  }
+  .product-description,h4{
+    font-weight:450;
+  }

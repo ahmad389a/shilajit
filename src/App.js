@@ -79,16 +79,15 @@ const ProductTabRight = lazy(() =>
 );
 const ProductSticky = lazy(() => import("./pages/shop-product/ProductSticky"));
 const ProductSlider = lazy(() => import("./pages/shop-product/ProductSlider"));
-const ProductFixedImage = lazy(() =>
-  import("./pages/shop-product/ProductFixedImage")
-);
+const ProductFixedImage = lazy(() =>  import("./pages/shop-product/ProductFixedImage"));
+const ProductBenifits = lazy(() =>  import("./pages/shop-product/ProductBenifits"));
+
 
 // blog pages
 const BlogStandard = lazy(() => import("./pages/blog/BlogStandard"));
 const BlogNoSidebar = lazy(() => import("./pages/blog/BlogNoSidebar"));
 const BlogRightSidebar = lazy(() => import("./pages/blog/BlogRightSidebar"));
-const BlogDetailsStandard = lazy(() =>
-  import("./pages/blog/BlogDetailsStandard")
+const BlogDetailsStandard = lazy(() =>  import("./pages/blog/BlogDetailsStandard")
 );
 
 // other pages
@@ -341,7 +340,10 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/product-fixed-image/:id"}
                 element={<ProductFixedImage/>}
               /> 
-
+              <Route
+                path={process.env.PUBLIC_URL + "/ProductBenifits"}
+                element={<ProductBenifits/>}
+              /> 
               {/* Blog pages */}
               <Route
                 path={process.env.PUBLIC_URL + "/blog-standard"}
