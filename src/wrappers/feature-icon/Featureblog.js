@@ -20,7 +20,7 @@ const FeatureBlog = ({
     
     >
       <div className={clsx(containerClass, gutterClass)}>
-        <h2 style={{textAlign:"center", paddingBottom:"2%"}}>BENEFITS OF USING SLAJEET</h2>
+        <h2 style={{textAlign:"center", paddingBottom:"2%"}}>BENEFITS OF USING SHILAJIT</h2>
         <div className="row">
           {featureIconData?.map((single, key) => (
             <div className="col-lg-4 col-md-6 col-sm-6" key={key}>
