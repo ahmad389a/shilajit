@@ -47,8 +47,19 @@ The RA number must be clearly marked on the outside of the packaging to facilita
             <h4>Refund Method:</h4>
             <p>
                 
-Refunds will be issued using the original payment method used for the purchase.<br/>
-Please allow a reasonable processing time for the refund to appear in your account.
+   Refunds will be issued using the original payment method used for the purchase.<br/>
+   Please allow a reasonable processing time for the refund to appear in your account.
+            </p>
+
+            <p>
+           <b>Please note: </b> that our return policy conditions are subject to change, and we encourage you to review them each time you make a purchase. If you have any questions or need assistance, feel free to contact our customer service team.<br/><br/>
+
+      Thank you for choosing us for your shopping needs!<br/><br/>
+
+Sincerely,<br/>
+
+<b>HIMALAYAN</b><br/>
+Contact Information
             </p>
            </div>
         
