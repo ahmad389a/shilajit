@@ -3,7 +3,13 @@ import { useLocation } from "react-router-dom";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+import DownloadForm from "./DownloadForm";
+import { Button } from "react-bootstrap";
 // import GoogleMap from "../../components/google-map"
+
+const Returnimg = 'ReturnForm.pdf';
+const ReturnForm = './assets/img/retunform/ReturnForm.pdf';
+
 
 const ReturnPolicy = () => {
   let { pathname } = useLocation();
@@ -39,7 +45,9 @@ This includes any shipping, handling, or other costs incurred in the process of 
 
              <h4>Return Authorization Process:</h4>
             <p>Prior to returning the product, the customer must contact our customer service team to request a Return by submitting this form <br/>
-The RA number must be clearly marked on the outside of the packaging to facilitate efficient processing.</p>
+The RA number must be clearly marked on the outside of the packaging to facilitate efficient processing.<br/><br/>
+  <DownloadForm filename={Returnimg} fileUrl={ReturnForm} />
+</p>
 
             <h4>Processing Time:</h4>
             <p>Once the returned product is received and inspected, we will process the refund or exchange within a reasonable timeframe.</p>
