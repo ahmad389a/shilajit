@@ -493,6 +493,11 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul>
           </li> */}
+               <li>
+                <Link to={process.env.PUBLIC_URL + "/about"}>
+                  {t("about_us")}
+                </Link>
+              </li>
        
           <li>
             <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>

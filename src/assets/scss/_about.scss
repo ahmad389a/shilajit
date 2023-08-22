@@ -91,7 +91,7 @@
 }
 
 .team-wrapper {
-  background-color: #f7f7f7;
+  // background-color: #f7f7f7;
   .team-img {
     position: relative;
 
@@ -151,15 +151,17 @@
   }
   .team-content {
     padding: 20px 10px 23px;
+    // background-color: white;
     h4 {
       font-size: 18px;
       font-weight: 500;
       margin: 0 0 3px;
       text-transform: capitalize;
     }
-    span {
-      font-size: 15px;
-      font-style: italic;
+    p {
+      font-size: 13px;
+      text-align: justify;
+  
     }
   }
   &:hover .team-action {

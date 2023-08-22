@@ -3,14 +3,14 @@ import clsx from "clsx";
 
 const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
   return (
-      <div className={clsx("team-wrapper", spaceBottomClass)}>
+      <div className={clsx("team-wrapper", spaceBottomClass)} style={{boxShadow:"7px 7px 7px 7px	#E5E4E2"}}>
         <div className="team-img">
           <img
             src={process.env.PUBLIC_URL + data.image}
             alt=""
             className="img-fluid"
           />
-          <div className="team-action">
+          {/* <div className="team-action">
             <a
               className="facebook"
               href={data.fbLink}
@@ -35,11 +35,11 @@ const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
             >
               <i className="fa fa-instagram" />
             </a>
-          </div>
+          </div> */}
         </div>
-        <div className="team-content text-center">
+        <div className="team-content text-center" >  
           <h4>{data.name}</h4>
-          <span>{data.position} </span>
+          <p>{data.position} </p>
         </div>
       </div>
   );

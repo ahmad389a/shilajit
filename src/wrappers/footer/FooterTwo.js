@@ -39,11 +39,13 @@ const FooterTwo = ({
               />
             </Link>
           </div>
+     {/* =========Text=========== */}
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim
           </p>
+           {/* =========Social links=========== */}
           <div className="footer-social">
             <ul>
               <li>
@@ -78,6 +80,12 @@ const FooterTwo = ({
               </li>*/}
             </ul>
           </div>
+  {/* =========Page links=========== */}
+
+
+
+   {/* =========Copy Right=========== */}
+
         </div>
       </div>
       <div className="footer-bottom text-center">

@@ -8,8 +8,8 @@ import { LuPackageCheck } from 'react-icons/lu';
 import { RiMapPinTimeLine  } from 'react-icons/ri';
 import { GiExpense, GiReturnArrow  } from 'react-icons/gi';
 import { MdSendTimeExtension } from 'react-icons/md';
-
 import { Container, Col, Row } from "react-bootstrap";
+
 import "./../other/ReturnPolicy.css";
 
 // import GoogleMap from "../../components/google-map"
@@ -48,7 +48,7 @@ const ReturnPolicy = () => {
             <h4><GiReturnArrow /> Return Authorization Process:</h4>
             <p>Prior to returning the product, the customer must contact our customer service team to request a Return by submitting this form <br/>
 The RA number must be clearly marked on the outside of the packaging to facilitate efficient processing.<br/><br/>
-  <DownloadForm filename={Returnimg} fileUrl={ReturnForm} className="Returnhover"/>
+  <DownloadForm filename={Returnimg} fileUrl={ReturnForm} />
 </p>
 <p> <b>Please note: </b> that our return policy conditions are subject to change, and we encourage you to review them each time you make a purchase. If you have any questions or need assistance, feel free to contact our customer service team.<br/><br/>
 

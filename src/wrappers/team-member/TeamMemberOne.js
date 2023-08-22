@@ -7,18 +7,11 @@ import TeamMemberOneSingle from "../../components/team-member/TeamMemberOneSingl
 const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
   return (
     <div className={clsx("team-area", spaceTopClass, spaceBottomClass)}>
-      <div className="container">
-        {/* section title */}
-        <SectionTitleTwo
-          titleText="Team Members"
-          subTitleText="Lorem ipsum dolor sit amet conse ctetu."
-          positionClass="text-center"
-          spaceClass="mb-60"
-        />
+      <div className="container">   
 
         <div className="row">
           {teamMemberData?.map((single, key) => (
-            <div className="col-lg-3 col-md-6 col-sm-6" key={key}>
+            <div className="col-lg-4 col-md-4 col-sm-4" key={key}>
               <TeamMemberOneSingle
                 data={single}
                 spaceBottomClass="mb-30"
