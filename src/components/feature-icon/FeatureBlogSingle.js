@@ -5,12 +5,12 @@ const FeatureBlogSingle = ({ data, spaceBottomClass }) => {
   return (
       <div
         className={clsx("support-wrap-3 text-center", spaceBottomClass)}
-        style={{ backgroundColor: `${data.backgroundColor}`, height:"90%" }}
+        style={{ backgroundColor:' #333', height:"90%", boxShadow:"5px 10px 5px #A9A9A9" }}
       >
         
         <div className="support-content-3"  >
-           <h4 style={{color:"green"}}>{data.titleImage}</h4>
-          <p style={{ color: 'Black', fontSize:'14px'}}>{data.title}</p> 
+           <h4 style={{color:" white"}}>{data.titleImage}</h4>
+          <p style={{ color: 'White', fontSize:'14px'}}>{data.title}</p> 
         </div>
       </div>
   );
