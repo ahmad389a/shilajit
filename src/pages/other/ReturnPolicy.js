@@ -42,13 +42,13 @@ const ReturnPolicy = () => {
           <Row style={{padding:'2%'}} >
           <h2 style={{textAlign:'center'}}>RETURN POLICY</h2>
             <Col md={8} id="returnform">
-              <br/>
+    
             <spam className=" greetingtext" > <i>THANK YOU! for shopping with us! We want to ensure your satisfaction with your purchase. Please review our return policy conditions below:</i></spam>
             <br/>  <br/>   <br/>  
             <h4><GiReturnArrow /> Return Authorization Process:</h4>
             <p>Prior to returning the product, the customer must contact our customer service team to request a Return by submitting this form <br/>
 The RA number must be clearly marked on the outside of the packaging to facilitate efficient processing.<br/><br/>
-  <DownloadForm filename={Returnimg} fileUrl={ReturnForm} />
+  <DownloadForm filename={Returnimg} fileUrl={ReturnForm} className="Returnhover"/>
 </p>
 <p> <b>Please note: </b> that our return policy conditions are subject to change, and we encourage you to review them each time you make a purchase. If you have any questions or need assistance, feel free to contact our customer service team.<br/><br/>
 

@@ -440,6 +440,11 @@ const MobileNavMenu = () => {
           </Link>
         </li>
         <li> 
+        <li>
+            <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
+              {t("Return Policy")}
+            </Link>
+          </li> 
           <Link to={process.env.PUBLIC_URL + "/contact"}> 
             {t("contact_us")}
           </Link>
