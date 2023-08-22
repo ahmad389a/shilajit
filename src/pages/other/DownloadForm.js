@@ -10,7 +10,7 @@ const DownloadForm = ({ filename, fileUrl }) => {
   };
 
   return (
-    <Button onClick={handleDownload}>Download Form</Button>
+    <Button variant='dark' style={{width:'70%'}} onClick={handleDownload}>Download Form</Button>
   );
 };
 

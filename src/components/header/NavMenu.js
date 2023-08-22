@@ -507,7 +507,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
           </li>
           <li>
             <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
-              {t("Return policy")}
+              {t("Return Policy")}
             </Link>
           </li>
         
