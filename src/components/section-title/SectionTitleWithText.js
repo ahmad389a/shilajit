@@ -7,11 +7,9 @@ const SectionTitleWithText = ({ spaceTopClass, spaceBottomClass }) => {
       <div className="container">
         <div className="welcome-content text-center">
           <h5>Who Are We</h5>
-          <h1>Pure Himalayan Shilajit</h1>
+          <h1>Pure Shilajit</h1>
           <p>
-          Pure Himalayan Shilajit is a blackish-brown tar-like material collected from the Himalayan mountain ranges and renowned as Elixir of Life - your all-time superfood.
-As more individuals resort to natural, herbal solutions for their health and well-being, how far might genuine Himalayan Shilajit fall in the race of the top most effective herbs?
-It is one of the most potent rejuvenating anti-aging blockbusters known to mankind. Pure Himalayan Shilajit is said to have mystical healing abilities. So, what exactly is this tar-like, sticky substance, shilajit? Let's learn everything we can about this mystical black weed.{" "}
+          We're two friends from Oslo, Norway, embarking on a journey to bring you products that are not only good for your well-being but also for the planet. Our first creation is Shilajit, a gift from nature.{" "}
           </p>
         </div>
       </div>

@@ -40,7 +40,7 @@ const About = () => {
         {/* <BannerOne spaceBottomClass="pb-70" /> */}
 
         {/* text grid */}
-        {/* <TextGridOne spaceBottomClass="pb-70" /> */}
+        <TextGridOne spaceBottomClass="pb-70" />
 
         {/* fun fact */}
         {/* <FunFactOne
@@ -50,7 +50,7 @@ const About = () => {
         /> */}
 
         {/* team member */}
-        <TeamMemberOne spaceTopClass="pt-95" spaceBottomClass="pb-70" />
+        {/* <TeamMemberOne spaceTopClass="pt-95" spaceBottomClass="pb-70" /> */}
 
         {/* brand logo slider */}
         {/* <BrandLogoSliderOne spaceBottomClass="pb-70" /> */}
