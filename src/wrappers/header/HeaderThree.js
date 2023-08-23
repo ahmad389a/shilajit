@@ -27,7 +27,7 @@ const HeaderThree = () => {
 
   return (
     <header className="header-area clearfix header-hm8">
-      <div className="header-top-area header-padding-2 d-lg-block d-none">
+      <div className=" header-padding-2 d-lg-block d-none">
         <div className="container-fluid">
           <div className="header-top-wap">
             {/* language currency changer */}

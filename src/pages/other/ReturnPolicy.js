@@ -60,7 +60,7 @@ Thank you for choosing us for your shopping needs!<br/><br/>
 Sincerely,<br/>
 
 <b>HIMALAYAN</b><br/>
-Contact Information
+Contact: +47 407 35 522
       </p>
 
             </Col>

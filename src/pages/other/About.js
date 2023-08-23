@@ -9,6 +9,7 @@ import TextGridOne from "../../wrappers/text-grid/TextGridOne";
 import FunFactOne from "../../wrappers/fun-fact/FunFactOne";
 import TeamMemberOne from "../../wrappers/team-member/TeamMemberOne";
 import BrandLogoSliderOne from "../../wrappers/brand-logo/BrandLogoSliderOne";
+import Card from 'react-bootstrap/Card';
 
 
 
@@ -29,8 +30,8 @@ const About = () => {
             {label: "About us", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
-        <div>
-          <img src="./assets/img/bg/About_hero.jpg" alt="About-hero" height={600} width={'100%'}/>
+        <div className="container">
+          <img src="./assets/img/bg/About_hero.jpg" alt="About-hero" height={500} width={'100%'}/>
         </div>
     
 
@@ -38,13 +39,52 @@ const About = () => {
         <SectionTitleWithText spaceTopClass="pt-100" spaceBottomClass="pb-95" />
 
      {/* cards */}
+     <div className="container d-flex mb-5">
+  <div className="col-md-4">
+  <Card className="Acard">
+      <Card.Body>
+    
+        <Card.Title style={{fontWeight:'500'}}>Our Vision</Card.Title>
+    
+        <Card.Text>
+        Our passion lies in using natural ingredients that Mother Earth provides. We believe in the power of what's pure and unprocessed. Our commitment to natural goodness extends from the lush landscapes of Norway to the farthest corners of the Earth.
 
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
+  <div className="col-md-4">
+  <Card className="Acard">
+      <Card.Body>
+     
+        <Card.Title style={{fontWeight:'500'}}>Our Mission</Card.Title>
+      
+        <Card.Text>
+        Our mission is clear: to make healthy living easy and accessible. We carefully select ingredients that are kind to your body, and our eco-friendly approach ensures we're gentle on the environment too.
+
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
+  <div className="col-md-4 col-lg-4">
+  <Card className="Acard">
+      <Card.Body>
+      
+        <Card.Title style={{fontWeight:'500'}}>Our Goal</Card.Title>
+        <Card.Text>
+        We're just starting, but our dream is big. We want to be your go-to source for products that harness the beauty of nature. From clean ingredients to sustainable practices, we're here to help you live healthier while honoring the natural world that inspires us..
+
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </div>
+</div>
 
         {/* banner */}
         {/* <BannerOne spaceBottomClass="pb-70" /> */}
 
         {/* text grid */}
-        <TextGridOne spaceBottomClass="pb-70" />
+        {/* <TextGridOne spaceBottomClass="pb-70" /> */}
 
         {/* fun fact */}
         {/* <FunFactOne
