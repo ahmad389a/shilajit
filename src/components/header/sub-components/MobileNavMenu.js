@@ -433,24 +433,25 @@ const MobileNavMenu = () => {
               {t("Benefits")}
             </Link>
           </li> */}
-        
-        {/* <li>      
+{/*         
+        <li>      
         <Link to={process.env.PUBLIC_URL + "/benefits"}>
             {t("Warnings")}
           </Link>
-        </li> */}
+        </li>
         <li> 
-        {/* <li>
+       
             <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
               {t("Return Policy")}
             </Link>
           </li>  */}
 
-          <li>
+             <li>
                 <Link to={process.env.PUBLIC_URL + "/about"}>
                   {t("about_us")}
                 </Link>
               </li>
+              <li>
           <Link to={process.env.PUBLIC_URL + "/contact"}> 
             {t("contact_us")}
           </Link>
