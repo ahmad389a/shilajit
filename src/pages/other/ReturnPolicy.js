@@ -6,9 +6,11 @@ import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import DownloadForm from "./DownloadForm";
 import { LuPackageCheck } from 'react-icons/lu';
 import { RiMapPinTimeLine  } from 'react-icons/ri';
+import { BsDot } from 'react-icons/bs';
 import { GiExpense, GiReturnArrow  } from 'react-icons/gi';
 import { MdSendTimeExtension } from 'react-icons/md';
 import { Container, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./../other/ReturnPolicy.css";
 
@@ -43,14 +45,15 @@ const ReturnPolicy = () => {
           <h2 style={{textAlign:'center'}}>RETURN POLICY</h2>
             <Col md={8} id="returnform">
     
-            <spam className=" greetingtext" > <i>THANK YOU! for shopping with us! We want to ensure your satisfaction with your purchase. Please review our return policy conditions below:</i></spam>
+            <spam className=" greetingtext" > <i>We want to ensure your satisfaction with every purchase you make from us. To provide you with a smooth and fair return process, we have established the following guidelines:</i></spam>
             <br/>  <br/>   <br/>  
             <h4><GiReturnArrow /> Return Authorization Process:</h4>
-            <p>Prior to returning the product, the customer must contact our customer service team to request a Return by submitting this form <br/>
-The RA number must be clearly marked on the outside of the packaging to facilitate efficient processing.<br/><br/>
-  <DownloadForm filename={Returnimg} fileUrl={ReturnForm} />
-</p>
-<p> <b>Please note: </b> that our return policy conditions are subject to change, and we encourage you to review them each time you make a purchase. If you have any questions or need assistance, feel free to contact our customer service team.<br/><br/>
+            <p>To initiate a return, please contact our customer service team  <Link to={process.env.PUBLIC_URL + "/contact"} style={{fontStyle:'italic'}}>
+             {("CONTACT US")}
+            </Link>. They will guide you through the return process, answer any questions you may have, and provide you with a return authorization if applicable.<br/><br/>
+            <br/><DownloadForm filename={Returnimg} fileUrl={ReturnForm} />
+</p><br/>
+<p> We are committed to your satisfaction and complying with all relevant laws and regulations regarding returns. If you have any questions or concerns, don't hesitate to reach out to our customer service team. Thank you for choosing us, and we appreciate your understanding of our return policy.<br/><br/>
 
 Thank you for choosing us for your shopping needs!<br/><br/>
 
@@ -66,29 +69,28 @@ Contact Information
 
             <Col md={4} id="conditions">
            
-            <h4><RiMapPinTimeLine /> Timeframe for Returns:</h4>
+            <h4><RiMapPinTimeLine /> Legal Right to Return: </h4>
 
-              <p>Products can only be returned within fourteen (14) days from the date of receipt.<br/>
-Returns requested beyond this timeframe will not be accepted.</p>
+              <p>You have the legal right to return any product purchased from us within 14 days from the date of delivery, provided the product is in its original condition.</p>
 
-            <h4><LuPackageCheck /> Unopened Packaging:</h4>
+            <h4><LuPackageCheck /> Unopened Products:</h4>
 
-            <p>To be eligible for a return, the product packaging must remain unopened, intact, and in its original condition.<br/>
-Any products with opened packaging will not be accepted for return.</p>
+            <p>To be eligible for a return, the product must remain unopened and in its original packaging. We understand that sometimes you may change your mind, and we're happy to accommodate your decision as long as the product is in resalable condition.
+</p>
 
-            <h4><GiExpense /> Return Expenses:</h4>
+            <h4><GiExpense /> Proof of Purchase:</h4>
 
-            <p>The customer is responsible for bearing the expenses associated with the return of the product.<br/>
+            <p>Please ensure you have proof of purchase, such as a receipt or order confirmation, when requesting a return. This helps us process your return efficiently.
+<br/>
              </p>
-             <h4><MdSendTimeExtension /> Processing Time:</h4>
+             <h4><MdSendTimeExtension />  Refund or Exchange:</h4>
 
-            <p>Once the returned product is received and inspected, we will process the refund or exchange within a reasonable timeframe.</p>
+            <p>Once we receive and inspect the returned product, we will process your refund or exchange, as per your preference and our policies. Please allow 7 days for us to complete this process.</p>
            
-            {/* <h4><BsDot />Refund Method:</h4>
+            {/* <h4><BsDot />Exceptions: </h4>
             <p>
                 
-   Refunds will be issued using the original payment method used for the purchase.<br/>
-   Please allow a reasonable processing time for the refund to appear in your account.
+            Certain products may not be eligible for return due to hygiene or safety reasons. Please check the product description or contact our customer service team for specific information on product eligibility.
             </p> */}
 
 
