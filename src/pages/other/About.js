@@ -22,13 +22,17 @@ const About = () => {
         description="About page of flone react minimalist eCommerce template."
       /> 
       <LayoutOne headerTop="visible">
-        {/* breadcrumb */}
-        <Breadcrumb 
+            {/* breadcrumb */}
+            <Breadcrumb 
           pages={[
             {label: "Home", path: process.env.PUBLIC_URL + "/" },
             {label: "About us", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
+        <div>
+          <img src="./assets/img/bg/About_hero.jpg" alt="About-hero" height={600} width={'100%'}/>
+        </div>
+    
 
         {/* section title with text */}
         <SectionTitleWithText spaceTopClass="pt-100" spaceBottomClass="pb-95" />
