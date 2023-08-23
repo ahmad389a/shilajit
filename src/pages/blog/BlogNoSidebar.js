@@ -24,7 +24,7 @@ const BlogNoSidebar = () => {
           ]} 
         />
         <div className="container">
-                <div className="product-description">
+                <div className="product-description" style={{paddingTop:'3%'}}> 
 
                 <h3 style={{textAlign:'center'}}> <span style={{color:'red'}}>Warning: </span>Please be aware of the following before using shilajit</h3>
 <br/>

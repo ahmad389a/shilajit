@@ -26,24 +26,7 @@ const ProductBenifits = () => {
         <div className="container">
                 <div className="product-description">
                   
-              {/* <h4>Pure Himalayan Shilajit</h4>
-              <p >Pure Himalayan Shilajit is a blackish-brown tar-like material collected from the Himalayan mountain ranges and renowned as Elixir of Life - your all-time superfood. <br/> 
-As more individuals resort to natural, herbal solutions for their health and well-being, how far might genuine Himalayan Shilajit fall in the race of the top most effective herbs? <br/> 
-It is one of the most potent rejuvenating anti-aging blockbusters known to mankind. Pure Himalayan Shilajit is said to have mystical healing abilities. So, what exactly is this tar-like, sticky substance, shilajit? Let's learn everything we can about this mystical black weed.</p>
-
-<h4>Other Names of Pure Himalayan Shilajit</h4>
-<p>There are allegedly more than 85 ionic minerals in Shilajit. Fulvic Acids, Dibenzo Alpha Pyrones, Humans, Humic Acids, trace minerals, Vitamins A, B, C, and P (citrines), phospholipids and polyphenol complexes, and Terpenoids are the main active constituents in Shilajit. Microelements (cobalt, nickel, copper, zinc, manganese, chrome, iron, magnesium, and others) are additionally present. The majority of shilajit formulations include between 60 and 80 percent fulvic acid, and the more fulvic acid a molecule has, the more anti-aging benefits it has.</p>
-
-
-<h4>Origin of Pure Himalayan Shilajit</h4>
-<p>The plant life in the Himalayan region, which encircles the expanse of China, Tibet, and other regions of Central Asia, is thought to be the source of pure Himalayan Shilajit. <br/>
-Shilajit is a viscous resin that oozes out of crevices in the Himalayan mountains throughout the summer as the heat of the season raises the temperature of the rock. It develops over many years as a result of the decay of plants and the activities of unusual microorganisms like Trifolium Repens and Euphorbia Royleana. Shilajit is thought by experts to be a millennia-old creation of nature because it takes centuries to develop.
-</p>
-
-<h4>Ingredients in Pure Himalayan Shilajit</h4>
-<p>There are allegedly more than 85 ionic minerals in Shilajit. Fulvic Acids, Dibenzo Alpha Pyrones, Humans, Humic Acids, trace minerals, Vitamins A, B, C, and P (citrines), phospholipids and polyphenol complexes, and Terpenoids are the main active constituents in Shilajit. Microelements (cobalt, nickel, copper, zinc, manganese, chrome, iron, magnesium, and others) are additionally present. The majority of shilajit formulations include between 60 and 80 percent fulvic acid, and the more fulvic acid a molecule has, the more anti-aging benefits it has.</p> */}
-
-<h3 style={{textAlign:'center'}}>Benefits of Pure Shilajit</h3>
+          <h3 style={{textAlign:'center'}}>Benefits of Pure Shilajit</h3>
 
   <h4>Energy and Stamina:</h4>
   <p>Shilajit has been used for centuries to increase physical stamina and energy levels. It is thought to aid in the body's energy-producing activities, especially through assisting with the metabolism of fats and carbohydrates. Shilajit's possible energising benefits may be attributable to its involvement in assisting mitochondrial function, which is in charge of generating energy within cells.</p>

@@ -37,6 +37,13 @@
     }
   }
 }
+.footerlinks{
+        
+          display: inline-flex;
+}
+.footerlinks,ul,li{
+  padding: 5px 7px;
+}
 
 .footer-widget {
   .footer-title {

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 const FooterTwo = ({
   backgroundColorClass,
@@ -13,6 +15,7 @@ const FooterTwo = ({
   footerLogo,
   backgroundImage
 }) => {
+  const { t } = useTranslation();
   return (
     <footer
       className={clsx("footer-area", backgroundColorClass, spaceLeftClass, spaceRightClass, backgroundImage && "bg-img")}
@@ -82,7 +85,26 @@ const FooterTwo = ({
           </div>
   {/* =========Page links=========== */}
 
+<div > 
+  <ul className="footerlinks"> 
+  <li>
+            <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
+              {t("Benefits")}
+            </Link>
+          </li>
 
+  <li>
+                <Link to={process.env.PUBLIC_URL + "/benefits"}>
+              {t("Warnings")}
+            </Link>
+          </li>
+          <li>
+            <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
+              {t("Return Policy")}
+            </Link>
+          </li>
+  </ul>
+</div>
 
    {/* =========Copy Right=========== */}
 
