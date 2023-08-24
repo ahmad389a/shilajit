@@ -30,8 +30,8 @@ const About = () => {
             {label: "About us", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
-        <div className="container">
-          <img src="./assets/img/bg/About_hero.jpg" alt="About-hero" height={500} width={'100%'}/>
+        <div  className="container">
+          <img src="./assets/img/bg/About_hero.jpg" alt="About-hero" className="AboutImage"/>
         </div>
     
 
@@ -41,7 +41,7 @@ const About = () => {
      {/* cards */}
      <div className="container d-flex mb-5">
       <div className="row">
-  <div className=" col-md-4 col-lg-4 col-sm-12 ">
+  <div className=" col-md-4 col-lg-4 col-sm-12 mt-3">
   <Card className="Acard">
       <Card.Body>
     
@@ -54,7 +54,7 @@ const About = () => {
       </Card.Body>
     </Card>
   </div>
-  <div className="col-md-4 col-lg-4 col-sm-12 mt-2">
+  <div className="col-md-4 col-lg-4 col-sm-12 mt-3">
   <Card className="Acard">
       <Card.Body>
      
@@ -67,7 +67,7 @@ const About = () => {
       </Card.Body>
     </Card>
   </div>
-  <div className="col-md-4 col-lg-4 col-sm-12 mt-2">
+  <div className="col-md-4 col-lg-4 col-sm-12 mt-3">
   <Card className="Acard">
       <Card.Body>
       

@@ -89,7 +89,7 @@ const FooterTwo = ({
   <ul className="footerlinks"> 
   <li>
             <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
-              {t("Benefits")}
+              {t("About Shilajit")}
             </Link>
           </li>
 
