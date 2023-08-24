@@ -40,7 +40,8 @@ const About = () => {
 
      {/* cards */}
      <div className="container d-flex mb-5">
-  <div className="col-md-4">
+      <div className="row">
+  <div className=" col-md-4 col-lg-4 col-sm-12 ">
   <Card className="Acard">
       <Card.Body>
     
@@ -53,7 +54,7 @@ const About = () => {
       </Card.Body>
     </Card>
   </div>
-  <div className="col-md-4">
+  <div className="col-md-4 col-lg-4 col-sm-12 mt-2">
   <Card className="Acard">
       <Card.Body>
      
@@ -66,7 +67,7 @@ const About = () => {
       </Card.Body>
     </Card>
   </div>
-  <div className="col-md-4 col-lg-4">
+  <div className="col-md-4 col-lg-4 col-sm-12 mt-2">
   <Card className="Acard">
       <Card.Body>
       
@@ -77,6 +78,7 @@ const About = () => {
         </Card.Text>
       </Card.Body>
     </Card>
+  </div>
   </div>
 </div>
 
