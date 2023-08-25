@@ -11,14 +11,14 @@ const HeaderTop = ({ borderStyle }) => {
   return (
     <div className={clsx("header-top-wap", borderStyle === "fluid-border" && "border-bottom")}>
       <LanguageCurrencyChanger currency={currency} />
-      <div className="header-offer">
+      {/* <div className="header-offer">
         <p>
           {t("")}
-          {/* <span>
+          <span>
             {currency.currencySymbol + (200 * currency.currencyRate).toFixed(2)}
-          </span> */}
+          </span>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

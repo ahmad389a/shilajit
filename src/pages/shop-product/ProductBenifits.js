@@ -20,7 +20,7 @@ const ProductBenifits = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="Blog"
+        titleTemplate="About Shilajit"
         description="Blog of flone react minimalist eCommerce template."
       />
       <LayoutOne headerTop="visible">
@@ -82,7 +82,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
 <br/>
 
 <p style={{textAlign:'center'}}>Shilajit is a natural dietary supplement that has been used in traditional medicine for centuries. Before you begin using shilajit, Ensure that you purchase shilajit from reputable sources that test the product for purity and quality.
-  please consider the following warnings and guidelines:</p>
+  please consider the following warnings and guidelines:</p><br/>
 
 <div className="row">
   <div className="col-md-4">
@@ -175,7 +175,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
 
 <p> <b>Remember !</b> that shilajit is a dietary supplement and should not replace a balanced diet and a healthy lifestyle. If you experience any unusual side effects or health issues after taking shilajit, consult a doctor immediately. This warning is for informational purposes only and is not intended as medical advice.</p>
 
-<p><b> Please note: </b> that this warning is general, and individual considerations may apply depending on a person's specific health and medical history. It's always best to consult a doctor before starting any new dietary supplement or medication.</p>
+<p><b> Please note: </b> Shilajit is not a medicine and should not be used as an alternative to medication. Its effects can vary from person to person. Shilajit is a resin-like substance that is sourced from the Himalayan mountains and is often marketed as a natural health supplement. While it contains various minerals and compounds that may have potential health benefits, it is essential to understand that it is not a substitute for medical treatment. If you have specific health concerns or conditions, it is advisable to consult with a healthcare professional for proper diagnosis and treatment. Additionally, individual reactions to shilajit can differ, so it's important to use it cautiously and in accordance with recommended guidelines. </p>
 </div>
 </div>
       </LayoutOne>

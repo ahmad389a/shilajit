@@ -47,7 +47,7 @@ const About = () => {
     
         <Card.Title style={{fontWeight:'500'}}>Our Vision</Card.Title>
     
-        <Card.Text>
+        <Card.Text className="Acardtext">
         Our passion lies in using natural ingredients that Mother Earth provides. We believe in the power of what's pure and unprocessed. Our commitment to natural goodness extends from the lush landscapes of Norway to the farthest corners of the Earth.
 
         </Card.Text>
@@ -60,7 +60,7 @@ const About = () => {
      
         <Card.Title style={{fontWeight:'500'}}>Our Mission</Card.Title>
       
-        <Card.Text>
+        <Card.Text className="Acardtext">
         Our mission is clear: to make healthy living easy and accessible. We carefully select ingredients that are kind to your body, and our eco-friendly approach ensures we're gentle on the environment too.
 
         </Card.Text>
@@ -72,7 +72,7 @@ const About = () => {
       <Card.Body>
       
         <Card.Title style={{fontWeight:'500'}}>Our Goal</Card.Title>
-        <Card.Text>
+        <Card.Text className="Acardtext">
         We're just starting, but our dream is big. We want to be your go-to source for products that harness the beauty of nature. From clean ingredients to sustainable practices, we're here to help you live healthier while honoring the natural world that inspires us..
 
         </Card.Text>
