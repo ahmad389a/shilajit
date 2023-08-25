@@ -23,42 +23,55 @@ const BlogNoSidebar = () => {
             {label: "Privacy Policy", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
-        <div className="container">
+        <div className="container mb-5">
                 <div className="product-description" style={{paddingTop:'3%'}}> 
 
-                <h3 style={{textAlign:'center'}}> <span style={{color:'red'}}>Privacy Policy </span>Please be aware of the following before using shilajit</h3>
+                <h3 style={{textAlign:'center'}}> Privacy Policy </h3>
 <br/>
 
-<p>we value and respect your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you visit or make a purchase from our website. By accessing or using our website, you agree to the terms of this Privacy Policy.</p>
+<p>Your privacy is important to us. This privacy policy explains how we collect, use, share, and protect your personal information when you visit our website [website domain]. We encourage you to carefully read this privacy policy.
+</p>
 
 <h4>Information We Collect</h4>
 <p>Before starting any dietary supplement, including shilajit, it is essential to consult a qualified healthcare professional or doctor, especially if you have underlying medical conditions or are taking other medications.
 </p>
 
 <h4>Use of Information</h4>
-<p>Carefully follow the dosage instructions provided on the product label or as recommended by healthcare professionals. Overdosing can lead to undesirable side effects.
+<p>When you visit our website, we may collect the following types of information:
 </p>
 
-<h4>Disclosure of Information</h4>
-<p>Pregnant and nursing women should avoid the use of shilajit unless otherwise advised by a healthcare professional.</p>
+<h4>Personally Identifiable Information (PII):</h4>
+<p>This may include names, email addresses, and other information you voluntarily provide through contact forms or registration forms.</p>
 
-<h4>Data Security</h4>
-<p> If you experience allergic reactions such as rash, itching, swelling, or difficulty breathing after taking shilajit, discontinue use immediately and seek medical assistance.
+<h4>Non-Personally Identifiable Information:</h4>
+<p> This may include information about your browser, IP address, device type, and information about how you interact with our website through cookies and similar technologies.
 </p>
 
-<h4>Cookies and Tracking Technologies</h4>
-<p>Shilajit may potentially interact with certain medications. Discuss the use of shilajit with your doctor if you are taking other medications to avoid unwanted interactions.</p>
-
-<h4>Children:</h4>
-<p>Keep shilajit out of reach of children, as there is insufficient research on its effect and safety for children.
+<h4>How We Use the Information</h4>
+<p>We use the information we collect for the following purposes:
+  <ul>
+    <li>- To provide services you request, such as responding to inquiries through contact forms.</li>
+    <li>- To enhance the user experience on our website.</li>
+    <li>- To send you relevant information and updates if you have consented to it.</li>
+  </ul>
 </p>
 
-<h4>Quality and source:</h4>
-<p>Ensure that you purchase shilajit from reputable sources that test the product for purity and quality.</p>
+<h4>Sharing of Information</h4>
+<p>We do not share your personal information with third parties without your consent unless required by law.
+</p>
 
-<p> <b>Remember !</b> that shilajit is a dietary supplement and should not replace a balanced diet and a healthy lifestyle. If you experience any unusual side effects or health issues after taking shilajit, consult a doctor immediately. This warning is for informational purposes only and is not intended as medical advice.</p>
+<h4>Information Security</h4>
+<p>We take information security seriously and implement appropriate security measures to protect your personal information.</p>
 
-<p><b> Please note: </b> that this warning is general, and individual considerations may apply depending on a person's specific health and medical history. It's always best to consult a doctor before starting any new dietary supplement or medication.</p>
+<h4>Your Rights</h4>
+<p>You have the right to request access to, correction of, deletion of, or limitation of the use of your personal information. You also have the right to withdraw any consents you have provided.</p>
+
+<h4>Changes to the Privacy Policy</h4>
+<p>We may update this privacy policy from time to time. Any changes will be posted on this page, and the date of the last update will be modified.</p>
+
+<h4>Contact Us</h4>
+<p>If you have questions about our privacy policy or wish to exercise your rights, please contact us at + 47 407 35 522 </p>
+
 </div>
 </div>
       </LayoutOne>
