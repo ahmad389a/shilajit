@@ -92,6 +92,7 @@
 .AboutImage{
   height: 500px;
   width: 100%;
+
   @media #{$xs-layout} {
     height: 250px;
     width: 100%;
@@ -102,11 +103,19 @@
 .Acard{
 height:105%;
 text-align:center;
-background-color: #ffff98;
+background-color: #070508;
+color: #fff;
 box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.Acard-title{
+  font-weight:550;
+   color:#e6c61c;
+   font-size:17px;
+
 }
 .Acardtext{
   text-align: justify;
+  color: #fff;
 }
 
 .team-wrapper {
