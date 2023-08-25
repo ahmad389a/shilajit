@@ -16,7 +16,7 @@ const HomeOrganicFood = () => {
       <SEO
         titleTemplate="Pure Shilajit"
         description="Organic food home of flone react minimalist eCommerce template."
-        title= "Himaliya"
+        title= "Himalayan"
       />
       <LayoutThree
         headerTop="visible"

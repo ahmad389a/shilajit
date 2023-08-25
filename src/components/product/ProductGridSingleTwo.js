@@ -146,7 +146,7 @@ const ProductGridSingleTwo = ({
             </div>
           </div>
          
-          <div className="pro-wishlist-2">
+          {/* <div className="pro-wishlist-2">
             <button
               className={wishlistItem !== undefined ? "active" : ""}
               disabled={wishlistItem !== undefined}
@@ -159,7 +159,7 @@ const ProductGridSingleTwo = ({
             >
               <i className="fa fa-heart-o" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
