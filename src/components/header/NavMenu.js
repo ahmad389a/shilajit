@@ -499,13 +499,13 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                 </Link>
               </li>
        
-          {/* <li>
+          <li>
             <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
-              {t("Benefits")}
+              {t("About Shilajit")}
             </Link>
           </li>
         
-          <li>
+          {/* <li>
             <Link to={process.env.PUBLIC_URL + "/benefits"}>
               {t("Warnings")}
             </Link>

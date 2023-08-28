@@ -44,9 +44,7 @@ const FooterTwo = ({
           </div>
      {/* =========Text=========== */}
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim
+          Our mission is to offer top-quality, health-enhancing products, empowering you to reach your peak vitality. Discover our thoughtfully curated range of natural solutions designed to foster a healthier lifestyle.
           </p>
            {/* =========Social links=========== */}
           <div className="footer-social">
@@ -87,11 +85,11 @@ const FooterTwo = ({
 
 <div > 
   <ul className="footerlinks"> 
-  <li>
+  {/* <li>
             <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
               {t("About Shilajit")}
             </Link>
-          </li>
+          </li> */}
 
   <li>
                 <Link to={process.env.PUBLIC_URL + "/benefits"}>

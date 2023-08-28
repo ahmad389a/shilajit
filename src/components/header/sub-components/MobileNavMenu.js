@@ -427,12 +427,17 @@ const MobileNavMenu = () => {
             </li>
           </ul>
         </li> */}
+          <li>
+                <Link to={process.env.PUBLIC_URL + "/about"}>
+                  {t("about_us")}
+                </Link>
+              </li>
           
-          {/* <li>
+          <li>
             <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
-              {t("Benefits")}
+              {t("About Shilajit")}
             </Link>
-          </li> */}
+          </li>
 {/*         
         <li>      
         <Link to={process.env.PUBLIC_URL + "/benefits"}>
@@ -446,11 +451,8 @@ const MobileNavMenu = () => {
             </Link>
           </li>  */}
 
-             <li>
-                <Link to={process.env.PUBLIC_URL + "/about"}>
-                  {t("about_us")}
-                </Link>
-              </li>
+           
+              
               <li>
           <Link to={process.env.PUBLIC_URL + "/contact"}> 
             {t("contact_us")}

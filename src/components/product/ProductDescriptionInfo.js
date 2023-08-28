@@ -62,7 +62,11 @@ const ProductDescriptionInfo = ({
         ""
       )}
       <div className="pro-details-list">
-        <p>{product.shortDescription}</p>
+        <p>Discover the power of nature in its purest form with our Shilajit resin from the majestic Himalayan mountains. This unique natural product has been used for centuries in traditional Ayurvedic medicine and is considered a treasure from the mountains.</p>
+      {/* <br/> */}
+       <div >  <Link to={process.env.PUBLIC_URL + "/ProductBenifits"} style={{color:'#047b04'}}>
+              Read More
+            </Link></div>
       </div>
 
       {product.variation ? (
