@@ -517,7 +517,7 @@
     span {
       font-size: 24px;
 
-      color:#e6c61c;
+      color:#04b304;
       &.old {
         font-size: 18px;
 
@@ -1477,7 +1477,7 @@
         border: none;
         border-radius: 50px;
         background: none;
-        background-color: #e6c61c;
+        background-color: #044704;
         &:hover,
         &.active {
           background-color: #334443;
@@ -1550,11 +1550,11 @@
 
           margin-right: 17px;
 
-          color: #e6c61c;
+          color: #047b04;
           &.old {
             text-decoration: line-through;
 
-            color: #e6c61c;
+            color: #04b304;
             &.red {
               color: #ff3d2a;
             }

@@ -86,7 +86,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
 
 <div className="row">
   <div className="col-md-4">
-  <Card style={{height:'95%', textAlign:'center', backgroundColor:'#ffff98'}}>
+  <Card style={{height:'95%', textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <MdOutlineHealthAndSafety/></h2>
         <Card.Title style={{fontWeight:'500'}}>Consult a healthcare professional:</Card.Title>
@@ -98,7 +98,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
     </Card>
   </div>
   <div className="col-md-4">
-  <Card style={{height:'95%', textAlign:'center', backgroundColor:'#ffff98'}}>
+  <Card style={{height:'95%', textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <GiOverdose/></h2>
         <Card.Title style={{fontWeight:'500'}}>Dosage</Card.Title>
@@ -110,7 +110,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
     </Card>
   </div>
   <div className="col-md-4 col-lg-4">
-  <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#ffff98'}}>
+  <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <FaPersonBreastfeeding/></h2>
         <Card.Title style={{fontWeight:'500'}}>Pregnant and nursing women:</Card.Title>
@@ -127,7 +127,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
 
 <div className="row">
   <div className="col-md-4">
-  <Card  style={{height:'95%',  textAlign:'center', backgroundColor:'#ffff98'}}>
+  <Card  style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <LiaAllergiesSolid/></h2>
         <Card.Title style={{fontWeight:'500'}}>Allergic reactions:</Card.Title>
@@ -140,7 +140,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
     </Card>
   </div>
   <div className="col-md-4">
-  <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#ffff98'}}>
+  <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <RiMedicineBottleLine/></h2>
         <Card.Title style={{fontWeight:'500'}}>Interactions with medications:</Card.Title>
@@ -153,7 +153,7 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
     </Card>
   </div>
   <div className="col-md-4 col-lg-4">
-  <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#ffff98'}}>
+  <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <LiaChildSolid/></h2>
         <Card.Title style={{fontWeight:'500'}}>Children:</Card.Title>
