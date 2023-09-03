@@ -32,21 +32,21 @@ const LanguageCurrencyChanger = ({ currency }) => {
         </span>
         <div className="lang-car-dropdown">
           <ul>
-            <li>
-              <button value="en" onClick={e => changeLanguageTrigger(e)}>
-                English
-              </button>
-            </li>
-            <li>
+          <li>
               <button value="nn" onClick={e => changeLanguageTrigger(e)}>
               Norwegian
               </button>
             </li>
             <li>
+              <button value="en" onClick={e => changeLanguageTrigger(e)}>
+                English
+              </button>
+            </li>          
+            {/* <li>
               <button value="de" onClick={e => changeLanguageTrigger(e)}>
                 Germany
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
@@ -61,7 +61,7 @@ const LanguageCurrencyChanger = ({ currency }) => {
                 NOK
               </button>
             </li>
-            <li>
+            {/* <li>
               <button value="EUR" onClick={e => setCurrencyTrigger(e)}>
                 EUR
               </button>
@@ -70,13 +70,13 @@ const LanguageCurrencyChanger = ({ currency }) => {
               <button value="GBP" onClick={e => setCurrencyTrigger(e)}>
                 GBP
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
-      <div className="same-language-currency">
+      {/* <div className="same-language-currency">
         <p>{t("Call Us")} +47 407 35 522</p>
-      </div>
+      </div> */}
     </div>
   );
 };

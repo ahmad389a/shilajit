@@ -5,9 +5,11 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import BlogPagination from "../../wrappers/blog/BlogPagination";
 import BlogPostsNoSidebar from "../../wrappers/blog/BlogPostsNoSidebar";
+import { useTranslation } from "react-i18next";
 
 const BlogNoSidebar = () => {
   let { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>

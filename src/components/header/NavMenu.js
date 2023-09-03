@@ -494,8 +494,8 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
             </ul>
           </li> */}
                {/* <li>
-                <Link to={process.env.PUBLIC_URL + "/about"}>
-                  {t("about_us")}
+                <Link to={process.env.PUBLIC_URL + "/order-status"}>
+                  {t("Order Success")}
                 </Link>
               </li> */}
        
@@ -514,7 +514,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
             <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
               {t("Return Policy")}
             </Link>
-          </li> */}
+          </li>  */}
         
           <li>
             <Link to={process.env.PUBLIC_URL + "/contact"}>

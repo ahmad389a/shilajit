@@ -204,16 +204,17 @@ const Cart = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="cart-shiping-update-wrapper">
-                      <div className="cart-shiping-update">
+                      {/* <div className="cart-shiping-update">
                         <Link
                           to={process.env.PUBLIC_URL + "/shop-grid-standard"}
                         >
                           Continue Shopping
                         </Link>
-                      </div>
+                      </div> */}
                       <div className="cart-clear">
                         <button onClick={() => dispatch(deleteAllFromCart())}>
                           Clear Shopping Cart
@@ -224,8 +225,8 @@ const Cart = () => {
                 </div>
 
                 <div className="row">
-                  <div className="col-lg-4 col-md-6">
-                    <div className="cart-tax">
+                  <div className="col-lg-2 col-md-6">
+                    {/* <div className="cart-tax">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gray">
                           Estimate Shipping And Tax
@@ -265,10 +266,10 @@ const Cart = () => {
                           </button>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
-                  <div className="col-lg-4 col-md-6">
+                  {/* <div className="col-lg-4 col-md-6">
                     <div className="discount-code-wrapper">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gray">
@@ -285,9 +286,9 @@ const Cart = () => {
                         </form>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="col-lg-4 col-md-12">
+                  <div className="col-lg-8 col-md-12">
                     <div className="grand-totall">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gary-cart">
@@ -323,7 +324,7 @@ const Cart = () => {
                     </div>
                     <div className="item-empty-area__text">
                       No items found in cart <br />{" "}
-                      <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+                      <Link to={process.env.PUBLIC_URL + "/"}>
                         Shop Now
                       </Link>
                     </div>

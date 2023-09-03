@@ -81,6 +81,7 @@ const ProductSticky = lazy(() => import("./pages/shop-product/ProductSticky"));
 const ProductSlider = lazy(() => import("./pages/shop-product/ProductSlider"));
 const ProductFixedImage = lazy(() =>  import("./pages/shop-product/ProductFixedImage"));
 const ProductBenifits = lazy(() =>  import("./pages/shop-product/ProductBenifits"));
+const OrderStatus = lazy(() =>  import("./pages/other/order-status"));
 
 
 // blog pages
@@ -344,6 +345,10 @@ const App = () => {
               <Route
                 path={process.env.PUBLIC_URL + "/ProductBenifits"}
                 element={<ProductBenifits/>}
+              /> 
+                <Route
+                path={process.env.PUBLIC_URL + "/order-status"}
+                element={<OrderStatus/>}
               /> 
               {/* Blog pages */}
               <Route

@@ -11,7 +11,7 @@ import { GiExpense, GiReturnArrow  } from 'react-icons/gi';
 import { MdSendTimeExtension } from 'react-icons/md';
 import { Container, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 import "./../other/ReturnPolicy.css";
 
 // import GoogleMap from "../../components/google-map"
@@ -22,6 +22,7 @@ const ReturnForm = './assets/img/retunform/ReturnForm.pdf';
 
 const ReturnPolicy = () => {
   let { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>

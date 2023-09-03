@@ -14,8 +14,10 @@ import { MdOutlineHealthAndSafety }  from "react-icons/md";
 import {  FaPersonBreastfeeding  } from "react-icons/fa6";
 // import {  FaPersonBreastfeeding } from "react-icons/fa";
 import { RiMedicineBottleLine }  from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 const ProductBenifits = () => {
   let { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>

@@ -1,5 +1,6 @@
 import { Fragment } from "react"; 
 import { useLocation } from "react-router-dom"; 
+import { useTranslation } from "react-i18next";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
@@ -15,6 +16,7 @@ import Card from 'react-bootstrap/Card';
 
 const About = () => {
   let { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>
