@@ -7,9 +7,11 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { addToCart, decreaseQuantity, deleteFromCart, deleteAllFromCart } from "../../store/slices/cart-slice";
 import { cartItemStock } from "../../helpers/product";
+import { useTranslation } from "react-i18next";
 
 const Cart = () => {
   let cartTotalPrice = 0;
+  const { t } = useTranslation();
 
   const [quantityCount] = useState(1);
   const dispatch = useDispatch();
@@ -29,27 +31,27 @@ const Cart = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Cart", path: process.env.PUBLIC_URL + pathname }
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Handlekurv", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="cart-main-area pt-90 pb-100">
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (
               <Fragment>
-                <h3 className="cart-page-title">Your cart items</h3>
+                <h3 className="cart-page-title">{t("Your cart items")}</h3>
                 <div className="row">
                   <div className="col-12">
                     <div className="table-content table-responsive cart-table-content">
                       <table>
                         <thead>
                           <tr>
-                            <th>Image</th>
-                            <th>Product Name</th>
-                            <th>Unit Price</th>
-                            <th>Qty</th>
-                            <th>Subtotal</th>
-                            <th>action</th>
+                            <th>{t("Image")}</th>
+                            <th>{t("Product Name")}</th>
+                            <th>{t("Unit Price")}</th>
+                            <th>{t("Qty")}</th>
+                            <th>{t("Subtotal")}</th>
+                            <th>{t("action")}</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -217,7 +219,7 @@ const Cart = () => {
                       </div> */}
                       <div className="cart-clear">
                         <button onClick={() => dispatch(deleteAllFromCart())}>
-                          Clear Shopping Cart
+                          {t("Clear Shopping Cart")}
                         </button>
                       </div>
                     </div>
@@ -292,24 +294,24 @@ const Cart = () => {
                     <div className="grand-totall">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gary-cart">
-                          Cart Total
+                        {t("Cart Total")}
                         </h4>
                       </div>
                       <h5>
-                        Total products{" "}
+                        {t("Total products")}{""}
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>
                       </h5>
 
                       <h4 className="grand-totall-title">
-                        Grand Total{" "}
+                        {t("Grand Total")}{""}
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>
                       </h4>
                       <Link to={process.env.PUBLIC_URL + "/checkout"}>
-                        Proceed to Checkout
+                        {t("Proceed to Checkout")}
                       </Link>
                     </div>
                   </div>
@@ -323,9 +325,9 @@ const Cart = () => {
                       <i className="pe-7s-cart"></i>
                     </div>
                     <div className="item-empty-area__text">
-                      No items found in cart <br />{" "}
+                     {t("No items found in cart")}<br />{" "}
                       <Link to={process.env.PUBLIC_URL + "/"}>
-                        Shop Now
+                        {t("Shop Now")}
                       </Link>
                     </div>
                   </div>

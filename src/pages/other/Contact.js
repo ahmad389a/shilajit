@@ -3,10 +3,12 @@ import { useLocation } from "react-router-dom";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
+import { useTranslation } from "react-i18next";
 // import GoogleMap from "../../components/google-map"
 
 const Contact = () => {
   let { pathname } = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Fragment>
@@ -18,7 +20,7 @@ const Contact = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
             {label: "Contact", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
@@ -101,31 +103,31 @@ const Contact = () => {
               <div className="col-12 col-lg-12 col-md-12">
                 <div className="contact-form">
                   <div className="contact-title mb-30 ">
-                    <h2>Get In Touch</h2>
+                    <h2>{t("Get In Touch")}</h2>
                   </div>
                   <form className="contact-form-style">
                     <div className="row">
                       <div className="col-lg-6">
-                        <input name="name" placeholder="Name*" type="text" />
+                        <input name="name" placeholder="Navn*" type="text" />
                       </div>
                       <div className="col-lg-6">
-                        <input name="email" placeholder="Email*" type="email" />
+                        <input name="email" placeholder="E-post*" type="email" />
                       </div>
                       <div className="col-lg-12">
                         <input
                           name="subject"
-                          placeholder="Subject*"
+                          placeholder="Emne*"
                           type="text"
                         />
                       </div>
                       <div className="col-lg-12">
                         <textarea
                           name="message"
-                          placeholder="Your Message*"
+                          placeholder="Din Beskjed*"
                           defaultValue={""}
                         />
                         <button className="submit" type="submit">
-                          SEND
+                          {t("SEND")}
                         </button>
                       </div>
                     </div>
