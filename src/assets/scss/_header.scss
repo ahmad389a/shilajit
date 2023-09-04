@@ -967,7 +967,7 @@
 .header-top-area {
   border-bottom: 1px solid #d5d4d4;
   .header-top-wap {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     @media #{$xs-layout} {

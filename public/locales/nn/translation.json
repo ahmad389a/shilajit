@@ -101,5 +101,23 @@
     "Order Success":"Bestillingssuksess",
     "Warnings":"Advarsel",
     "Our mission is to offer top-quality":"Vårt oppdrag er til by på topp kvalitet ",
-    " health-enhancing products":"helsefremmende Produkter"
+    "health-enhancing products":"helsefremmende Produkter",
+    "Your cart items":"Din handlekurv varer",
+    "Cart Total":"Handlevogn totalt",
+    "Total products":"Totalt produkter",
+    "Grand Total":"Grand Total",
+    "Proceed to Checkout":"Fortsett til utsjekking",
+    "Clear Shopping Cart":"Tøm handlekurven",
+    "Image":"Bilde",
+    "Product Name":"Produktnavn",
+    "Unit Price":"Enhetspris",
+    "Qty":"Antall",
+    "Subtotal":"Delsum",
+    "action":"handling",
+    "Shop Now":"Handle nå",
+    "No items found in cart":"Ingen varer funnet i handlekurven",
+    "SEND":"SENDE",
+    "Get In Touch":"Ta kontakt"
+
+   
 }
