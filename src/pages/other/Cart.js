@@ -7,11 +7,10 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { addToCart, decreaseQuantity, deleteFromCart, deleteAllFromCart } from "../../store/slices/cart-slice";
 import { cartItemStock } from "../../helpers/product";
-import { useTranslation } from "react-i18next";
+import PayButton from "./PayButton";
 
 const Cart = () => {
   let cartTotalPrice = 0;
-  const { t } = useTranslation();
 
   const [quantityCount] = useState(1);
   const dispatch = useDispatch();
@@ -31,27 +30,27 @@ const Cart = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
-            {label: "Handlekurv", path: process.env.PUBLIC_URL + pathname }
+            {label: "Home", path: process.env.PUBLIC_URL + "/" },
+            {label: "Cart", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="cart-main-area pt-90 pb-100">
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (
               <Fragment>
-                <h3 className="cart-page-title">{t("Your cart items")}</h3>
+                <h3 className="cart-page-title">Your cart items</h3>
                 <div className="row">
                   <div className="col-12">
                     <div className="table-content table-responsive cart-table-content">
                       <table>
                         <thead>
                           <tr>
-                            <th>{t("Image")}</th>
-                            <th>{t("Product Name")}</th>
-                            <th>{t("Unit Price")}</th>
-                            <th>{t("Qty")}</th>
-                            <th>{t("Subtotal")}</th>
-                            <th>{t("action")}</th>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Unit Price</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                            <th>action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -206,20 +205,19 @@ const Cart = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="cart-shiping-update-wrapper">
-                      {/* <div className="cart-shiping-update">
+                      <div className="cart-shiping-update">
                         <Link
                           to={process.env.PUBLIC_URL + "/shop-grid-standard"}
                         >
                           Continue Shopping
                         </Link>
-                      </div> */}
+                      </div>
                       <div className="cart-clear">
                         <button onClick={() => dispatch(deleteAllFromCart())}>
-                          {t("Clear Shopping Cart")}
+                          Clear Shopping Cart
                         </button>
                       </div>
                     </div>
@@ -227,8 +225,8 @@ const Cart = () => {
                 </div>
 
                 <div className="row">
-                  <div className="col-lg-2 col-md-6">
-                    {/* <div className="cart-tax">
+                  <div className="col-lg-4 col-md-6">
+                    <div className="cart-tax">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gray">
                           Estimate Shipping And Tax
@@ -268,10 +266,10 @@ const Cart = () => {
                           </button>
                         </div>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
 
-                  {/* <div className="col-lg-4 col-md-6">
+                  <div className="col-lg-4 col-md-6">
                     <div className="discount-code-wrapper">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gray">
@@ -288,31 +286,32 @@ const Cart = () => {
                         </form>
                       </div>
                     </div>
-                  </div> */}
+                  </div>
 
-                  <div className="col-lg-8 col-md-12">
+                  <div className="col-lg-4 col-md-12">
                     <div className="grand-totall">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gary-cart">
-                        {t("Cart Total")}
+                          Cart Total
                         </h4>
                       </div>
                       <h5>
-                        {t("Total products")}{""}
+                        Total products{" "}
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>
                       </h5>
 
                       <h4 className="grand-totall-title">
-                        {t("Grand Total")}{""}
+                        Grand Total{" "}
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>
                       </h4>
-                      <Link to={process.env.PUBLIC_URL + "/checkout"}>
-                        {t("Proceed to Checkout")}
-                      </Link>
+                      <PayButton cartItems={cartItems} />
+                      {/* <Link to={process.env.PUBLIC_URL + "/checkout"}>
+                        Proceed to Checkout
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -325,9 +324,9 @@ const Cart = () => {
                       <i className="pe-7s-cart"></i>
                     </div>
                     <div className="item-empty-area__text">
-                     {t("No items found in cart")}<br />{" "}
-                      <Link to={process.env.PUBLIC_URL + "/"}>
-                        {t("Shop Now")}
+                      No items found in cart <br />{" "}
+                      <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+                        Shop Now
                       </Link>
                     </div>
                   </div>
