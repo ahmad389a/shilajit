@@ -7,6 +7,7 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { addToCart, decreaseQuantity, deleteFromCart, deleteAllFromCart } from "../../store/slices/cart-slice";
 import { cartItemStock } from "../../helpers/product";
+import { useTranslation } from "react-i18next";
 
 const Cart = () => {
   let cartTotalPrice = 0;
@@ -310,7 +311,7 @@ const Cart = () => {
                         </span>
                       </h4>
                       <Link to={process.env.PUBLIC_URL + "/checkout"}>
-                        Proceed to Checkout
+                        {t("Proceed to Checkout")}
                       </Link>
                     </div>
                   </div>
