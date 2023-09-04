@@ -307,11 +307,10 @@ const Cart = () => {
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>
-                      </h4>
-                      <PayButton cartItems={cartItems} />
-                      {/* <Link to={process.env.PUBLIC_URL + "/checkout"}>
+                      </h4>  
+                      <Link to={process.env.PUBLIC_URL + "/checkout"}>
                         Proceed to Checkout
-                      </Link> */}
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ const PayButton = ({ cartItems,billingAddress  }) => {
 
   return (
     <>
-      <button onClick={() => handleCheckout()}>Check out</button>
+      <button onClick={() => handleCheckout()}>Place Order</button>
     </>
   );
 };
