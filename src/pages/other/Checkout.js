@@ -6,6 +6,8 @@ import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { useTranslation } from "react-i18next";
+import PayButton from "./PayButton";
+import { useState } from "react";
 
 const Checkout = () => {
   let cartTotalPrice = 0;
@@ -14,6 +16,24 @@ const Checkout = () => {
   let { pathname } = useLocation();
   const currency = useSelector((state) => state.currency);
   const { cartItems } = useSelector((state) => state.cart);
+  const [billingAddress, setBillingInfo] = useState({
+    firstName: "",
+    lastName: "",
+    streetAddress: "",
+    townCity: "",
+    stateCounty: "",
+    postcodeZIP: "",
+    phone: "",
+    emailAddress: "",
+  });
+
+  const handleBillingInfoChange = (e) => {
+    const { name, value } = e.target;
+    setBillingInfo({
+      ...billingAddress,
+      [name]: value,
+    });
+  };
 
   return (
     <Fragment>
@@ -40,13 +60,25 @@ const Checkout = () => {
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("First Name")}</label>
-                          <input type="text"  required/>
+                          <input
+                            type="text"
+                            name="firstName"
+                            value={billingAddress.firstName}
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("Last Name")}</label>
-                          <input type="text"  required />
+                          <input
+                            type="text"
+                            name="lastname"
+                            value="we"
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12">
@@ -203,7 +235,8 @@ const Checkout = () => {
                       <div className="payment-method"></div>
                     </div>
                     <div className="place-order mt-25">
-                      <button className="btn-hover">{t("Place Order")}</button>
+                      <PayButton cartItems={cartItems} billingAddress={billingAddress} />
+                      {/* <button className="btn-hover">{t("Place Order")}</button> */}
                     </div>
                   </div>
                 </div>

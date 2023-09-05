@@ -104,6 +104,7 @@ const Checkout = lazy(() => import("./pages/other/Checkout"));
 
 const NotFound = lazy(() => import("./pages/other/NotFound"));
 const ReturnPolicy = lazy(() => import("./pages/other/ReturnPolicy"));
+const OrderCompleted = lazy(() => import("./pages/other/Order-Success"));
 
 const App = () => {
   return (
@@ -406,6 +407,11 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/ReturnPolicy"}
                 element={<ReturnPolicy/>}
               /> 
+              <Route
+                path={process.env.PUBLIC_URL + "/checkout-success"}
+                element={<OrderCompleted />}
+              />
+
 
               <Route path="*" element={<NotFound/>} />
             </Routes>

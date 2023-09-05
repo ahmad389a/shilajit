@@ -1,18 +1,15 @@
-
 import { Fragment } from "react";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { getProducts } from "../../helpers/product";
 import ProductGridSingleTwo from "../../components/product/ProductGridSingleTwo";
-
-
 const ProductGridTwo = ({
   spaceBottomClass,
   colorClass,
   titlePriceClass,
   category,
   type,
-  limit
+  limit,
 }) => {
   const { products } = useSelector((state) => state.product);
   const currency = useSelector((state) => state.currency);
@@ -20,33 +17,31 @@ const ProductGridTwo = ({
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
   const prods = getProducts(products, category, type, limit);
-  
+  console.log("productsssssssssssssss", products);
   return (
     <Fragment>
       <div className="col-md-1 col-lg-1 col-xl-1"></div>
       {prods?.map((product) => {
         return (
-
-          
-          <div className="col-xl-5 col-md-5 col-lg-5 col-sm-6" style={{justifyContent:'center',}} key={product.id}>
+          <div
+            className="col-xl-5 col-md-5 col-lg-5 col-sm-6"
+            style={{ justifyContent: "center" }}
+            key={product.id}
+          >
             <ProductGridSingleTwo
               spaceBottomClass={spaceBottomClass}
               colorClass={colorClass}
               product={product}
               currency={currency}
-              cartItem={
-                cartItems.find((cartItem) => cartItem.id === product.id)
-              }
-              wishlistItem={
-                wishlistItems.find(
-                  (wishlistItem) => wishlistItem.id === product.id
-                )
-              }
-              compareItem={
-                compareItems.find(
-                  (compareItem) => compareItem.id === product.id
-                )
-              }
+              cartItem={cartItems.find(
+                (cartItem) => cartItem.id === product.id
+              )}
+              wishlistItem={wishlistItems.find(
+                (wishlistItem) => wishlistItem.id === product.id
+              )}
+              compareItem={compareItems.find(
+                (compareItem) => compareItem.id === product.id
+              )}
               titlePriceClass={titlePriceClass}
             />
           </div>
@@ -63,7 +58,7 @@ ProductGridTwo.propTypes = {
   titlePriceClass: PropTypes.string,
   category: PropTypes.string,
   type: PropTypes.string,
-  limit: PropTypes.number
+  limit: PropTypes.number,
 };
 
 export default ProductGridTwo;
