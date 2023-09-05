@@ -34,67 +34,101 @@ const ProductBenifits = () => {
           ]} 
         />
         <div className="container">
-        <h3 style={{textAlign:'center',paddingTop:'3%'}}>Pure Himalayan Shilajit</h3>
+        <h3 style={{textAlign:'center',paddingTop:'3%'}}> {t("Pure Himalayan Shilajit")} </h3>
 
-             <p style={{textAlign:'center'}}>Pure Himalayan Shilajit is a blackish-brown tar-like material collected from the Himalayan mountain ranges and renowned as Elixir of Life - your all-time superfood.  
-As more individuals resort to natural, herbal solutions for their health and well-being, how far might genuine Himalayan Shilajit fall in the race of the top most effective herbs? 
-It is one of the most potent rejuvenating anti-aging blockbusters known to mankind. Pure Himalayan Shilajit is said to have mystical healing abilities. So, what exactly is this tar-like, sticky substance, shilajit? Let's learn everything we can about this mystical black weed.
+             <p style={{textAlign:'center'}}>{t("Shilajit is a blackish-brown tar-like material")}  {t("collected from the Himalayan mountain ranges and renowned as Elixir of Life")}- {t("your all-time superfood")}.
+             {t("As more individuals resort to natural")}, {t("herbal solutions for their health and well-being")}, {t("how far might genuine Himalayan Shilajit fall in the race of the top most effective herbs")}? 
+             {t("It is one of the most potent rejuvenating anti-aging blockbusters known to mankind")}. {t("Shilajit is said to have mystical healing abilities")}. {t("So")},{t("what exactly is this tar-like")} ,{t("sticky substance")} , {t("shilajit")}? {t("Let's learn everything we can about this mystical black weed")}.
 </p>
-
-        <TeamMemberOne spaceTopClass="pt-95" spaceBottomClass="pb-70" /> 
+       {/* ========================cards========================================= */}
+<div className="row pt-5 pb-5">
+  <div className="col-md-1 col-lg-1"></div>
+<div className="col-md-5 col-lg-5">
+       <Card style={{ width: '100%' }}>
+      <Card.Img variant="top" src="/assets/img/team/team-3.jpg" />
+      <Card.Body>
+        <Card.Title><b>{t("Origin Of Pure Himalayan Shilajit")}</b></Card.Title>
+        <Card.Text>
+        {t("The plant life in the Himalayan region")},  {t("which encircles the expanse of China")} ,  {t("Tibet")}, 
+        {t("and other regions of Central Asia")}, {t("is thought to be the source of Shilajit")} .
+        {t("Shilajit is a viscous resin that oozes out of crevices in the Himalayan mountains throughout the summer as the heat of the  season raises the temperature of the rock")}
+       .  {t("It develops over many years as a result of the decay of plants and the activities of unusual microorganisms like Trifolium Repens and Euphorbia Royleana")}. {t("Shilajit is thought by experts to be a millennia-old creation of nature because it takes centuries to develop")} .
+        </Card.Text>        
+      </Card.Body>
+    </Card>
+    </div>
+{/* ------------------ */}
+<div className="col-md-5 col-lg-5">
+<Card style={{ width: '100%' }}>
+      <Card.Img variant="top" src="/assets/img/team/team-1.jpg" />
+      <Card.Body>
+        <Card.Title><b>{t("Ingredients In Pure Himalayan Shilajit")}</b></Card.Title>
+        <Card.Text>
+        {t("There are allegedly more than 85 ionic minerals in Shilajit")} .  {t("Fulvic Acids")}, {t("Dibenzo Alpha Pyrones")} ,  {t("Humans")},  {t("Humic Acids")},  {t("trace minerals")},  {t("Vitamins")} A, B, C, and P ( {t("citrines")}), 
+        {t("phospholipids and polyphenol complexes")},  {t("and Terpenoids are the main active constituents in Shilajit")}.  {t("Microelements")} ( {t("cobalt")},  {t("nickel")},  {t("copper")},  {t("zinc")},  {t("manganese")},  {t("chrome")},  {t("iron")},  {t("magnesium")},  {t("and others")}) 
+        {t("are additionally present")}.  {t("The majority of shilajit formulations include between 60 and 80 percent fulvic acid")}, 
+        {t("and the more fulvic acid a molecule has")},  {t("the more anti-aging benefits it has")}.
+        </Card.Text>
+       
+      </Card.Body>
+    </Card>
+    </div>
+    </div>
 
         {/* ===============Benifits=============== */}
 
                 <div className="product-description">              
-          <h3 style={{textAlign:'center'}}>Benefits of Pure Shilajit</h3>
+          <h3 style={{textAlign:'center'}}>{t("Benefits of Pure Shilajit")}</h3>
 
-  <h4>Energy and Stamina:</h4>
-  <p>Shilajit has been used for centuries to increase physical stamina and energy levels. It is thought to aid in the body's energy-producing activities, especially through assisting with the metabolism of fats and carbohydrates. Shilajit's possible energising benefits may be attributable to its involvement in assisting mitochondrial function, which is in charge of generating energy within cells.</p>
+  <h4>{t("Energy and Stamina")}:</h4>
+  <p>{t("Shilajit has been used for centuries to increase physical stamina and energy levels")}. {t("It is thought to aid in the body's energy-producing activities")}, {t("especially through assisting with the metabolism of fats and carbohydrates")}. {t("Shilajit's possible energising benefits may be attributable to its involvement in assisting mitochondrial function")},{t("which is in charge of generating energy within cells")} .</p>
 
-  <h4>Rich in Minerals and Fulvic Acid:</h4>
-  <p>Shilajit is a food that is abundant in minerals and fulvic acid, both of which are necessary for many body processes. Magnesium, iron, zinc, copper, and selenium are a few of these. These minerals help with metabolic functions, immune system support, and bone health maintenance. Shilajit contains fulvic acid, a natural substance that is proven to improve the body's absorption of minerals and other nutrients. It might improve these nutrients' bioavailability by assisting in their transit through cell membranes.</p>
+  <h4>{t("Rich in Minerals and Fulvic Acid")}:</h4>
+  <p>{t("Shilajit is a food that is abundant in minerals and fulvic acid")}, {t("both of which are necessary for many body processes")}.{t("Magnesium")} , {t("iron")}, {t("zinc")}, {t("copper")},{t("and selenium are a few of these")} . {t("These minerals help with metabolic functions")},{t("immune system support")} ,{t("and bone health maintenance")} .{t("Shilajit contains fulvic acid")} , {t("a natural substance that is proven to improve the body's absorption of minerals and other nutrients")}.{t("It might improve these nutrients' bioavailability by assisting in their transit through cell membranes")} .</p>
 
-  <h4>Anti-Aging Superstar:</h4>
-  <p>Pure Himalayan Shilajit has an unrivalled ability to slow and reverse the ageing process. It aids in the acceleration of protein and nucleic acid metabolism and accelerates energy-producing pathways.</p>
+  <h4>{t("Anti-Aging Superstar")}:</h4>
+  <p>{t("Shilajit has an unrivalled ability to slow and reverse the ageing process")}. {t("It aids in the acceleration of protein and nucleic acid metabolism and accelerates energy-producing pathways")}.</p>
 
-  <h4>Male Health:</h4>
-  <p>Shilajit has long been utilised to support the health of male reproduction. It is thought to have favourable effects on testosterone levels, which are essential for male reproductive health as well as muscle and bone density. Shilajit intake may increase sperm count, motility, and fertility in males, according to some studies, though more studies are required to completely understand these benefits.</p>
+  <h4>{t("Male Health")}:</h4>
+  <p>{t("Shilajit has long been utilised to support the health of male reproduction")}.{t("It is thought to have favourable effects on testosterone levels")} , {t("which are essential for male reproductive health as well as muscle and bone density")}. {t("Shilajit intake may increase sperm count")},{t("motility")} ,{t("and fertility in males")} ,{t("according to some studies")} , {t("though more studies are required to completely understand these benefits")}.</p>
    
-  <h4>Bone Wellness:</h4>
-  <p>Calcium and magnesium are two minerals found in shilajit that are crucial for supporting strong, healthy bones. To avoid disorders like osteoporosis, which results in weakening bones and an elevated risk of fractures, an adequate intake of these minerals is necessary. Shilajit may support general bone health and density by supplying these minerals.</p>
+  <h4>{t("Bone Wellness")}:</h4>
+  <p>{t("Calcium and magnesium are two minerals found in shilajit that are crucial for supporting strong")},{t("healthy bones")}. {t("To avoid disorders like osteoporosis")}, {t("which results in weakening bones and an elevated risk of fractures")},{t("an adequate intake of these minerals is necessary")} .{t("Shilajit may support general bone health and density by supplying these minerals")} .</p>
    
-  <h4>Pure Himalayan Shilajit For Skin Care:</h4>
-  <p>Acne and dull skin issues can be treated with pure Himalayan Shilajit. Shilajit's anti-inflammatory qualities aid in preventing the cellular harm brought on by free radicals. It can be combined with your usual face packs to give you skin that is naturally glowing.</p>
+  <h4>{t("Shilajit For Skin Care")}:</h4>
+  <p>{t("Acne and dull skin issues can be treated with Shilajit")}. {t("Shilajit's anti-inflammatory qualities aid in preventing the cellular harm brought on by free radicals")}. {t("It can be combined with your usual face packs to give you skin that is naturally glowing")}.</p>
   
-  <h4>Stress Reliever:</h4>
-  <p>Because of the androgen-like qualities of Pure Himalayan Shilajit, it may help balance out stress-causing hormones, making it simpler for both your mind and body to deal with stress signals in a healthier and calmer manner.</p>
+  <h4>{t("Stress Reliever")}:</h4>
+  <p>{t("Because of the androgen-like qualities of Shilajit")},{t("it may help balance out stress-causing hormones")} , {t("making it simpler for both your mind and body to deal with stress signals in a healthier and calmer manner")}.</p>
 
-  <h4>Other Benefits:</h4>
-  <p>Shilajit is thought to have a number of advantages, including being rich in minerals and fulvic acid, which promote nutrient absorption and cellular function. Antioxidants in it can fight off free radicals and promote cellular health. It has long been used to increase energy and endurance, but it may also improve memory and focus while protecting brain cells, which could enhance cognitive performance. It could help with illnesses like arthritis because of its anti-inflammatory effects. Shilajit's immuno-modulating properties may help the immune system function better. Its nutrients and antioxidants support skin health by potentially having anti-aging benefits. It might have a favourable effect on testosterone levels and sexual function in men. The mineral content, which includes calcium and magnesium, may help maintain healthy bones.</p>
+  <h4>{t("Other Benefits")}:</h4>
+  <p>{t("Shilajit is thought to have a number of advantages")}, {t("including being rich in minerals and fulvic acid")}, {t("which promote nutrient absorption and cellular function")}. {t("Antioxidants in it can fight off free radicals and promote cellular health")}.{t("It has long been used to increase energy and endurance")} , 
+  {t("but it may also improve memory and focus while protecting brain cells")}, {t("which could enhance cognitive performance")}. {t("It could help with illnesses like arthritis because of its anti-inflammatory effects")}. {t("Shilajit's immuno-modulating properties may help the immune system function better")}.
+  {t("Its nutrients and antioxidants support skin health by potentially having anti-aging benefits")} .{t("It might have a favourable effect on testosterone levels and sexual function in men")}. {t("The mineral content")}, {t("which includes calcium and magnesium")},{t("may help maintain healthy bones")} .</p>
   
-  <h4>How to use Pure Himaliyan Shilajit?</h4>
-  <p>Dissolve with milk, tea, or warm, non-chlorinated water to drink. For general wellbeing, we advise beginning with a rice grain to pea-sized quantity, once day. The dosage can be raised for more power and effect, but it shouldn't go over 1 gram daily.
-Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all illnesses and maintaining youth due to its medicinal properties. It is referred to as Amrit or the Fountain of Youth in ancient Chinese and Indian literature.
+  <h4>{t("How to use Shilajit")}?</h4>
+  <p>{t("Dissolve with milk")}, {t("tea")} , {t("or warm")}, {t("non-chlorinated water to drink")}. {t("For general wellbeing")}, {t("we advise beginning with a rice grain to pea-sized quantity")}, {t("once day")}.{t("The dosage can be raised for more power and effect")} , {t("but it shouldn't go over 150-500 mg daily")}.
+  {t("Shilajit is known as the")} "{t("Nectar of God")}," {t("capable of curing all illnesses and maintaining youth due to its medicinal properties")}. {t("It is referred to as Amrit or the Fountain of Youth in ancient Chinese and Indian literature")}.
 </p><br/>
 </div>
 <hr/>
 {/* ===========Warnings============= */}
 
-<h3 style={{textAlign:'center'}}> <span style={{color:'red'}}>Warning: </span>Please be aware of the following before using shilajit</h3>
+<h3 style={{textAlign:'center'}}> <span style={{color:'red'}}>{t("Warning")}: </span>{t("Please be aware of the following before using shilajit")}</h3>
 <br/>
 
-<p style={{textAlign:'center'}}>Shilajit is a natural dietary supplement that has been used in traditional medicine for centuries. Before you begin using shilajit, Ensure that you purchase shilajit from reputable sources that test the product for purity and quality.
-  please consider the following warnings and guidelines:</p><br/>
+<p style={{textAlign:'center'}}>{t("Shilajit is a natural dietary supplement that has been used in traditional medicine for centuries")}. {t("Before you begin using shilajit")}, {t("Ensure that you purchase shilajit from reputable sources that test the product for purity and quality")}.
+{t("please consider the following warnings and guidelines")}:</p><br/>
 
 <div className="row">
   <div className="col-md-4">
   <Card style={{height:'95%', textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <MdOutlineHealthAndSafety/></h2>
-        <Card.Title style={{fontWeight:'500'}}>Consult a healthcare professional:</Card.Title>
+        <Card.Title style={{fontWeight:'500'}}>{t("Consult a healthcare professional")}:</Card.Title>
      
         <Card.Text>
-        Before starting any dietary supplement, including shilajit, it is essential to consult a qualified healthcare professional or doctor, especially if you have underlying medical conditions or are taking other medications.
+        {t("Before starting any dietary supplement")}, {t("including shilajit")}, {t("it is essential to consult a qualified healthcare professional or doctor")}, {t("especially if you have underlying medical conditions or are taking other medications")}.
         </Card.Text>
       </Card.Body>
     </Card>
@@ -103,10 +137,10 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
   <Card style={{height:'95%', textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <GiOverdose/></h2>
-        <Card.Title style={{fontWeight:'500'}}>Dosage</Card.Title>
+        <Card.Title style={{fontWeight:'500'}}>{t("Dosage")}</Card.Title>
      
         <Card.Text>
-        Carefully follow the dosage instructions provided on the product label or as recommended by healthcare professionals. Overdosing can lead to undesirable side effects.
+        {t("Carefully follow the dosage instructions provided on the product label or as recommended by healthcare professionals")}.  {t("Overdosing can lead to undesirable side effects")}.
         </Card.Text>
       </Card.Body>
     </Card>
@@ -115,10 +149,10 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
   <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <FaPersonBreastfeeding/></h2>
-        <Card.Title style={{fontWeight:'500'}}>Pregnant and nursing women:</Card.Title>
+        <Card.Title style={{fontWeight:'500'}}>{t("Pregnant and nursing women")}:</Card.Title>
        
         <Card.Text>
-        Pregnant and nursing women should avoid the use of shilajit unless otherwise advised by a healthcare professional.
+        {t("Pregnant and nursing women should avoid the use of shilajit unless otherwise advised by a healthcare professional")}.
 
         </Card.Text>
       </Card.Body>
@@ -132,10 +166,10 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
   <Card  style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <LiaAllergiesSolid/></h2>
-        <Card.Title style={{fontWeight:'500'}}>Allergic reactions:</Card.Title>
+        <Card.Title style={{fontWeight:'500'}}>{t("Allergic reactions")}:</Card.Title>
     
         <Card.Text>
-        If you experience allergic reactions such as rash, itching, swelling, or difficulty breathing after taking shilajit, discontinue use immediately and seek medical assistance.
+        {t("If you experience allergic reactions such as rash")}, {t("itching")}, {t("swelling")}, {t("or difficulty breathing after taking shilajit")}, {t("discontinue use immediately and seek medical assistance")}.
 
         </Card.Text>
       </Card.Body>
@@ -145,10 +179,10 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
   <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <RiMedicineBottleLine/></h2>
-        <Card.Title style={{fontWeight:'500'}}>Interactions with medications:</Card.Title>
+        <Card.Title style={{fontWeight:'500'}}>{t("Interactions with medications")}:</Card.Title>
       
         <Card.Text>
-        Shilajit may potentially interact with certain medications. Discuss the use of shilajit with your doctor if you are taking other medications to avoid unwanted interactions.
+        {t("Shilajit may potentially interact with certain medications")} {t("Discuss the use of shilajit with your doctor if you are taking other medications to avoid unwanted interactions")}.
 
         </Card.Text>
       </Card.Body>
@@ -158,9 +192,9 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
   <Card style={{height:'95%',  textAlign:'center', backgroundColor:'#78d23d'}}>
       <Card.Body>
       <h2> <LiaChildSolid/></h2>
-        <Card.Title style={{fontWeight:'500'}}>Children:</Card.Title>
+        <Card.Title style={{fontWeight:'500'}}>{t("Children")}:</Card.Title>
         <Card.Text>
-        Keep shilajit out of reach of children, as there is insufficient research on its effect and safety for children.
+        {t("Keep shilajit out of reach of children")}, {t("as there is insufficient research on its effect and safety for children")}.
 
         </Card.Text>
       </Card.Body>
@@ -175,9 +209,10 @@ Pure Himalayan Shilajit is known as the "Nectar of God," capable of curing all i
 
 <div className="product-description" style={{paddingTop:'3%'}}> 
 
-<p> <b>Remember !</b> that shilajit is a dietary supplement and should not replace a balanced diet and a healthy lifestyle. If you experience any unusual side effects or health issues after taking shilajit, consult a doctor immediately. This warning is for informational purposes only and is not intended as medical advice.</p>
+<p> <b>{t("Remember")}  !</b>{t("that shilajit is a dietary supplement and should not replace a balanced diet and a healthy lifestyle")} . {t("If you experience any unusual side effects or health issues after taking shilajit")},{t("consult a doctor immediately")} . {t("This warning is for informational purposes only and is not intended as medical advice")}.</p>
 
-<p><b> Please note: </b> Shilajit is not a medicine and should not be used as an alternative to medication. Its effects can vary from person to person. Shilajit is a resin-like substance that is sourced from the Himalayan mountains and is often marketed as a natural health supplement. While it contains various minerals and compounds that may have potential health benefits, it is essential to understand that it is not a substitute for medical treatment. If you have specific health concerns or conditions, it is advisable to consult with a healthcare professional for proper diagnosis and treatment. Additionally, individual reactions to shilajit can differ, so it's important to use it cautiously and in accordance with recommended guidelines. </p>
+<p><b> {t("Please note")}: </b> {t("Shilajit is not a medicine and should not be used as an alternative to medication")}. {t("Its effects can vary from person to person")}. {t("Shilajit is a resin-like substance that is sourced from the Himalayan mountains and is often marketed as a natural health supplement")}. {t("While it contains various minerals and compounds that may have potential health benefits")} , 
+{t("it is essential to understand that it is not a substitute for medical treatment")}. {t("If you have specific health concerns or conditions")}, {t("it is advisable to consult with a healthcare professional for proper diagnosis and treatment")}. {t("Additionally")},{t("individual reactions to shilajit can differ")} , {t("so it's important to use it cautiously and in accordance with recommended guidelines")}. </p>
 </div>
 </div>
       </LayoutOne>

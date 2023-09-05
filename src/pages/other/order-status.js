@@ -43,9 +43,9 @@ const OrderStatus = () => {
           <div style={{textAlign:'center'}}>
             <img src="../assets/img/icon-img/order-sucess.png" alt="status imege" height={100} width={100} style={{display:'inline-block'}}/>
           </div><br/>
-          <h4>ORDER PLACED SUCCESSFULLY !</h4>
-          <spam>Order ID:</spam> <spam>d8o9566777</spam>
-          <p> Thank you for choosing our service! <br/>You will receive an order confirmation email shortly with expected delivery date for your item.</p>
+          <h4>{t("ORDER PLACED SUCCESSFULLY")} !</h4>
+          <spam> {t("Order ID")} :</spam> <spam>d8o9566777</spam>
+          <p> {t("Thank you for choosing our service")} ! <br/> {t("You will receive an order confirmation email shortly with expected delivery date for your item")}.</p>
          </div>
         
 {/* 

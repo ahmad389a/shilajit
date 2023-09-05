@@ -25,8 +25,8 @@ const Checkout = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Checkout", path: process.env.PUBLIC_URL + pathname }
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "SJEKK UT", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="checkout-area pt-95 pb-100">
@@ -75,11 +75,11 @@ const Checkout = () => {
                           <label>{t("Street Address")}</label>
                           <input
                             className="billing-address"
-                            placeholder="House number and street name"
+                            placeholder="Husnummer og gatenavn"
                             type="text"  required
                           />
                           <input
-                            placeholder="Apartment, suite, unit etc."
+                            placeholder="Leilighet, suite, enhet etc."
                             type="text"
                           />
                         </div>

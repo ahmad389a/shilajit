@@ -9,7 +9,7 @@ import ProductModal from "./ProductModal";
 import { addToCart } from "../../store/slices/cart-slice";
 import { addToWishlist } from "../../store/slices/wishlist-slice";
 import { addToCompare } from "../../store/slices/compare-slice";
-
+import { useTranslation } from "react-i18next";
 const ProductGridListSingle = ({
   product,
   currency,
@@ -25,6 +25,7 @@ const ProductGridListSingle = ({
     discountedPrice * currency.currencyRate
   ).toFixed(2);
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   return (
     <Fragment>
@@ -109,7 +110,7 @@ const ProductGridListSingle = ({
                   </button>
                 ) : (
                   <button disabled className="active">
-                    Out of Stock
+                     {t("Out of Stock")}
                   </button>
                 )}
               </div>
@@ -261,7 +262,7 @@ const ProductGridListSingle = ({
                       </button>
                     ) : (
                       <button disabled className="active">
-                        Out of Stock
+                         {t("Out of Stock")}
                       </button>
                     )}
                   </div>

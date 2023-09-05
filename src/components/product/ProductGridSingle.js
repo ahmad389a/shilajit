@@ -8,7 +8,7 @@ import { getDiscountPrice } from "../../helpers/product";
 import ProductModal from "./ProductModal";
 import { addToCart } from "../../store/slices/cart-slice";
 import { addToWishlist } from "../../store/slices/wishlist-slice";
-
+import { useTranslation } from "react-i18next";
 const ProductGridSingle = ({
   product,
   currency,
@@ -24,6 +24,7 @@ const ProductGridSingle = ({
     discountedPrice * currency.currencyRate
   ).toFixed(2);
   const dispatch = useDispatch();
+   const { t } = useTranslation();
 
   return (
     <Fragment>
@@ -89,7 +90,8 @@ const ProductGridSingle = ({
                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
                   Select Option
                 </Link>
-              ) : product.stock && product.stock > 0 ? (
+              ) 
+              : product.stock && product.stock > 0 ? (
                 <button
                   onClick={() => dispatch(addToCart(product))}
                   className={
@@ -105,10 +107,11 @@ const ProductGridSingle = ({
                   {" "}
                   <i className="pe-7s-cart"></i>{" "}
                   {cartItem !== undefined && cartItem.quantity > 0
-                    ? "Added"
-                    : "Add to cart"}
+                    ? "La til"
+                    : "Legg i handlekurv"}
                 </button>
-              ) : (
+              )
+               : (
                 <button disabled className="active">
                   Out of Stock
                 </button>

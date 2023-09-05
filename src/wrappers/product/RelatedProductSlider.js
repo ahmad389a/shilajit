@@ -5,6 +5,7 @@ import Swiper, { SwiperSlide } from "../../components/swiper";
 import SectionTitle from "../../components/section-title/SectionTitle";
 import ProductGridSingle from "../../components/product/ProductGridSingle";
 import { getProducts } from "../../helpers/product";
+import { useTranslation } from "react-i18next";
 
 const settings = {
   loop: false,
@@ -35,11 +36,11 @@ const RelatedProductSlider = ({ spaceBottomClass, category }) => {
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
   const prods = getProducts(products, category, null, 4);
-  
+  const { t } = useTranslation();
   return (
     <div className={clsx("related-product-area", spaceBottomClass)}>
         <SectionTitle
-          titleText="Related Products"
+          titleText={t("Related Products")}
           positionClass="text-center"
           spaceClass="mb-50"
         />

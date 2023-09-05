@@ -43,9 +43,8 @@ const FooterTwo = ({
             </Link>
           </div>
      {/* =========Text=========== */}
-          <p> {t("Our mission is to offer top-quality")} {t(" health-enhancing products")} &nbsp;
-         
-          empowering you to reach your peak vitality. Discover our thoughtfully curated range of natural solutions designed to foster a healthier lifestyle.
+          <p> {t("Our mission is to offer top-quality health-enhancing products empowering you to reach your peak vitality")} .
+             {t("Discover our thoughtfully curated range of natural solutions designed to foster a healthier lifestyle")}.
           
           </p>
            {/* =========Social links=========== */}

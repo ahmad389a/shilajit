@@ -298,14 +298,14 @@ const Cart = () => {
                         </h4>
                       </div>
                       <h5>
-                        {t("Total products")}{""}
+                        Total products{""}
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>
                       </h5>
 
                       <h4 className="grand-totall-title">
-                        {t("Grand Total")}{""}
+                        Grand Total{""}
                         <span>
                           {currency.currencySymbol + cartTotalPrice.toFixed(2)}
                         </span>

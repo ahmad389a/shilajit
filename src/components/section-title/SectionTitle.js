@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
-import clsx from "clsx"
+import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 
-const SectionTitle = ({
+const SectionTitle = ({  
   titleText,
   subtitleText,
   subtitleColorClass,
   positionClass,
   spaceClass,
-  borderClass
+  borderClass  
 }) => {
+  const { t } = useTranslation();
   return (
     <div className={clsx("section-title", positionClass, spaceClass, borderClass)}>
       <h2>{titleText}</h2>

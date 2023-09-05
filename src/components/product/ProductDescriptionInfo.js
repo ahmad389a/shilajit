@@ -7,6 +7,7 @@ import Rating from "./sub-components/ProductRating";
 import { addToCart } from "../../store/slices/cart-slice";
 import { addToWishlist } from "../../store/slices/wishlist-slice";
 import { addToCompare } from "../../store/slices/compare-slice";
+import { useTranslation } from "react-i18next";
 
 const ProductDescriptionInfo = ({
   product,
@@ -18,6 +19,7 @@ const ProductDescriptionInfo = ({
   wishlistItem,
   compareItem,
 }) => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const [selectedProductColor, setSelectedProductColor] = useState(
     product.variation ? product.variation[0].color : ""
@@ -146,7 +148,7 @@ const ProductDescriptionInfo = ({
               rel="noopener noreferrer"
               target="_blank"
             >
-              Buy Now
+             {t("Buy Now")}
             </a>
           </div>
         </div>
@@ -194,10 +196,10 @@ const ProductDescriptionInfo = ({
                 disabled={productCartQty >= productStock}
               >
                 {" "}
-                Add To Cart{" "}
+                  {t("Add To Cart")}{" "}
               </button>
             ) : (
-              <button disabled>Out of Stock</button>
+              <button disabled>{t("Out of Stock")}</button>
             )}
           </div>
           <div className="pro-details-wishlist">
@@ -232,13 +234,13 @@ const ProductDescriptionInfo = ({
       )}
       {product.category ? (
         <div className="pro-details-meta">
-          <span>Categories :</span>
+          <span>{t("Categories")}:</span>
           <ul>
             {product.category.map((single, key) => {
               return (
                 <li key={key}>
                   <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-                    {single}
+                    {t("organic food")}
                   </Link>
                 </li>
               );
@@ -250,13 +252,13 @@ const ProductDescriptionInfo = ({
       )}
       {product.tag ? (
         <div className="pro-details-meta">
-          <span>Tags :</span>
+          <span>{t("Tags")} :</span>
           <ul>
             {product.tag.map((single, key) => {
               return (
                 <li key={key}>
-                  <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-                    {single}
+                  <Link to={process.env.PUBLIC_URL + "/"}>
+                  {t("organic food")}
                   </Link>
                 </li>
               );

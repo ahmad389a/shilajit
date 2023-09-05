@@ -28,51 +28,48 @@ const BlogNoSidebar = () => {
         <div className="container mb-5">
                 <div className="product-description" style={{paddingTop:'3%'}}> 
 
-                <h3 style={{textAlign:'center'}}> Privacy Policy </h3>
+                <h3 style={{textAlign:'center'}}> {t("Privacy Policy")}</h3>
 <br/>
 
-<p>Your privacy is important to us. This privacy policy explains how we collect, use, share, and protect your personal information when you visit our website [website domain]. We encourage you to carefully read this privacy policy.
+<p>{t("Your privacy is important to us")}. {t("This privacy policy explains how we collect")}, {t("use")}, {t("share")}, {t("and protect your personal information when you visit our website")}. {t("We encourage you to carefully read this privacy policy")} .
 </p>
 
-<h4>Information We Collect</h4>
-<p>Before starting any dietary supplement, including shilajit, it is essential to consult a qualified healthcare professional or doctor, especially if you have underlying medical conditions or are taking other medications.
+
+<h4>{t("Information We Collect")}</h4>
+<p>{t("When you visit our website")}, {t("we may collect the following types of information")}:
 </p>
 
-<h4>Use of Information</h4>
-<p>When you visit our website, we may collect the following types of information:
+<h4> {t("Personally Identifiable Information")}(PII):</h4>
+<p>{t("This may include names")}, {t("email addresses")}, {t("and other information you voluntarily provide through contact forms or registration forms")}.</p>
+
+<h4>{t("Non-Personally Identifiable Information")}:</h4>
+<p> {t("This may include information about your browser")}, {t("IP address")}, {t("device type")}, {t("and information about how you interact with our website through cookies and similar technologies")}.
 </p>
 
-<h4>Personally Identifiable Information (PII):</h4>
-<p>This may include names, email addresses, and other information you voluntarily provide through contact forms or registration forms.</p>
-
-<h4>Non-Personally Identifiable Information:</h4>
-<p> This may include information about your browser, IP address, device type, and information about how you interact with our website through cookies and similar technologies.
-</p>
-
-<h4>How We Use the Information</h4>
-<p>We use the information we collect for the following purposes:
+<h4>{t("Use of Information")}</h4>
+<p>{t("We use the information we collect for the following purposes")}:
   <ul>
-    <li>- To provide services you request, such as responding to inquiries through contact forms.</li>
-    <li>- To enhance the user experience on our website.</li>
-    <li>- To send you relevant information and updates if you have consented to it.</li>
+    <li>- {t("To provide services you request")}, {t("such as responding to inquiries through contact forms")}.</li>
+    <li>- {t("To enhance the user experience on our website")}.</li>
+    <li>- {t("To send you relevant information and updates if you have consented to it")}.</li>
   </ul>
 </p>
 
-<h4>Sharing of Information</h4>
-<p>We do not share your personal information with third parties without your consent unless required by law.
+<h4>{t("Sharing of Information")}</h4>
+<p>{t("We do not share your personal information with third parties without your consent unless required by law")}.
 </p>
 
-<h4>Information Security</h4>
-<p>We take information security seriously and implement appropriate security measures to protect your personal information.</p>
+<h4>{t("Information Security")}</h4>
+<p>{t("We take information security seriously and implement appropriate security measures to protect your personal information")}.</p>
 
-<h4>Your Rights</h4>
-<p>You have the right to request access to, correction of, deletion of, or limitation of the use of your personal information. You also have the right to withdraw any consents you have provided.</p>
+<h4>{t("Your Rights")}</h4>
+<p>{t("You have the right to request access to")}, {t("correction of")}, {t("deletion of")}, {t("or limitation of the use of your personal information")}. {t("You also have the right to withdraw any consents you have provided")}.</p>
 
-<h4>Changes to the Privacy Policy</h4>
-<p>We may update this privacy policy from time to time. Any changes will be posted on this page, and the date of the last update will be modified.</p>
+<h4>{t("Changes to the Privacy Policy")}</h4>
+<p>{t("We may update this privacy policy from time to time")}. {t("Any changes will be posted on this page")}, {t("and the date of the last update will be modified")}.</p>
 
-<h4>Contact Us</h4>
-<p>If you have questions about our privacy policy or wish to exercise your rights, please contact us at + 47 407 35 522 </p>
+<h4>{t("Contact Us")}</h4>
+<p>{t("If you have questions about our privacy policy or wish to exercise your rights")}, {t("please contact us at")}+ 47 407 35 522 </p>
 
 </div>
 </div>

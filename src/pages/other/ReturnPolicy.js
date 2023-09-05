@@ -43,25 +43,25 @@ const ReturnPolicy = () => {
         
 
           <Row style={{padding:'2%'}} >
-          <h2 style={{textAlign:'center'}}>RETURN POLICY</h2>
+          <h2 style={{textAlign:'center'}}> {t("RETURN POLICY")} </h2>
             <Col md={8} id="returnform">
     
-            <spam className=" greetingtext" > <i>We want to ensure your satisfaction with every purchase you make from us. To provide you with a smooth and fair return process, we have established the following guidelines:</i></spam>
+            <spam className=" greetingtext" > <i>{t("We want to ensure your satisfaction with every purchase you make from us")} . {t("To provide you with a smooth and fair return process")} , {t("we have established the following guidelines")} :</i></spam>
             <br/>  <br/>   <br/>  
-            <h4><GiReturnArrow /> Return Authorization Process:</h4>
-            <p>To initiate a return, please contact our customer service team  <Link to={process.env.PUBLIC_URL + "/contact"} style={{fontStyle:'italic'}}>
-             {("CONTACT US")}
-            </Link>. They will guide you through the return process, answer any questions you may have, and provide you with a return authorization if applicable.<br/><br/>
+            <h4><GiReturnArrow /> {t("Return Authorization Process")} :</h4>
+            <p>{t("To initiate a return")}, {t("please contact our customer service team")}  <Link to={process.env.PUBLIC_URL + "/contact"} style={{fontStyle:'italic'}}>
+             {t("CONTACT US")}
+            </Link>. {t("They will guide you through the return process")}, {t("answer any questions you may have")}, {t("and provide you with a return authorization if applicable")}.<br/><br/>
             <br/><DownloadForm filename={Returnimg} fileUrl={ReturnForm} />
 </p><br/>
-<p> We are committed to your satisfaction and complying with all relevant laws and regulations regarding returns. If you have any questions or concerns, don't hesitate to reach out to our customer service team. Thank you for choosing us, and we appreciate your understanding of our return policy.<br/><br/>
+<p> {t("We are committed to your satisfaction and complying with all relevant laws and regulations regarding returns")}.{t("If you have any questions or concerns")} , {t("don't hesitate to reach out to our customer service team")}. {t("Thank you for choosing us")}, {t("and we appreciate your understanding of our return policy")}.<br/><br/>
 
-Thank you for choosing us for your shopping needs!<br/><br/>
+{t("Thank you for choosing us for your shopping needs")}!<br/><br/>
 
-Sincerely,<br/>
+{t("Sincerely")},<br/>
 
-<b>HIMALAYAN</b><br/>
-Contact: +47 407 35 522
+<b>{t("NATURENSSKATTER")}</b><br/>
+{t("Contact")}: +47 407 35 522
       </p>
 
             </Col>
@@ -70,23 +70,23 @@ Contact: +47 407 35 522
 
             <Col md={4} id="conditions">
            
-            <h4><RiMapPinTimeLine /> Legal Right to Return: </h4>
+            <h4><RiMapPinTimeLine />{t("Legal Right to Return")} : </h4>
 
-              <p>You have the legal right to return any product purchased from us within 14 days from the date of delivery, provided the product is in its original condition.</p>
+              <p>{t("You have the legal right to return any product purchased from us within 14 days from the date of delivery")} , {t("provided the product is in its original condition")} .</p>
 
-            <h4><LuPackageCheck /> Unopened Products:</h4>
+            <h4><LuPackageCheck /> {t("Unopened Products")} :</h4>
 
-            <p>To be eligible for a return, the product must remain unopened and in its original packaging. We understand that sometimes you may change your mind, and we're happy to accommodate your decision as long as the product is in resalable condition.
+            <p>{t("To be eligible for a return")} , {t("the product must remain unopened and in its original packaging")} . {t("We understand that sometimes you may change your mind")} , {t("and we're happy to accommodate your decision as long as the product is in resalable condition")} .
 </p>
 
-            <h4><GiExpense /> Proof of Purchase:</h4>
+            <h4><GiExpense />{t("Proof of Purchase")}  :</h4>
 
-            <p>Please ensure you have proof of purchase, such as a receipt or order confirmation, when requesting a return. This helps us process your return efficiently.
+            <p>{t("Please ensure you have proof of purchase")} , {t("such as a receipt or order confirmation")} , {t("when requesting a return")} .{t("This helps us process your return efficiently")}  .
 <br/>
              </p>
-             <h4><MdSendTimeExtension />  Refund or Exchange:</h4>
+             <h4><MdSendTimeExtension /> {t("Refund or Exchange")} :</h4>
 
-            <p>Once we receive and inspect the returned product, we will process your refund or exchange, as per your preference and our policies. Please allow 7 days for us to complete this process.</p>
+            <p>{t("Once we receive and inspect the returned product")} , {t("we will process your refund or exchange")} , {t("as per your preference and our policies")} .{t("Please allow 7 days for us to complete this process")}  .</p>
            
             {/* <h4><BsDot />Exceptions: </h4>
             <p>

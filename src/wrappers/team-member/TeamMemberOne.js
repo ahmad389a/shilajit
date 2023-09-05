@@ -10,8 +10,9 @@ const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
       <div className="container">   
 
         <div className="row">
+          <div className="col-md-1"></div>
           {teamMemberData?.map((single, key) => (
-            <div className="col-lg-4 col-md-4 col-sm-4" key={key}>
+            <div className="col-lg-5 col-md-5 col-sm-6" key={key}>
               <TeamMemberOneSingle
                 data={single}
                 spaceBottomClass="mb-30"

@@ -47,10 +47,10 @@ const About = () => {
   <Card className="Acard">
       <Card.Body>
     
-        <Card.Title className="Acard-title">Our Vision</Card.Title>
+        <Card.Title className="Acard-title">{t("Our Vision")} </Card.Title>
     
         <Card.Text className="Acardtext">
-        Our passion lies in using natural ingredients that Mother Earth provides. We believe in the power of what's pure and unprocessed. Our commitment to natural goodness extends from the lush landscapes of Norway to the farthest corners of the Earth.
+        {t("Our passion lies in using natural ingredients that Mother Earth provides")}.{t("We believe in the power of what's pure and unprocessed")} .{t("Our commitment to natural goodness extends from the lush landscapes of Norway to the farthest corners of the Earth")} .
 
         </Card.Text>
       </Card.Body>
@@ -60,10 +60,10 @@ const About = () => {
   <Card className="Acard">
       <Card.Body>
      
-        <Card.Title className="Acard-title">Our Mission</Card.Title>
+        <Card.Title className="Acard-title">{t("Our Mission")}</Card.Title>
       
         <Card.Text className="Acardtext">
-        Our mission is clear: to make healthy living easy and accessible. We carefully select ingredients that are kind to your body, and our eco-friendly approach ensures we're gentle on the environment too.
+        {t("Our mission is clear")}: {t("to make healthy living easy and accessible")}. {t("We carefully select ingredients that are kind to your body")}, {t("and our eco-friendly approach ensures we're gentle on the environment too")}.
 
         </Card.Text>
       </Card.Body>
@@ -73,9 +73,9 @@ const About = () => {
   <Card className="Acard">
       <Card.Body>
       
-        <Card.Title className="Acard-title">Our Goal</Card.Title>
+        <Card.Title className="Acard-title">{t("Our Goal")}</Card.Title>
         <Card.Text className="Acardtext">
-        We're just starting, but our dream is big. We want to be your go-to source for products that harness the beauty of nature. From clean ingredients to sustainable practices, we're here to help you live healthier while honoring the natural world that inspires us..
+        {t("We're just starting")}, {t("but our dream is big")}. {t("We want to be your go-to source for products that harness the beauty of nature")}.{t("From clean ingredients to sustainable practices")} , {t("we're here to help you live healthier while honoring the natural world that inspires us")}.
 
         </Card.Text>
       </Card.Body>
