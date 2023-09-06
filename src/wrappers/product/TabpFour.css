@@ -6,39 +6,48 @@
      border-radius: 0%;
 }
 .card:hover{
-    opacity: 0.6;
-    transition: 2s;
+    opacity: 0.8;
 }
 .iconbar{
     background-color:transparent;
     width: 100%;
     position: absolute;
-    padding: 2%;
-    font-size: 1rem;
-    justify-content: right; 
-    align-items: right;
-   
+    padding: 5%;
+    font-size: 1.5rem;
+    justify-content: center; 
+    align-items: center;   
+    margin-top: 28%;
 }
+/* .iconbar:hover{
+    visibility: visible;
+} */
+.link{
+  text-align: center; 
+  padding-left: 45%;
+}
+.link .circle{
+    visibility: hidden;
+}
+.link:hover .circle{
+    visibility: visible;
+} 
 .circle{
-    width: 35px; /* Set the width and height to create a circular container */
-    height: 35px;
+    width: 50px; /* Set the width and height to create a circular container */
+    height: 50px;
     border-radius: 50%; /* Make the container circular */
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid;
     border-color: #044704;
+    background-color: #044704;
+    color: aliceblue;
 
 }
 .circle:hover{
-    background-color: #045b04;
+    /* background-color: #045b04; */
     color: aliceblue !important;
+    
+  
 }
-.link{color: black;}
-.link:hover{
-    color: aliceblue;
-}
-.cardbody{
 
-    background-color:rgba(211, 211, 211, 0.329);
-}

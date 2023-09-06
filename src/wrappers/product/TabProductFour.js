@@ -45,7 +45,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
             </Nav.Item> */}
           </Nav>
           {/* =========content================ */}
-          {/* <Tab.Content>
+          <Tab.Content>
             <Tab.Pane eventKey="newArrival">
               <div className="row">
                 <div></div>
@@ -77,19 +77,21 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 />
               </div>
             </Tab.Pane>
-          </Tab.Content> */}
+          </Tab.Content>
     {/* =============new product cards======================= */}
 
     <Row>
       <Col md={1}></Col>
     <Col md={5}>
     <Card className="card">
-      <div className="row iconbar">     
-        <div className="circle">
-        <Link to="/contact" title="add to cart" className="link"><BiCartAlt/></Link>
-        </div>        
+      <div className="row iconbar">          
+        <Link to="/contact" title="add to cart" className="link">
+        <div className="circle"> 
+        <BiCartAlt/>
+        </div>  
+        </Link>            
         </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\1.jpg" />
+      <Card.Img variant="top" src="..\assets\img\product\fruits\2.jpg" />
       <Card.Body className="cardbody">
         <Card.Title className="">Lorem ipsum fruit two</Card.Title>
         <Card.Text style={{color:'#04b304'}}>
@@ -103,12 +105,14 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
     {/* ===========product 2============= */}
     <Col md={5}>
     <Card className="card">
-    <div className="row iconbar">     
-        <div className="circle">
-        <Link to="/contact" title="add to cart" className="link"><BiCartAlt/></Link>
-        </div>        
+    <div className="row iconbar">          
+        <Link to="/contact" title="add to cart" className="link">
+        <div className="circle"> 
+        <BiCartAlt/>
+        </div>  
+        </Link>            
         </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\2.jpg" />
+      <Card.Img variant="top" src="..\assets\img\product\fruits\2.png" />
       <Card.Body>
        <Link to="/Product"> <Card.Title>Lorem ipsum fruit three</Card.Title>
         <Card.Text style={{color:'#04b304'}}>
