@@ -6,6 +6,12 @@ import Nav from "react-bootstrap/Nav";
 import SectionTitleThree from "../../components/section-title/SectionTitleThree";
 import ProductGridTwo from "./ProductGridTwo";
 import { useTranslation } from "react-i18next";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Row , Col} from "react-bootstrap";
+import { BiCartAlt } from 'react-icons/bi';
+import "./TabpFour.css"
+
 
 const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
 
@@ -38,7 +44,8 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
               </Nav.Link>
             </Nav.Item> */}
           </Nav>
-          <Tab.Content>
+          {/* =========content================ */}
+          {/* <Tab.Content>
             <Tab.Pane eventKey="newArrival">
               <div className="row">
                 <div></div>
@@ -70,7 +77,56 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 />
               </div>
             </Tab.Pane>
-          </Tab.Content>
+          </Tab.Content> */}
+    {/* =============new product cards======================= */}
+
+    <Row>
+      <Col md={1}></Col>
+    <Col md={5}>
+    <Card className="card">
+      <div className="row iconbar">     
+        <div className="circle">
+        <Link to="/contact" title="add to cart" className="link"><BiCartAlt/></Link>
+        </div>        
+        </div>
+      <Card.Img variant="top" src="..\assets\img\product\fruits\1.jpg" />
+      <Card.Body className="cardbody">
+        <Card.Title className="">Lorem ipsum fruit two</Card.Title>
+        <Card.Text style={{color:'#04b304'}}>
+        €9.54 - €10.6
+        </Card.Text>
+        
+       
+      </Card.Body>
+    </Card>
+    </Col>
+    {/* ===========product 2============= */}
+    <Col md={5}>
+    <Card className="card">
+    <div className="row iconbar">     
+        <div className="circle">
+        <Link to="/contact" title="add to cart" className="link"><BiCartAlt/></Link>
+        </div>        
+        </div>
+      <Card.Img variant="top" src="..\assets\img\product\fruits\2.jpg" />
+      <Card.Body>
+       <Link to="/Product"> <Card.Title>Lorem ipsum fruit three</Card.Title>
+        <Card.Text style={{color:'#04b304'}}>
+        €9.54 - €10.6
+        </Card.Text> </Link>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row>
+
+
+
+
+
+
+
+
+
         </Tab.Container>
         {/* <div className="view-more text-center mt-20 toggle-btn6 col-12">
           <Link
