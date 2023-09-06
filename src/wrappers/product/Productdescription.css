@@ -1,0 +1,40 @@
+#featured{
+    max-width: 500px;
+    max-height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.active{
+  opacity: 1; 
+}
+.des{
+    font-size: medium;
+    font-weight:400;
+    margin-right: 25%;
+    color:#047b04;
+    
+}
+.price{
+   color:#04b304 ;
+}
+.flex-row{
+    justify-content: center;
+    display: flex;
+    padding: 2px;
+
+}
+.thumbnail{
+    padding:8px ;
+    justify-content:center;
+  cursor: pointer;
+}
+.thumbnail:hover{
+    opacity: 0.8; 
+  }
+.clicked{
+    border:2px solid black;
+}
+.Imgwidth{
+    width: 100%;
+}
