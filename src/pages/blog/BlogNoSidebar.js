@@ -21,8 +21,8 @@ const BlogNoSidebar = () => {
          {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Privacy Policy", path: process.env.PUBLIC_URL + pathname }
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Personvernerklæring", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="container mb-5">

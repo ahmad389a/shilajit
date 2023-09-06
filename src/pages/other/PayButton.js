@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useSelector } from "react-redux";
 import { url } from "../../slices/api";
+import { useTranslation } from "react-i18next";
 
 const PayButton = ({ cartItems,billingAddress  }) => {
   const handleCheckout = () => {
@@ -20,10 +21,10 @@ const PayButton = ({ cartItems,billingAddress  }) => {
       })
       .catch((err) => console.log("Error:", err.message));
   };
-
+  const { t } = useTranslation();
   return (
     <>
-      <button onClick={() => handleCheckout()}>Place Order</button>
+      <button onClick={() => handleCheckout()}>{t("Place Order")} </button>
     </>
   );
 };

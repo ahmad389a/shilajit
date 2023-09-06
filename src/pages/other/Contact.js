@@ -21,7 +21,7 @@ const Contact = () => {
         <Breadcrumb 
           pages={[
             {label: "Heim", path: process.env.PUBLIC_URL + "/" },
-            {label: "Contact", path: process.env.PUBLIC_URL + pathname }
+            {label: "KONTAKT", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="contact-area pt-100 pb-100">

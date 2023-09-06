@@ -34,8 +34,8 @@ const ReturnPolicy = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Return Policy", path: process.env.PUBLIC_URL + pathname }
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "returrett", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
           <Container >

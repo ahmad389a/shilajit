@@ -29,8 +29,8 @@ const ProductBenifits = () => {
          {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Benefits", path: process.env.PUBLIC_URL + pathname }
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "om shilajit", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="container">
