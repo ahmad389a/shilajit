@@ -71,12 +71,8 @@ const ShopListTwoColumn = lazy(() => import("./pages/shop/ShopListTwoColumn"));
 
 // product pages
 const Product = lazy(() => import("./pages/shop-product/Product"));
-const ProductTabLeft = lazy(() =>
-  import("./pages/shop-product/ProductTabLeft")
-);
-const ProductTabRight = lazy(() =>
-  import("./pages/shop-product/ProductTabRight")
-);
+const ProductTabLeft = lazy(() =>import("./pages/shop-product/ProductTabLeft"));
+const ProductTabRight = lazy(() =>import("./pages/shop-product/ProductTabRight"));
 const ProductSticky = lazy(() => import("./pages/shop-product/ProductSticky"));
 const ProductSlider = lazy(() => import("./pages/shop-product/ProductSlider"));
 const ProductFixedImage = lazy(() =>  import("./pages/shop-product/ProductFixedImage"));

@@ -91,7 +91,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
         </div>  
         </Link>            
         </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\2.jpg" />
+      <Card.Img variant="top" src="..\assets\img\product\fruits\3.png" />
       <Card.Body className="cardbody">
         <Card.Title className="">Lorem ipsum fruit two</Card.Title>
         <Card.Text style={{color:'#04b304'}}>

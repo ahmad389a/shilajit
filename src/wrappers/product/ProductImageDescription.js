@@ -24,10 +24,10 @@ const ProductImageDescription = ({ spaceTopClass, spaceBottomClass, galleryType,
   const finalDiscountedPrice = +(
     discountedPrice * currency.currencyRate
   ).toFixed(2);
-  
+
 const imgs=[
-  {id:0,value:"../assets/img/product/fruits/1.png"},
-  {id:1,value:"../assets/img/product/fruits/2.jpg"},
+  {id:0,value:"../assets/img/product/fruits/2.png"},
+  {id:1,value:"../assets/img/product/fruits/3.png"},
   {id:2,value:"../assets/img/product/fruits/9.jpg"},
   {id:3,value:"../assets/img/product/fruits/2.jpg"},
   ];
