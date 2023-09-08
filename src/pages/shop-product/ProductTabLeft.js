@@ -25,8 +25,8 @@ const ProductTabLeft = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Shop Product", path: process.env.PUBLIC_URL + pathname }
+            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Handle produkt", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
 

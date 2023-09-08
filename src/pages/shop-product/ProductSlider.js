@@ -26,7 +26,7 @@ const ProductSlider = () => {
         <Breadcrumb 
           pages={[
             {label: "Home", path: process.env.PUBLIC_URL + "/" },
-            {label: "Shop Product", path: process.env.PUBLIC_URL + pathname }
+            {label: "Handle produkt", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
 
