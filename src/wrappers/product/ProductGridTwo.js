@@ -17,7 +17,6 @@ const ProductGridTwo = ({
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
   const prods = getProducts(products, category, type, limit);
-  console.log("productsssssssssssssss", products);
   return (
     <Fragment>
       <div className="col-md-1 col-lg-1 col-xl-1"></div>

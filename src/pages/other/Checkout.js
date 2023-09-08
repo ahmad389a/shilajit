@@ -26,6 +26,7 @@ const Checkout = () => {
     phone: "",
     emailAddress: "",
   });
+  console.log("--------------",billingAddress);
 
   const handleBillingInfoChange = (e) => {
     const { name, value } = e.target;
@@ -74,8 +75,8 @@ const Checkout = () => {
                           <label>{t("Last Name")}</label>
                           <input
                             type="text"
-                            name="lastname"
-                            value="we"
+                            name="lastName"
+                            value={billingAddress.lastName}
                             onChange={handleBillingInfoChange}
                             required
                           />
@@ -107,8 +108,12 @@ const Checkout = () => {
                           <label>{t("Street Address")}</label>
                           <input
                             className="billing-address"
+                            name="streetAddress"
                             placeholder="Husnummer og gatenavn"
-                            type="text"  required
+                            value={billingAddress.streetAddress}
+                            type="text"  
+                            onChange={handleBillingInfoChange}
+                            required
                           />
                           <input
                             placeholder="Leilighet, suite, enhet etc."
@@ -119,31 +124,56 @@ const Checkout = () => {
                       <div className="col-lg-12">
                         <div className="billing-info mb-20">
                           <label> {t("Town")}/ {t("City")}</label>
-                          <input type="text"  required />
+                          <input type="text"
+                          name="townCity"
+                          value={billingAddress.townCity}
+                          placeholder="city"
+                          onChange={handleBillingInfoChange}
+                            required />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label> {t("State")}/ {t("County")}</label>
-                          <input type="text"  required/>
+                          <input type="text" 
+                             name="stateCounty"
+                             value={billingAddress.stateCounty}
+                             placeholder="County"
+                             onChange={handleBillingInfoChange} 
+                          required/>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("Postcode")}/ {t("ZIP")}</label>
-                          <input type="text"  required/>
+                          <input type="text" 
+                             name="postcodeZIP"
+                             value={billingAddress.postcodeZIP}
+                             placeholder="Postal code"
+                             onChange={handleBillingInfoChange} 
+                          required/>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("Phone")}</label>
-                          <input type="text"  required/>
+                          <input type="text" 
+                             name="phone"
+                             value={billingAddress.phone}
+                             placeholder="Phone"
+                             onChange={handleBillingInfoChange}
+                          required/>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("Email Address")}</label>
-                          <input type="text"  required/>
+                          <input type="text"  
+                             name="emailAddress"
+                             value={billingAddress.emailAddress}
+                             placeholder="Email"
+                             onChange={handleBillingInfoChange}
+                          required/>
                         </div>
                       </div>
                     </div>

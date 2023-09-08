@@ -78,59 +78,6 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
               </div>
             </Tab.Pane>
           </Tab.Content>
-    {/* =============new product cards======================= */}
-
-    <Row>
-      <Col md={1}></Col>
-    <Col md={5}>
-    <Card className="card">
-      <div className="row iconbar">          
-        <Link to="/contact" title="add to cart" className="link">
-        <div className="circle"> 
-        <BiCartAlt/>
-        </div>  
-        </Link>            
-        </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\3.png" />
-      <Card.Body className="cardbody">
-        <Card.Title className="">Lorem ipsum fruit two</Card.Title>
-        <Card.Text style={{color:'#04b304'}}>
-        €9.54 - €10.6
-        </Card.Text>
-        
-       
-      </Card.Body>
-    </Card>
-    </Col>
-    {/* ===========product 2============= */}
-    <Col md={5}>
-    <Card className="card">
-    <div className="row iconbar">          
-        <Link to="/contact" title="add to cart" className="link">
-        <div className="circle"> 
-        <BiCartAlt/>
-        </div>  
-        </Link>            
-        </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\2.png" />
-      <Card.Body>
-       <Link to="/Product"> <Card.Title>Lorem ipsum fruit three</Card.Title>
-        <Card.Text style={{color:'#04b304'}}>
-        €9.54 - €10.6
-        </Card.Text> </Link>
-      </Card.Body>
-    </Card>
-    </Col>
-    </Row>
-
-
-
-
-
-
-
-
-
         </Tab.Container>
         {/* <div className="view-more text-center mt-20 toggle-btn6 col-12">
           <Link

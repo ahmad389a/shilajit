@@ -36,7 +36,7 @@ const HomeOrganicFood = () => {
         {/* tab product */}
         <TabProductFour
           spaceBottomClass="pb-100"
-          category="organic food"
+          category="Supplements"
           productTabClass="product-tab-fruits"
         />
         {/* banner */}
