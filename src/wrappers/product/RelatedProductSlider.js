@@ -52,7 +52,7 @@ const RelatedProductSlider = ({ spaceBottomClass, category }) => {
       <div className="container "  >
       <div className="col-md-12 col-lg-12 "  >
     
-        {/* {prods?.length ? (
+        {prods?.length ? (
           <Swiper options={settings}>
               {prods.map(product => (
                 <SwiperSlide key={product.id}>
@@ -76,52 +76,7 @@ const RelatedProductSlider = ({ spaceBottomClass, category }) => {
                 </SwiperSlide>
               ))}
           </Swiper>
-        ) : null} */}
-
-
-<Row>
-      <Col md={1}></Col>
-    <Col md={5}>
-    <Card className="card">
-      <div className="row iconbar">          
-        <Link to="/contact" title="add to cart" className="link">
-        <div className="circle"> 
-        <BiCartAlt/>
-        </div>  
-        </Link>            
-        </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\1.png" />
-      <Card.Body className="cardbody">
-        <Card.Title className="">Lorem ipsum fruit two</Card.Title>
-        <Card.Text style={{color:'#04b304'}}>
-        €9.54 - €10.6
-        </Card.Text>
-        
-       
-      </Card.Body>
-    </Card>
-    </Col>
-    {/* ===========product 2============= */}
-    <Col md={5}>
-    <Card className="card">
-    <div className="row iconbar">          
-        <Link to="/contact" title="add to cart" className="link">
-        <div className="circle"> 
-        <BiCartAlt/>
-        </div>  
-        </Link>            
-        </div>
-      <Card.Img variant="top" src="..\assets\img\product\fruits\2.jpg" />
-      <Card.Body>
-       <Link to="/Product"> <Card.Title>Lorem ipsum fruit three</Card.Title>
-        <Card.Text style={{color:'#04b304'}}>
-        €9.54 - €10.6
-        </Card.Text> </Link>
-      </Card.Body>
-    </Card>
-    </Col>
-    </Row>
-
+        ) : null}
 
      </div>
       </div>

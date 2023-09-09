@@ -1,1 +1,1 @@
-export const url = "http://localhost:2100/api";
+export const url = "http://backend.naturensskatter.com/api";
