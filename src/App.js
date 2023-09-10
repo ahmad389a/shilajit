@@ -349,10 +349,7 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/order-status"}
                 element={<OrderStatus/>}
               /> 
-              <Route
-              path={process.env.PUBLIC_URL + "/GstCalculator"}
-              element={<GSTCalculator/>}
-              />
+           
               {/* Blog pages */}
               <Route
                 path={process.env.PUBLIC_URL + "/blog-standard"}
