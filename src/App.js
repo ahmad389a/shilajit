@@ -1,6 +1,8 @@
 import { Suspense, lazy } from "react";
 import ScrollToTop from "./helpers/scroll-top";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { element } from "prop-types";
+import GSTCalculator from "./pages/other/GstCalculator";
 
 // home pages
 const HomeFashion = lazy(() => import("./pages/home/HomeFashion"));
@@ -347,6 +349,10 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/order-status"}
                 element={<OrderStatus/>}
               /> 
+              <Route
+              path={process.env.PUBLIC_URL + "/GstCalculator"}
+              element={<GSTCalculator/>}
+              />
               {/* Blog pages */}
               <Route
                 path={process.env.PUBLIC_URL + "/blog-standard"}

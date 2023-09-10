@@ -7,15 +7,18 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { useTranslation } from "react-i18next";
 import PayButton from "./PayButton";
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 
 const Checkout = () => {
-  let cartTotalPrice = 0;
   const { t } = useTranslation();
-
+  let cartTotalPrice = 0;
   let { pathname } = useLocation();
   const currency = useSelector((state) => state.currency);
   const { cartItems } = useSelector((state) => state.cart);
+  const [gstRate, setGSTRate] = useState(30);
+  const [gstAmount, setGSTAmount] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
+
   const [billingAddress, setBillingInfo] = useState({
     firstName: "",
     lastName: "",
@@ -35,7 +38,13 @@ const Checkout = () => {
       [name]: value,
     });
   };
-
+ 
+  useEffect(() => {
+    const calculatedGSTAmount = (cartTotalPrice * gstRate) / 100;
+    const calculatedTotalAmount = cartTotalPrice + calculatedGSTAmount;
+    setGSTAmount(calculatedGSTAmount);
+    setTotalAmount(calculatedTotalAmount);
+  }, [cartTotalPrice, gstRate]); 
   return (
     <Fragment>
       <SEO
@@ -64,6 +73,7 @@ const Checkout = () => {
                           <input
                             type="text"
                             name="firstName"
+                            placeholder="Fornavn"
                             value={billingAddress.firstName}
                             onChange={handleBillingInfoChange}
                             required
@@ -76,6 +86,7 @@ const Checkout = () => {
                           <input
                             type="text"
                             name="lastName"
+                            placeholder="Etternavn"
                             value={billingAddress.lastName}
                             onChange={handleBillingInfoChange}
                             required
@@ -127,7 +138,7 @@ const Checkout = () => {
                           <input type="text"
                           name="townCity"
                           value={billingAddress.townCity}
-                          placeholder="city"
+                          placeholder="By"
                           onChange={handleBillingInfoChange}
                             required />
                         </div>
@@ -138,7 +149,7 @@ const Checkout = () => {
                           <input type="text" 
                              name="stateCounty"
                              value={billingAddress.stateCounty}
-                             placeholder="County"
+                             placeholder="By"
                              onChange={handleBillingInfoChange} 
                           required/>
                         </div>
@@ -149,7 +160,7 @@ const Checkout = () => {
                           <input type="text" 
                              name="postcodeZIP"
                              value={billingAddress.postcodeZIP}
-                             placeholder="Postal code"
+                             placeholder="Postnummer"
                              onChange={handleBillingInfoChange} 
                           required/>
                         </div>
@@ -160,7 +171,7 @@ const Checkout = () => {
                           <input type="text" 
                              name="phone"
                              value={billingAddress.phone}
-                             placeholder="Phone"
+                             placeholder="Telefon"
                              onChange={handleBillingInfoChange}
                           required/>
                         </div>
@@ -171,7 +182,7 @@ const Checkout = () => {
                           <input type="text"  
                              name="emailAddress"
                              value={billingAddress.emailAddress}
-                             placeholder="Email"
+                             placeholder="Epostadresse"
                              onChange={handleBillingInfoChange}
                           required/>
                         </div>
@@ -193,6 +204,8 @@ const Checkout = () => {
                     </div> */}
                   </div>
                 </div>
+
+  {/* ===================Order detail part/ Invoice================================== */}
 
                 <div className="col-lg-5">
                   <div className="your-order-area">
@@ -254,10 +267,24 @@ const Checkout = () => {
                         </div>
                         <div className="your-order-total">
                           <ul>
-                            <li className="order-total">{t("Total")}</li>
+                            <li className="your-order-shipping">{t("Total")}</li>
                             <li>
                               {currency.currencySymbol +
                                 cartTotalPrice.toFixed(2)}
+                            </li>
+                          </ul>
+                          <ul>
+                            <li className="your-order-shipping">{t("GST (30%)")}</li>
+                            <li>
+                              {currency.currencySymbol +
+                                gstAmount.toFixed(2)}
+                            </li>
+                          </ul>
+                          <ul>
+                            <li className="order-total">{t("Grand Total")}</li>
+                            <li>
+                              {currency.currencySymbol +
+                                totalAmount.toFixed(2)}
                             </li>
                           </ul>
                         </div>

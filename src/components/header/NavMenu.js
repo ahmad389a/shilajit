@@ -494,7 +494,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
             </ul>
           </li> */}
                {/* <li>
-                <Link to={process.env.PUBLIC_URL + "/order-status"}>
+                <Link to={process.env.PUBLIC_URL + "/GstCalculator"}>
                   {t("Order Success")}
                 </Link>
               </li> */}
