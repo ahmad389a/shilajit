@@ -23,8 +23,8 @@ const Cart = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="Cart"
-        description="Cart page of flone react minimalist eCommerce template."
+        titleTemplate="vogn"
+        description="."
       />
 
       <LayoutOne headerTop="visible">

@@ -14,8 +14,8 @@ const BlogNoSidebar = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="Privacy Policy"
-        description="Blog of flone react minimalist eCommerce template."
+        titleTemplate="Personvernerklæring"
+        description="."
       />
       <LayoutOne headerTop="visible">
          {/* breadcrumb */}

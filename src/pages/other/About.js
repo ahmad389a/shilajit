@@ -21,8 +21,8 @@ const About = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="About us"
-        description="About page of flone react minimalist eCommerce template."
+        titleTemplate="om oss"
+        description="."
       /> 
       <LayoutOne headerTop="visible">
             {/* breadcrumb */}

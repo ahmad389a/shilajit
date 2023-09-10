@@ -27,8 +27,8 @@ const ReturnPolicy = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="ReturnPolicy"
-        description="Contact page of flone react minimalist eCommerce template."
+        titleTemplate="returrett"
+        description=""
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}

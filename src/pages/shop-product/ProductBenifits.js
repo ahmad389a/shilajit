@@ -22,15 +22,15 @@ const ProductBenifits = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="About Shilajit"
-        description="Blog of flone react minimalist eCommerce template."
+        titleTemplate="om Shilajit"
+        description="."
       />
       <LayoutOne headerTop="visible">
          {/* breadcrumb */}
         <Breadcrumb 
           pages={[
             {label: "Heim", path: process.env.PUBLIC_URL + "/" },
-            {label: "om shilajit", path: process.env.PUBLIC_URL + pathname }
+            {label: "om Shilajit", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
         <div className="container">

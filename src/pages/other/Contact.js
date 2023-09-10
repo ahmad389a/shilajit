@@ -13,8 +13,8 @@ const Contact = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="Contact"
-        description="Contact page of flone react minimalist eCommerce template."
+        titleTemplate="KONTAKT"
+        description="."
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}

@@ -1,1 +1,1 @@
-export const url = "http://backend.naturensskatter.com/api";
+export const url = "https://backend.naturensskatter.com/api";
