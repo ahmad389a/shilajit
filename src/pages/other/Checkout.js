@@ -15,7 +15,7 @@ const Checkout = () => {
   let { pathname } = useLocation();
   const currency = useSelector((state) => state.currency);
   const { cartItems } = useSelector((state) => state.cart);
-  const [gstRate, setGSTRate] = useState(30);
+  const [gstRate, setGSTRate] = useState(15);
   const [gstAmount, setGSTAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
 
@@ -55,7 +55,7 @@ const Checkout = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Hjem", path: process.env.PUBLIC_URL + "/" },
             {label: "SJEKK UT", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
@@ -274,7 +274,7 @@ const Checkout = () => {
                             </li>
                           </ul>
                           <ul>
-                            <li className="your-order-shipping">{t("GST (30%)")}</li>
+                            <li className="your-order-shipping">{t("MVA (15%)")}</li>
                             <li>
                               {currency.currencySymbol +
                                 gstAmount.toFixed(2)}

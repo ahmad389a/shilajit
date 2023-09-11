@@ -20,7 +20,7 @@ const Contact = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Hjem", path: process.env.PUBLIC_URL + "/" },
             {label: "KONTAKT", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />

@@ -34,7 +34,7 @@ const ReturnPolicy = () => {
         {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Hjem", path: process.env.PUBLIC_URL + "/" },
             {label: "returrett", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
@@ -61,7 +61,7 @@ const ReturnPolicy = () => {
 {t("Sincerely")},<br/>
 
 <b>{t("NATURENSSKATTER")}</b><br/>
-{t("Contact")}: +47 407 35 522
+{/* {t("Contact")}: +47 407 35 522 */}
       </p>
 
             </Col>

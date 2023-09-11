@@ -124,7 +124,7 @@ const FooterTwo = ({
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Himaliya
+                Naturensskatter
               </a>
               . All Rights Reserved.
             </p>

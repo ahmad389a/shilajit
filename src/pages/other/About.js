@@ -28,7 +28,7 @@ const About = () => {
             {/* breadcrumb */}
             <Breadcrumb 
           pages={[
-            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Hjem", path: process.env.PUBLIC_URL + "/" },
             {label: "om oss", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />

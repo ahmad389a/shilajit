@@ -29,7 +29,7 @@ const ProductBenifits = () => {
          {/* breadcrumb */}
         <Breadcrumb 
           pages={[
-            {label: "Heim", path: process.env.PUBLIC_URL + "/" },
+            {label: "Hjem", path: process.env.PUBLIC_URL + "/" },
             {label: "om Shilajit", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
