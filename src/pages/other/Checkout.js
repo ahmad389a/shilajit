@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
 import { getDiscountPrice } from "../../helpers/product";
 import SEO from "../../components/seo";
 import LayoutOne from "../../layouts/LayoutOne";
@@ -8,6 +7,7 @@ import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { useTranslation } from "react-i18next";
 import PayButton from "./PayButton";
 import { useState, useEffect  } from "react";
+import { useSelector } from 'react-redux';
 
 const Checkout = () => {
   const { t } = useTranslation();
@@ -18,6 +18,7 @@ const Checkout = () => {
   const [gstRate, setGSTRate] = useState(15);
   const [gstAmount, setGSTAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
+
 
   const [billingAddress, setBillingInfo] = useState({
     firstName: "",
@@ -273,19 +274,22 @@ const Checkout = () => {
                                 cartTotalPrice.toFixed(2)}
                             </li>
                           </ul>
-                          <ul>
+                          {/* <ul>
                             <li className="your-order-shipping">{t("MVA (15%)")}</li>
                             <li>
                               {currency.currencySymbol +
                                 gstAmount.toFixed(2)}
                             </li>
-                          </ul>
-                          <ul>
-                            <li className="order-total">{t("Grand Total")}</li>
+                          </ul> */}
+                          {/* <ul>
+                            <li className="order-total">{t("Total")}</li>
                             <li>
                               {currency.currencySymbol +
                                 totalAmount.toFixed(2)}
                             </li>
+                          </ul> */}
+                          <ul>
+                            <li > {t("MVA (15%) Included")} </li>                           
                           </ul>
                         </div>
                       </div>
