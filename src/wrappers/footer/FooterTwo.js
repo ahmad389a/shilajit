@@ -2,6 +2,13 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import {LiaCcVisa,LiaCcMastercard , LiaCcApplePay, LiaCcAmazonPay} from 'react-icons/lia';
+
+
+
+
+
+
 
 
 const FooterTwo = ({
@@ -109,13 +116,23 @@ const FooterTwo = ({
           </li>
   </ul>
 </div>
-
+    {/* =========payment card=========== */}
+    <div className="d-inline-flex" >
+         <Link title="Visa Card Payment"> <LiaCcVisa style={{ width: '28px', height: '28px', margin:'2px' }} /></Link>
+         <Link title="Master Card Payment"> <LiaCcMastercard style={{ width: '28px', height: '28px', margin:'2px' }}  /></Link>
+         <Link title="Amazon Payment">  <LiaCcAmazonPay style={{ width: '28px', height: '28px', margin:'2px' }} /></Link>
+         <Link title="Apple Pay"> <LiaCcApplePay style={{ width: '28px', height: '28px', margin:'2px' }} /></Link>
+          
+          </div>
    {/* =========Copy Right=========== */}
 
         </div>
       </div>
       <div className="footer-bottom text-center">
         <div className="container">
+      
+
+          {/* =========Copy Right=========== */}
           <div className={clsx("copyright-2", copyrightColorClass)}>
             <p>
               &copy; {new Date().getFullYear()}{" "}
