@@ -46,9 +46,9 @@ const ProductDescriptionTab = ({ spaceBottomClass, productFullDesc }) => {
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey="productDescription" > 
-              <b>Usage Instructions:</b>&nbsp;For best results, it is recommended to take a small amount of Shilajit resin daily, preferably in the morning. It can be dissolved in warm water or mixed with honey for a pleasant taste.
+              <b>Usage Instructions:</b>&nbsp;For best resultat, ta en dosering på ca. 150- 500 mg på tom mage om morgenen, og bland det med lunkent vann eller melk.
 
-<br/><br/>Choose our Himalayan Shilajit resin to experience the natural strength and health benefits that this ancient treasure from the mountains has to offer. Nurture your inner balance and vitality with this exceptional product from Mother Nature.
+<br/><br/>Vennligst merk at dette produktet ikke er beregnet som medisin og bør ikke erstatte profesjonell medisinsk rådgivning. Hvis du er gravid, ammer, eller har underliggende helseproblemer, bør du konsultere lege før bruk. Det anbefales også å unngå overdreven bruk av Shilajit, da det kan ha bivirkninger hos noen individer. Hold produktet utilgjengelig for barn.
               </Tab.Pane>
               <Tab.Pane eventKey="productReviews">
                 <div className="row">
