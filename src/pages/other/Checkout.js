@@ -288,10 +288,11 @@ const Checkout = () => {
                                 totalAmount.toFixed(2)}
                             </li>
                           </ul> */}
-                          <ul>
-                            <li > {t("MVA (15%) Included")} </li>                           
+                           <ul > 
+                            <li style={{fontSize:'13px'}}> {t("MVA (15%) Included")} </li>                           
                           </ul>
                         </div>
+                       
                       </div>
                       <div className="payment-method"></div>
                     </div>

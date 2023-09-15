@@ -28,11 +28,11 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
             variant="pills"
             className={clsx("product-tab-list pt-35 pb-60 text-center", productTabClass)}
           >
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link eventKey="newArrival">
                 <h4>{t("New Arrivals")}</h4>
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             {/* <Nav.Item>
               <Nav.Link eventKey="bestSeller">
                 <h4>Best Sellers</h4>

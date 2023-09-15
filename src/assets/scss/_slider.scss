@@ -588,18 +588,18 @@
       }
     }
     h1 {
-      font-size: 71px;
+      font-size: 55px;
       @media #{$xl-layout} {
-        font-size: 55px;
-      }
-      @media #{$lg-layout} {
         font-size: 50px;
       }
+      @media #{$lg-layout} {
+        font-size: 48px;
+      }
       @media #{$md-layout} {
-        font-size: 40px;
+        font-size: 30px;
       }
       @media #{$xs-layout} {
-        font-size: 30px;
+        font-size: 25px;
 
         margin: 6px 0 20px;
       }
