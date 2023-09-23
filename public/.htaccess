@@ -2,3 +2,7 @@ Options -MultiViews
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.html [QSA,L]
+
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^www.naturensskatter.com [NC]
+    RewriteRule^(.*)$ http://naturensskatter.com/$1 [R=301,L]
