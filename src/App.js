@@ -78,7 +78,8 @@ const ProductTabRight = lazy(() =>import("./pages/shop-product/ProductTabRight")
 const ProductSticky = lazy(() => import("./pages/shop-product/ProductSticky"));
 const ProductSlider = lazy(() => import("./pages/shop-product/ProductSlider"));
 const ProductFixedImage = lazy(() =>  import("./pages/shop-product/ProductFixedImage"));
-const ProductBenifits = lazy(() =>  import("./pages/shop-product/ProductBenifits"));
+const ProductBenefits = lazy(() =>  import("./pages/shop-product/ProductBenefits"));
+const AboutMoringa = lazy(() =>  import("./pages/shop-product/AboutMoringa"));
 const OrderStatus = lazy(() =>  import("./pages/other/order-status"));
 
 
@@ -342,8 +343,12 @@ const App = () => {
                 element={<ProductFixedImage/>}
               /> 
               <Route
-                path={process.env.PUBLIC_URL + "/ProductBenifits"}
-                element={<ProductBenifits/>}
+                path={process.env.PUBLIC_URL + "/ProductBenefits"}
+                element={<ProductBenefits/>}
+              /> 
+               <Route
+                path={process.env.PUBLIC_URL + "/AboutMoringa"}
+                element={<AboutMoringa/>}
               /> 
                 <Route
                 path={process.env.PUBLIC_URL + "/order-status"}

@@ -19,7 +19,7 @@ const Product = () => {
     <Fragment>
       <SEO
         titleTemplate="Product Page"
-        description="Product Page of flone react minimalist eCommerce template."
+        description="Ren Shilajit er et naturlig organisk stoff kjent for å styrke kroppen og øke din vitalitet. Legg dette til din daglige rutine og øk kraften din."
       />
 
       <LayoutOne headerTop="visible">
@@ -45,10 +45,19 @@ const Product = () => {
         />
 
         {/* related product slider */}
-        <RelatedProductSlider
+
+         {/* <RelatedProductSlider
           spaceBottomClass="pb-95"
           category={product.category[0]}
-        />
+        />  */}
+
+          <div>
+      {product.id === '64e72e94c7d66dd42dacfd74' ? (
+        <p></p>
+      ) : (
+        <RelatedProductSlider spaceBottomClass="pb-95" category={product.category[0]} />
+      )}
+    </div>
       </LayoutOne>
     </Fragment>
   );

@@ -24,7 +24,7 @@ SEO.propTypes = {
 SEO.defaultProps = {
     title: "Naturensskatter",
     titleTemplate: "Product Page",
-    description: "Product page of flone react minimalist eCommerce template.",
+    description: "Experience Better Health with Pure Shilajit From Himalayan! Get Authentic Shilajit Products for More Energy and Wellness. Shop Now",
 };
 
 export default SEO;

@@ -19,7 +19,6 @@ const Checkout = () => {
   const [gstAmount, setGSTAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
 
-
   const [billingAddress, setBillingInfo] = useState({
     firstName: "",
     lastName: "",
@@ -40,12 +39,15 @@ const Checkout = () => {
     });
   };
  
-  useEffect(() => {
-    const calculatedGSTAmount = (cartTotalPrice * gstRate) / 100;
-    const calculatedTotalAmount = cartTotalPrice + calculatedGSTAmount;
-    setGSTAmount(calculatedGSTAmount);
-    setTotalAmount(calculatedTotalAmount);
-  }, [cartTotalPrice, gstRate]); 
+  // useEffect(() => {
+  //   const calculatedGSTAmount = (cartTotalPrice * gstRate) / 100;
+  //   const calculatedTotalAmount = cartTotalPrice + calculatedGSTAmount;
+  //   setGSTAmount(calculatedGSTAmount);
+  //   setTotalAmount(calculatedTotalAmount);
+  // }, [cartTotalPrice, gstRate]); 
+
+
+
   return (
     <Fragment>
       <SEO
@@ -275,10 +277,10 @@ const Checkout = () => {
                             </li>
                           </ul>
                           {/* <ul>
-                            <li className="your-order-shipping">{t("MVA (15%)")}</li>
+                            <li className="your-order-shipping">{t("delivery amount")}</li>
                             <li>
                               {currency.currencySymbol +
-                                gstAmount.toFixed(2)}
+                                 deliveryFee.toFixed(2)}
                             </li>
                           </ul> */}
                           {/* <ul>

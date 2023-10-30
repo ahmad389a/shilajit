@@ -307,6 +307,7 @@ function ProductModal({ product, currency, discountedPrice, finalProductPrice, f
           </div>
         </div>
       </div>
+      
     </div>
   </Modal>
   );

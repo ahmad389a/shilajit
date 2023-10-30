@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { getProducts } from "../../helpers/product";
 import ProductGridSingleTwo from "../../components/product/ProductGridSingleTwo";
+import './ProuctGridTwo.css';
 const ProductGridTwo = ({
   spaceBottomClass,
   colorClass,
@@ -17,13 +18,14 @@ const ProductGridTwo = ({
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
   const prods = getProducts(products, category, type, limit);
+
   return (
     <Fragment>
       <div className="col-md-1 col-lg-1 col-xl-1"></div>
-      {prods?.map((product) => {
+      {prods?.map((product, index) => {
         return (
           <div
-            className="col-xl-5 col-md-5 col-lg-5 col-sm-6"
+          className={`col-xl-5 col-md-5 col-lg-5  ${index === 2 ? 'centered-card' : ''}`}
             style={{ justifyContent: "center" }}
             key={product.id}
           >
@@ -42,8 +44,12 @@ const ProductGridTwo = ({
                 (compareItem) => compareItem.id === product.id
               )}
               titlePriceClass={titlePriceClass}
-            />
+            />            
+         
           </div>
+          
+
+          
         );
       })}
     </Fragment>

@@ -67,7 +67,7 @@ const ProductDescriptionInfo = ({
       {product.shortDescription}
         <p>{product.fullDescription}</p>
       {/* <br/> */}
-       <div >  <Link to={process.env.PUBLIC_URL + "/ProductBenifits"} style={{color:'#047b04'}}>
+       <div >  <Link to={process.env.PUBLIC_URL + "/ProductBenefits"} style={{color:'#047b04'}}>
               Read More
             </Link></div>
       </div>
@@ -235,15 +235,16 @@ const ProductDescriptionInfo = ({
       )}
       {product.category ? (
         <div className="pro-details-meta">
-          <span>{t("Categories")}:</span>
+          {/* <span>{t("Categories")}:</span> */}
           <ul>
             {product.category.map((single, key) => {
               return (
-                <li key={key}>
-                  <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-                    {single}
-                  </Link>
-                </li>
+                // <li key={key}>
+                //   <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+                //     {single}
+                //   </Link>
+                // </li>
+                <></>
               );
             })}
           </ul>
@@ -253,15 +254,16 @@ const ProductDescriptionInfo = ({
       )}
       {product.tag ? (
         <div className="pro-details-meta">
-          <span>{t("Tags")} :</span>
+          {/* <span>{t("Tags")} :</span> */}
           <ul>
             {product.tag.map((single, key) => {
               return (
-                <li key={key}>
-                  <Link to={process.env.PUBLIC_URL + "/"}>
-                  {single}
-                  </Link>
-                </li>
+                // <li key={key}>
+                //   <Link to={process.env.PUBLIC_URL + "/"}>
+                //   {single}
+                //   </Link>
+                // </li>
+                <></>
               );
             })}
           </ul>

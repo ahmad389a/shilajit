@@ -2,11 +2,11 @@
   {
     "id": "64e72c81abdf21a49ac9fe38",
     "sku": "sku_g5roea",
-    "slug": "shilajit_30g",
-    "name": "Shilajit 30G",
+    "slug": "ren shilajit_30g",
+    "name": "Ren Shilajit 30G",
     "size": 30,
     "price": 499,
-    "discount": 0,
+    "discount":0,
     "new": true,
     "rating": 5,
     "saleCount": 0,
@@ -20,14 +20,14 @@
       "/assets/img/shop/4.png"
     
     ],
-    "shortDescription": "30 gram shilajit gir omtrent 1-2 måneders forbruk",
-    "fullDescription": "Shilajit er en naturlig organisk substans kjent for å styrke kroppen og øke vitaliteten din. Dette kosttilskuddet har en lang historie som et naturlig supplement som kan bidra til generell velvære. Legg til dette i din daglige rutine for å oppleve fordelene av Shilajit."
+    "shortDescription": "Ren Shilajit 30g gir omtrent 1-2 måneders forbruk",
+    "fullDescription": "Ren Shilajit er en naturlig organisk substans kjent for å styrke kroppen og øke vitaliteten din. Dette kosttilskuddet har en lang historie som et naturlig supplement som kan bidra til generell velvære. Legg til dette i din daglige rutine for å oppleve fordelene av Shilajit."
   },
   {
     "id": "64e72e94c7d66dd42dacfd73",
     "sku": "sku_y3knon",
-    "slug": "shilajit_60g",
-    "name": "Shilajit 60G",
+    "slug": "ren shilajit_60g",
+    "name": "Ren Shilajit 60G",
     "size": 60,
     "price": 799,
     "discount": 0,
@@ -43,7 +43,28 @@
       "/assets/img/shop/7.png",
       "/assets/img/shop/4.png"
     ],
-    "shortDescription": "60 gram shilajit gir omtrent 3-4 måneders forbruk.",
-    "fullDescription": "Shilajit er en naturlig organisk substans kjent for å styrke kroppen og øke vitaliteten din. Dette kosttilskuddet har en lang historie som et naturlig supplement som kan bidra til generell velvære. Legg til dette i din daglige rutine for å oppleve fordelene av Shilajit."
+    "shortDescription": "Ren Shilajit 60g gir omtrent 3-4 måneders forbruk.",
+    "fullDescription": "Ren Shilajit er en naturlig organisk substans kjent for å styrke kroppen og øke vitaliteten din. Dette kosttilskuddet har en lang historie som et naturlig supplement som kan bidra til generell velvære. Legg til dette i din daglige rutine for å oppleve fordelene av Shilajit."
+  },
+  {
+    "id": "64e72e94c7d66dd42dacfd74",
+    "sku": "sku_y3knon",
+    "slug": "Moringa_250g",
+    "name": "Moringa 250g",
+    "size": 250,
+    "price": 199,
+    "discount": 0,
+    "new": true,
+    "rating": 5,
+    "saleCount": 0,
+    "category": ["Supplements"],
+    "tag": ["Supplements"],
+    "stock": 25,
+    "image": [
+      "/assets/img/shop/moringa1.jpeg",
+      "/assets/img/shop/moringa.jpeg"     
+    ],
+    "shortDescription": "250 gram Moringa gir omtrent 3-4 måneders forbruk.",
+    "fullDescription": "Moringapulver er en næringsrik supermat laget av tørkede blader fra moringa-treet. Det er rikt på vitaminer, mineraler og antioksidanter, og anses som en god kilde til energi og styrking av immunforsvaret. Pulveret er enkelt å blande i drikker eller mat, og er ideelt for de som ønsker en naturlig helseforbedring i sin daglige rutine."
   }
 ]

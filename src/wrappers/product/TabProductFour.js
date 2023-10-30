@@ -32,8 +32,8 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
               <Nav.Link eventKey="newArrival">
                 <h4>{t("New Arrivals")}</h4>
               </Nav.Link>
-            </Nav.Item> */}
-            {/* <Nav.Item>
+            </Nav.Item>
+            <Nav.Item>
               <Nav.Link eventKey="bestSeller">
                 <h4>Best Sellers</h4>
               </Nav.Link>
@@ -62,7 +62,7 @@ const TabProductFour = ({ spaceBottomClass, category, productTabClass }) => {
                 <ProductGridTwo
                   category={category}
                   type="bestSeller"
-                  limit={2}
+                  limit={3}
                   spaceBottomClass="mb-25"
                 />
               </div>

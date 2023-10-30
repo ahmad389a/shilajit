@@ -119,11 +119,12 @@ const ProductGridSingleTwo = ({
           </div>
         </div>
       
-        <div className="product-content-2">
+        <div className="product-content-2" >
           <div
             className={`title-price-wrap-2 ${
               titlePriceClass ? titlePriceClass : ""
             }`}
+          
           >
             <h3>
               <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>

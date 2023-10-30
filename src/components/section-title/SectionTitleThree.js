@@ -13,7 +13,7 @@ const SectionTitleThree = ({
 
   return (
     <div className={clsx("section-title-5", positionClass, spaceClass)}>
-      <h2 className={clsx(colorClass)}>{t(titleText)}</h2>
+      <h1 className={clsx(colorClass)}>{t(titleText)}</h1>
     </div>
   );
 };

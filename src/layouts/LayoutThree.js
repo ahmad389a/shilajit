@@ -28,7 +28,7 @@ const LayoutThree = ({
         footerTopSpaceTopClass="pt-80"
         footerTopSpaceBottomClass="pb-60"
         copyrightColorClass="copyright-gray"
-        footerLogo="/assets/img/logo/Himalya.png"
+        footerLogo="/assets/img/logo/Naturensskatter.png"
       />
       <ScrollToTop/>
     </Fragment>

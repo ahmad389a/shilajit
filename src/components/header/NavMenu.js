@@ -493,17 +493,17 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul>
           </li> */}
-               {/* <li>
-                <Link to={process.env.PUBLIC_URL + "/GstCalculator"}>
-                  {t("Order Success")}
-                </Link>
-              </li> */}
        
           <li>
-            <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
+            <Link to={process.env.PUBLIC_URL + "/ProductBenefits"}>
               {t("About Shilajit")}
             </Link>
           </li>
+          <li>
+                <Link to={process.env.PUBLIC_URL + "/AboutMoringa"}>
+                  {t("About Moringa")}
+                </Link>
+              </li>
         
           {/* <li>
             <Link to={process.env.PUBLIC_URL + "/benefits"}>

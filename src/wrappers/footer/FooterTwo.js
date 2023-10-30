@@ -44,7 +44,7 @@ const FooterTwo = ({
                 alt=""
                 src={
                   process.env.PUBLIC_URL +
-                  `${footerLogo ? footerLogo : "/assets/img/logo/Himalya.png"}`
+                  `${footerLogo ? footerLogo : "/assets/img/logo/Naturensskatter.png"}`
                 }
               />
             </Link>
@@ -94,7 +94,7 @@ const FooterTwo = ({
 <div > 
   <ul className="footerlinks"> 
   {/* <li>
-            <Link to={process.env.PUBLIC_URL + "/ProductBenifits"}>
+            <Link to={process.env.PUBLIC_URL + "/ProductBenefits"}>
               {t("About Shilajit")}
             </Link>
           </li> */}
@@ -143,7 +143,7 @@ const FooterTwo = ({
               >
                 Naturensskatter
               </a>
-              . All Rights Reserved.
+              . {t("All Rights Reserved")} .
             </p>
           </div>
         </div>

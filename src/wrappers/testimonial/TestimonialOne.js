@@ -20,29 +20,29 @@ const TestimonialOne = ({
   testimonialClass,
 }) => {
   return (
-    // <div className={clsx("testimonial-area", spaceTopClass, spaceBottomClass, spaceLeftClass, spaceRightClass, bgColorClass)}>
-    //   <div className="container">
-    //     <div className="row">
-    //       <div className="col-lg-10 mx-auto">
-    //         <div className="testimonial-active nav-style-1 nav-testi-style">
-    //           {testimonialData && (
-    //             <Swiper options={settings}>
-    //               {testimonialData.map((single, key) => (
-    //                   <SwiperSlide key={key}>
-    //                     <TestimonialOneSingle
-    //                       data={single}
-    //                       testimonialClass={testimonialClass}
-    //                     />
-    //                   </SwiperSlide>
-    //               ))}
-    //             </Swiper>
-    //           )}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <></>
+    <div className={clsx("testimonial-area", spaceTopClass, spaceBottomClass, spaceLeftClass, spaceRightClass, bgColorClass)}>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-10 mx-auto">
+            <div className="testimonial-active nav-style-1 nav-testi-style">
+              {testimonialData && (
+                <Swiper options={settings}>
+                  {testimonialData.map((single, key) => (
+                      <SwiperSlide key={key}>
+                        <TestimonialOneSingle
+                          data={single}
+                          testimonialClass={testimonialClass}
+                        />
+                      </SwiperSlide>
+                  ))}
+                </Swiper>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   );
 };
 

@@ -15,7 +15,7 @@ const HomeOrganicFood = () => {
     <Fragment>
       <SEO
         titleTemplate="Pure Shilajit"
-        description="Organic food home of flone react minimalist eCommerce template."
+        description="Ren Shilajit kjøpe naturens gave til helsen din - Naturensskatters"
         title= "Naturensskatter"
       />
       <LayoutThree
@@ -40,28 +40,28 @@ const HomeOrganicFood = () => {
           productTabClass="product-tab-fruits"
         />
         {/* banner */}
-        <BannerFive />
+        {/* <BannerFive /> */}
         {/* countdown */}
-        <CountDownTwo
+        {/* <CountDownTwo
           spaceTopClass="pt-80"
           spaceBottomClass="pb-95"
           dateTime="November 13, 2023 12:12:00"
-        />
+        /> */}
         {/* testimonial */}
-        <TestimonialOne
+        {/* <TestimonialOne
           spaceTopClass="pt-100"
           spaceBottomClass="pb-95"
           spaceLeftClass="ml-70"
           spaceRightClass="mr-70"
           bgColorClass="bg-gray-3"
-        />
+        /> */}
         {/* newsletter */}
-        <FeatureBlog
+        {/* <FeatureBlog
           spaceTopClass="pt-10"
           spaceBottomClass="pb-90"
           containerClass="container-fluid"
           gutterClass="padding-10-row-col"
-        />
+        /> */}
 
         <NewsletterTwo
           spaceTopClass="pt-100"
