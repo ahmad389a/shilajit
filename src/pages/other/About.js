@@ -22,7 +22,7 @@ const About = () => {
     <Fragment>
       <SEO
         titleTemplate="om oss"
-        description="."
+        description="Finn frem kraften til Shilajit med Nature's Bounty"
       /> 
       <LayoutOne headerTop="visible">
             {/* breadcrumb */}

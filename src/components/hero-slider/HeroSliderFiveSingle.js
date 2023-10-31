@@ -17,9 +17,9 @@ const HeroSliderFiveSingle = ({ data }) => {
           <div className="col-xl-6 col-lg-6 col-md-7 ms-auto">
             <div className="slider-content-2 slider-content-fruits slider-animated-1">
               {/* <h3 className="animated" style={{color: data.title === "Naturlig & Sunn" ? "white" : "black"}}>{t(data.title)}</h3> */}
-              <h1 className="animated" style={{ color: data.subtitle === "Opplev en annen side av nåturen" ? "black" : "white" }}>
+              <h2 className="animated" style={{lineHeight:'1.5', color: data.subtitle === "Opplev en annen side av nåturen" ? "black" : "white" }}>
              {t(data.subtitle)}
-               </h1>
+               </h2>
 
               {/*<div className="slider-btn btn-hover">
                 <Link

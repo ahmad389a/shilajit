@@ -24,7 +24,7 @@ const Cart = () => {
     <Fragment>
       <SEO
         titleTemplate="vogn"
-        description="."
+        description="Vognen er din inngangsport til å gjøre ønsker til virkelighet."
       />
 
       <LayoutOne headerTop="visible">

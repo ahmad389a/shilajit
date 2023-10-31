@@ -14,8 +14,8 @@ const HomeOrganicFood = () => {
   return (
     <Fragment>
       <SEO
-        titleTemplate="Pure Shilajit"
-        description="Ren Shilajit kjøpe naturens gave til helsen din - Naturensskatters"
+        titleTemplate="Pure Shilajit kjøp naturens gave til ditt sunne liv - "
+        description="Opplev bedre helse med ren Shilajit fra Himalaya! Få autentiske Shilajit-produkter for mer energi og velvære. Handle nå!"
         title= "Naturensskatter"
       />
       <LayoutThree

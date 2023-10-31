@@ -52,7 +52,7 @@ const Checkout = () => {
     <Fragment>
       <SEO
         titleTemplate="SJEKK UT"
-        description="."
+        description="Sømløs og sikker utsjekking venter!"
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}

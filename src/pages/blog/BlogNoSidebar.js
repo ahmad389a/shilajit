@@ -15,7 +15,7 @@ const BlogNoSidebar = () => {
     <Fragment>
       <SEO
         titleTemplate="Personvernerklæring"
-        description="."
+        description="Ta deg tid til å lese vår personvernerklæring og kontakt oss gjerne"
       />
       <LayoutOne headerTop="visible">
          {/* breadcrumb */}

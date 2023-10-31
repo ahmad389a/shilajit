@@ -14,7 +14,7 @@ const Contact = () => {
     <Fragment>
       <SEO
         titleTemplate="KONTAKT"
-        description="."
+        description="Ta kontakt med oss uten problemer!"
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
