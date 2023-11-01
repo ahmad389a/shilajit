@@ -46,7 +46,7 @@ const ProductBenefits = () => {
   <div className="col-md-1 col-lg-1"></div>
 <div className="col-md-5 col-lg-5">
        <Card style={{ width: '100%' }}>
-      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-1.jpg" alt="Pure-Shilajit-From-Himalayan-team-1" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter"/>
+      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-1.webp" alt="Pure-Shilajit-From-Himalayan-team-1" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter"/>
       <Card.Body>
         <Card.Title><b>{t("Origin Of Pure Shilajit From Himalayan")}</b></Card.Title>
         <Card.Text>
@@ -61,7 +61,7 @@ const ProductBenefits = () => {
 {/* ------------------ */}
 <div className="col-md-5 col-lg-5">
 <Card style={{ width: '100%' }}>
-      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-3.jpg" alt="Pure-Shilajit-From-Himalayan-team-3" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter" />
+      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-3.webp" alt="Pure-Shilajit-From-Himalayan-team-3" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter" />
       <Card.Body>
         <Card.Title><b>{t("Ingredients In Pure Shilajit From Himalayan")}</b></Card.Title>
         <Card.Text>

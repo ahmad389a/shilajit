@@ -33,7 +33,7 @@ const About = () => {
           ]} 
         />
         <div  className="container">
-          <img src="./assets/img/bg/About_hero.jpg" alt="About-hero" className="AboutImage"/>
+          <img src="./assets/img/bg/About_hero.webp" alt="About-hero" className="AboutImage"/>
         </div>
     
 

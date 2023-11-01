@@ -3,14 +3,14 @@
     "id": 1,
     "title": "Naturlig & Sunn",
     "subtitle": "Opplev en annen side av naturen",
-    "image": "/assets/img/slider/updated-slider.jpg",
+    "image": "/assets/img/slider/updated-slider.webp",
     "url": "/shop-grid-standard"
   },
   {
     "id": 2,
     "title": "Naturlig & Sunn",
     "subtitle": "Opplev en annen side av nåturen",
-    "image": "/assets/img/slider/himalayan-cover-2.png",
+    "image": "/assets/img/slider/himalayan-cover-2.webp",
     "url": "/shop-grid-standard"
   }
 ]
