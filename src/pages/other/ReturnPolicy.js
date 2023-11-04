@@ -38,12 +38,10 @@ const ReturnPolicy = () => {
             {label: "returrett", path: process.env.PUBLIC_URL + pathname }
           ]} 
         />
-          <Container >
-
-        
+          <Container >        
 
           <Row style={{padding:'2%'}} >
-          <h2 style={{textAlign:'center'}}> {t("RETURN POLICY")} </h2>
+          <h1 style={{textAlign:'center'}}> {t("RETURN POLICY")} </h1>
             <Col md={8} id="returnform">
     
             <spam className=" greetingtext" > <i>{t("We want to ensure your satisfaction with every purchase you make from us")} . {t("To provide you with a smooth and fair return process")} , {t("we have established the following guidelines")} :</i></spam>

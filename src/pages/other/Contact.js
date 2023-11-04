@@ -103,7 +103,7 @@ const Contact = () => {
               <div className="col-12 col-lg-12 col-md-12">
                 <div className="contact-form">
                   <div className="contact-title mb-30 ">
-                    <h2>{t("Get In Touch")}</h2>
+                    <h1 style={{fontSize:'33px'}}>{t("Get In Touch")}</h1>
                   </div>
                   <form className="contact-form-style">
                     <div className="row">

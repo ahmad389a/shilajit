@@ -13,7 +13,7 @@ const SectionTitle = ({
   const { t } = useTranslation();
   return (
     <div className={clsx("section-title", positionClass, spaceClass, borderClass)}>
-      <h2>{titleText}</h2>
+      <h1>{titleText}</h1>
       <p className={clsx(subtitleColorClass)}>
         {subtitleText}
       </p>

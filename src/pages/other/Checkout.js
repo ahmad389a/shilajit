@@ -212,7 +212,7 @@ const Checkout = () => {
 
                 <div className="col-lg-5">
                   <div className="your-order-area">
-                    <h3>{t("Your order")}</h3>
+                    <h1 style={{fontSize:'18px', fontWeight:'600'}}>{t("Your order")}</h1>
                     <div className="your-order-wrap gray-bg-4">
                       <div className="your-order-product-info">
                         <div className="your-order-top">

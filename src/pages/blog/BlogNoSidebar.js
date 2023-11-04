@@ -28,7 +28,7 @@ const BlogNoSidebar = () => {
         <div className="container mb-5">
                 <div className="product-description" style={{paddingTop:'3%'}}> 
 
-                <h3 style={{textAlign:'center'}}> {t("Privacy Policy")}</h3>
+                <h1 style={{textAlign:'center'}}> {t("Privacy Policy")}</h1>
 <br/>
 
 <p>{t("Your privacy is important to us")}. {t("This privacy policy explains how we collect")}, {t("use")}, {t("share")}, {t("and protect your personal information when you visit our website")}. {t("We encourage you to carefully read this privacy policy")} .
