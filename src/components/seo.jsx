@@ -22,9 +22,9 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
-    title: "Naturensskatter",
-    titleTemplate: "Product Page",
-    description: "Experience Better Health with Pure Shilajit From Himalayan! Get Authentic Shilajit Products for More Energy and Wellness. Shop Now",
+    title: "Ren Shilajit kjøp naturens gave til ditt sunne liv -",
+    titleTemplate: "Naturensskatter",
+    description: "Opplev bedre helse med ren Shilajit fra Himalaya! Få autentiske Shilajit-produkter for mer energi og velvære. Handle nå!",
 };
 
 export default SEO;

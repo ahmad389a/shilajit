@@ -26,7 +26,7 @@ const AboutMoringa = () => {
     <Fragment>
       <SEO
         titleTemplate="om Moringa"
-        description="Experience Better Health with Pure Shilajit From Himalayan! Get Authentic Shilajit Products for More Energy and Wellness. Shop Now"
+        description="Opplev bedre helse med ren Shilajit fra Himalaya! Få autentiske Shilajit-produkter for mer energi og velvære. Handle nå!"
       />
       <LayoutOne headerTop="visible">
          {/* breadcrumb */}
