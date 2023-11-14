@@ -7,7 +7,7 @@ const SEO = ({ title, titleTemplate, description }) => {
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>
-                    {title} | {titleTemplate}
+                    {title} - {titleTemplate}
                 </title>
                 <meta name="description" content={description} />
             </Helmet>
@@ -22,7 +22,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
-    title: "Ren Shilajit kjøp naturens gave til ditt sunne liv -",
+    title: "Ren Shilajit kjøp naturens gave til ditt sunne liv",
     titleTemplate: "Naturensskatter",
     description: "Opplev bedre helse med ren Shilajit fra Himalaya! Få autentiske Shilajit-produkter for mer energi og velvære. Handle nå!",
 };

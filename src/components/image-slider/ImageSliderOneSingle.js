@@ -5,7 +5,7 @@ const ImageSliderOneSingle = ({ data }) => {
   return (
     <div className="single-image">
       <Link to={process.env.PUBLIC_URL + data.link}>
-        <img src={process.env.PUBLIC_URL + data.image} alt="" />
+        <img src={process.env.PUBLIC_URL + data.image} alt="Shilajitimageslder" />
       </Link>
     </div>
   );

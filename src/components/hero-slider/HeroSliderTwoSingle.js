@@ -25,7 +25,7 @@ const HeroSliderTwoSingle = ({ data }) => {
               <img
                 className="animated img-fluid"
                 src={process.env.PUBLIC_URL + data.image}
-                alt=""
+                alt="Shilajitheroslider2"
               />
             </div>
           </div>

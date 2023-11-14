@@ -6,7 +6,7 @@ const BlogFeaturedThreeSingle = ({ singlePost }) => {
     <div className="blog-wrap mb-30 scroll-zoom">
       <div className="blog-img">
         <Link to={process.env.PUBLIC_URL + singlePost.url}>
-          <img src={process.env.PUBLIC_URL + singlePost.image} alt="" />
+          <img src={process.env.PUBLIC_URL + singlePost.image} alt="Shilajitblog" />
         </Link>
         <div className="blog-category-names blog-category-names--style2">
           {singlePost.category.map((singleCategory, key) => {

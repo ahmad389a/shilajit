@@ -92,7 +92,7 @@ const ProductImageGalleryLeftThumb = ({ product, thumbPosition }) => {
                       <img
                         src={process.env.PUBLIC_URL + single}
                         className="img-fluid"
-                        alt=""
+                        alt="shilajitP11"
                       />
                     </div>
                   </SwiperSlide>
@@ -122,7 +122,7 @@ const ProductImageGalleryLeftThumb = ({ product, thumbPosition }) => {
                       <img
                         src={process.env.PUBLIC_URL + single}
                         className="img-fluid"
-                        alt=""
+                        alt="shilajitP10"
                       />
                     </div>
                   </SwiperSlide>

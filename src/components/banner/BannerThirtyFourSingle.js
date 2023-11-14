@@ -8,7 +8,7 @@ const BannerThirtyFourSingle = ({ data, spaceBottomClass }) => {
         className={clsx("single-banner", spaceBottomClass)}
       >
         <Link to={process.env.PUBLIC_URL + data.url}>
-          <img src={process.env.PUBLIC_URL + data.image} alt="" />
+          <img src={process.env.PUBLIC_URL + data.image} alt="Shilajitbanner14" />
         </Link>
         <div className="banner-content-5 banner-content-5-white">
           <span>{data.title}</span>

@@ -46,7 +46,7 @@ const ProductDescriptionTab = ({ spaceBottomClass, productFullDesc }) => {
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey="productDescription" > 
-              <b>Usage Instructions:</b>&nbsp;For best resultat, ta en dosering på ca. 150- 500 mg på tom mage om morgenen, og bland det med lunkent vann eller melk.
+              <b>Bruksanvisning:</b>&nbsp;Anbefalt daglig dose: 10g. Vennligst følg den angitte dosen og ikke overskrid den. Vi anbefaler å begynne med 5g, deretter øke til 10g etter at kroppen har tilpasset seg kosttilskuddet.
 
 <br/><br/>Vennligst merk at dette produktet ikke er beregnet som medisin og bør ikke erstatte profesjonell medisinsk rådgivning. Hvis du er gravid, ammer, eller har underliggende helseproblemer, bør du konsultere lege før bruk. Det anbefales også å unngå overdreven bruk av Shilajit, da det kan ha bivirkninger hos noen individer. Hold produktet utilgjengelig for barn.
               </Tab.Pane>
@@ -61,7 +61,7 @@ const ProductDescriptionTab = ({ spaceBottomClass, productFullDesc }) => {
                               process.env.PUBLIC_URL +
                               "/assets/img/testimonial/1.jpg"
                             }
-                            alt=""
+                            alt="testimonial1"
                           />
                         </div>
                         <div className="review-content">
@@ -99,7 +99,7 @@ const ProductDescriptionTab = ({ spaceBottomClass, productFullDesc }) => {
                               process.env.PUBLIC_URL +
                               "/assets/img/testimonial/1.jpg"
                             }
-                            alt=""
+                            alt="testimonial2"
                           />
                         </div>
                         <div className="review-content">

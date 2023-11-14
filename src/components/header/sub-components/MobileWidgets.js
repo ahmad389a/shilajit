@@ -6,13 +6,13 @@ const MobileWidgets = () => {
       <div className="off-canvas-contact-widget">
         <div className="header-contact-info">
           <ul className="header-contact-info__list">
-            <li>
+            {/* <li>
               <i className="fa fa-phone"></i>{" "}
-              <a href="tel://12452456012">(1245) 2456 012 </a>
-            </li>
+              <a href="tel://12452456012"> </a>
+            </li> */}
             <li>
               <i className="fa fa-envelope"></i>{" "}
-              <a href="mailto:info@yourdomain.com">info@naturesskatter.com</a>
+              <a href="mailto:info@naturesskatter.com">info@naturesskatter.com</a>
             </li>
           </ul>
         </div>

@@ -38,7 +38,7 @@ const ProductDescriptionInfo = ({
     selectedProductColor,
     selectedProductSize
   );
-
+  
   return (
     <div className="product-details-content ml-70">
       <h2>{product.name}</h2>
@@ -66,10 +66,19 @@ const ProductDescriptionInfo = ({
       <div className="pro-details-list">
       {product.shortDescription}
         <p>{product.fullDescription}</p>
-      {/* <br/> */}
-       <div >  <Link to={process.env.PUBLIC_URL + "/ProductBenefits"} style={{color:'#047b04'}}>
-              Read More
-            </Link></div>
+
+<div>
+      {product.name === 'Moringa 250g' ? (
+        <Link to={process.env.PUBLIC_URL + "/AboutMoringa"} style={{ color: '#047b04' }}>
+          Read More
+        </Link>
+      ) : (
+        <Link to={process.env.PUBLIC_URL + "/ProductBenefits"} style={{ color: '#047b04' }}>
+          Read More
+        </Link>
+      )}
+    </div>
+
       </div>
 
       {product.variation ? (

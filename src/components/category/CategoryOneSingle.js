@@ -5,7 +5,7 @@ const CategoryOneSingle = ({ data }) => {
   return (
     <div className="collection-product-2">
       <Link to={process.env.PUBLIC_URL + data.link}>
-        <img src={process.env.PUBLIC_URL + data.image} alt="" />
+        <img src={process.env.PUBLIC_URL + data.image} alt="Shilajitcategory2" />
       </Link>
       <div className="collection-content-2 text-center">
         <span>{data.subtitle}</span>

@@ -6,8 +6,13 @@ import LayoutOne from "../../layouts/LayoutOne";
 import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { useTranslation } from "react-i18next";
 import PayButton from "./PayButton";
-import { useState, useEffect  } from "react";
-import { useSelector } from 'react-redux';
+import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import Button from "react-bootstrap/Button";
+import Collapse from "react-bootstrap/Collapse";
+// import couponName from "../src/data/Coupons.js";
+// import axios from 'axios';
+
 
 const Checkout = () => {
   const { t } = useTranslation();
@@ -18,6 +23,7 @@ const Checkout = () => {
   const [gstRate, setGSTRate] = useState(15);
   const [gstAmount, setGSTAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const [billingAddress, setBillingInfo] = useState({
     firstName: "",
@@ -29,7 +35,7 @@ const Checkout = () => {
     phone: "",
     emailAddress: "",
   });
-  console.log("--------------",billingAddress);
+  console.log("--------------", billingAddress);
 
   const handleBillingInfoChange = (e) => {
     const { name, value } = e.target;
@@ -38,15 +44,14 @@ const Checkout = () => {
       [name]: value,
     });
   };
- 
+
+  
   // useEffect(() => {
   //   const calculatedGSTAmount = (cartTotalPrice * gstRate) / 100;
   //   const calculatedTotalAmount = cartTotalPrice + calculatedGSTAmount;
   //   setGSTAmount(calculatedGSTAmount);
   //   setTotalAmount(calculatedTotalAmount);
-  // }, [cartTotalPrice, gstRate]); 
-
-
+  // }, [cartTotalPrice, gstRate]);
 
   return (
     <Fragment>
@@ -56,11 +61,11 @@ const Checkout = () => {
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}
-        <Breadcrumb 
+        <Breadcrumb
           pages={[
-            {label: "Hjem", path: process.env.PUBLIC_URL + "/" },
-            {label: "SJEKK UT", path: process.env.PUBLIC_URL + pathname }
-          ]} 
+            { label: "Hjem", path: process.env.PUBLIC_URL + "/" },
+            { label: "SJEKK UT", path: process.env.PUBLIC_URL + pathname },
+          ]}
         />
         <div className="checkout-area pt-95 pb-100">
           <div className="container">
@@ -103,8 +108,7 @@ const Checkout = () => {
                         </div> */}
                       </div>
                       <div className="col-lg-12">
-
-                    {/* ========country==========     */}
+                        {/* ========country==========     */}
                         {/* <div className="billing-select mb-20">
                           <label>Country{t("Get In Touch")}</label>
                           <select>
@@ -125,7 +129,7 @@ const Checkout = () => {
                             name="streetAddress"
                             placeholder="Husnummer og gatenavn"
                             value={billingAddress.streetAddress}
-                            type="text"  
+                            type="text"
                             onChange={handleBillingInfoChange}
                             required
                           />
@@ -137,62 +141,80 @@ const Checkout = () => {
                       </div>
                       <div className="col-lg-12">
                         <div className="billing-info mb-20">
-                          <label> {t("Town")}/ {t("City")}</label>
-                          <input type="text"
-                          name="townCity"
-                          value={billingAddress.townCity}
-                          placeholder="By"
-                          onChange={handleBillingInfoChange}
-                            required />
+                          <label>
+                            {" "}
+                            {t("Town")}/ {t("City")}
+                          </label>
+                          <input
+                            type="text"
+                            name="townCity"
+                            value={billingAddress.townCity}
+                            placeholder="By"
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label> {t("State")}/ {t("County")}</label>
-                          <input type="text" 
-                             name="stateCounty"
-                             value={billingAddress.stateCounty}
-                             placeholder="By"
-                             onChange={handleBillingInfoChange} 
-                          required/>
+                          <label>
+                            {" "}
+                            {t("State")}/ {t("County")}
+                          </label>
+                          <input
+                            type="text"
+                            name="stateCounty"
+                            value={billingAddress.stateCounty}
+                            placeholder="By"
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
-                          <label>{t("Postcode")}/ {t("ZIP")}</label>
-                          <input type="text" 
-                             name="postcodeZIP"
-                             value={billingAddress.postcodeZIP}
-                             placeholder="Postnummer"
-                             onChange={handleBillingInfoChange} 
-                          required/>
+                          <label>
+                            {t("Postcode")}/ {t("ZIP")}
+                          </label>
+                          <input
+                            type="text"
+                            name="postcodeZIP"
+                            value={billingAddress.postcodeZIP}
+                            placeholder="Postnummer"
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("Phone")}</label>
-                          <input type="text" 
-                             name="phone"
-                             value={billingAddress.phone}
-                             placeholder="Telefon"
-                             onChange={handleBillingInfoChange}
-                          required/>
+                          <input
+                            type="text"
+                            name="phone"
+                            value={billingAddress.phone}
+                            placeholder="Telefon"
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
                           <label>{t("Email Address")}</label>
-                          <input type="text"  
-                             name="emailAddress"
-                             value={billingAddress.emailAddress}
-                             placeholder="Epostadresse"
-                             onChange={handleBillingInfoChange}
-                          required/>
+                          <input
+                            type="text"
+                            name="emailAddress"
+                            value={billingAddress.emailAddress}
+                            placeholder="Epostadresse"
+                            onChange={handleBillingInfoChange}
+                            required
+                          />
                         </div>
                       </div>
                     </div>
 
- {/* =============additionalInfo==================== */}
+                    {/* =============additionalInfo==================== */}
 
                     {/* <div className="additional-info-wrap">
                       <h4>{t("Additional information")}</h4>
@@ -208,11 +230,13 @@ const Checkout = () => {
                   </div>
                 </div>
 
-  {/* ===================Order detail part/ Invoice================================== */}
+                {/* ===================Order detail part/ Invoice================================== */}
 
                 <div className="col-lg-5">
                   <div className="your-order-area">
-                    <h1 style={{fontSize:'18px', fontWeight:'600'}}>{t("Your order")}</h1>
+                    <h1 style={{ fontSize: "18px", fontWeight: "600" }}>
+                      {t("Your order")}
+                    </h1>
                     <div className="your-order-wrap gray-bg-4">
                       <div className="your-order-product-info">
                         <div className="your-order-top">
@@ -264,13 +288,70 @@ const Checkout = () => {
                         </div>
                         <div className="your-order-bottom">
                           <ul>
-                            <li className="your-order-shipping">{t("Shipping")}</li>
+                            <li className="your-order-shipping">
+                              {t("Shipping")}
+                            </li>
                             <li>{t("Free shipping")}</li>
                           </ul>
                         </div>
                         <div className="your-order-total">
                           <ul>
-                            <li className="your-order-shipping">{t("Total")}</li>
+                            <li className="your-order-shipping">
+                              {t("Sub sTotal")}
+                            </li>
+                            <li>
+                              {currency.currencySymbol +
+                                cartTotalPrice.toFixed(2)}
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <Link style={{fontSize:'13px'}}
+                                onClick={() => setOpen(!open)}
+                                aria-controls="example-collapse-text"
+                                aria-expanded={open}
+                              >
+                                Have a Coupon Code?
+                              </Link>
+                              <Collapse in={open}>
+                                <div id="example-collapse-text">
+                                  <div className="billing-info">
+                                    <label>{t("Rabattkode")}</label>
+                                    <input
+                                      style={{
+                                        outline: "1px solid lightgray",
+                                        borderRadius: "5px",
+                                        marginTop: "10px",
+                                      }}
+                                      type="text"
+                                      // value={couponName}
+                                      // onChange={(e) => setCouponName(e.target.value)}                          
+                                      name="couponCode"                                      
+                                      placeholder="Rabattkode"                                    
+                                      required
+                                    />
+                                    <Button
+                                      variant="success"
+                                      className="mt-3 justify-content-center"
+                                      style={{
+                                        backgroundColor: "#044704",
+                                        borderRadius: "30px",
+                                        marginLeft: "80%",
+                                        paddingTop: "3px",
+                                        paddingBottom: "3px",
+                                      }}
+                                    >
+                                      Verify
+                                    </Button>
+                                  </div>
+                                </div>
+                              </Collapse>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li className="your-order-shipping">
+                              {t("Total")}
+                            </li>
                             <li>
                               {currency.currencySymbol +
                                 cartTotalPrice.toFixed(2)}
@@ -290,16 +371,21 @@ const Checkout = () => {
                                 totalAmount.toFixed(2)}
                             </li>
                           </ul> */}
-                           <ul > 
-                            <li style={{fontSize:'13px'}}> {t("MVA (15%) Included")} </li>                           
+                          <ul>
+                            <li style={{ fontSize: "13px" }}>
+                              {" "}
+                              {t("MVA (15%) Included")}{" "}
+                            </li>
                           </ul>
                         </div>
-                       
                       </div>
                       <div className="payment-method"></div>
                     </div>
                     <div className="place-order mt-25">
-                      <PayButton cartItems={cartItems} billingAddress={billingAddress} />
+                      <PayButton
+                        cartItems={cartItems}
+                        billingAddress={billingAddress}
+                      />
                       {/* <button className="btn-hover">{t("Place Order")}</button> */}
                     </div>
                   </div>
@@ -313,9 +399,10 @@ const Checkout = () => {
                       <i className="pe-7s-cash"></i>
                     </div>
                     <div className="item-empty-area__text">
-                       {t("No items found in cart to checkout")}<br />{" "}
+                      {t("No items found in cart to checkout")}
+                      <br />{" "}
                       <Link to={process.env.PUBLIC_URL + "/"}>
-                       {t("Shop Now")}
+                        {t("Shop Now")}
                       </Link>
                     </div>
                   </div>

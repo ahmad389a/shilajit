@@ -21,7 +21,7 @@ const productImageGallerySticky = ({ product }) => {
           <div className="product-sticky-image__single mb-10" key={key}>
             <img
               src={process.env.PUBLIC_URL + single}
-              alt=""
+              alt="shilajitP1"
               className="img-fluid"
             />
           </div>
