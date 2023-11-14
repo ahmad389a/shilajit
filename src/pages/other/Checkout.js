@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
+import { url } from "../../slices/api";
 import axios from 'axios';
 
 const Checkout = () => {
@@ -24,6 +25,7 @@ const Checkout = () => {
   const [open, setOpen] = useState(false);
   const [couponCode, setCouponCode] = useState('');
   const [isCouponValid, setIsCouponValid] = useState(false);
+  const [couponDetails, setCouponDetails] = useState(null);
   const [discountedTotalAmount, setDiscountedTotalAmount] = useState(0);
   const [couponErrorMessage, setCouponErrorMessage] = useState('');
   const [couponMessage, setCouponMessage] = useState('');
@@ -37,8 +39,6 @@ const Checkout = () => {
     phone: "",
     emailAddress: "",
   });
-  console.log("--------------", billingAddress);
-
   const handleBillingInfoChange = (e) => {
     const { name, value } = e.target;
     setBillingInfo({
@@ -46,9 +46,6 @@ const Checkout = () => {
       [name]: value,
     });
   };
-
-  
-
   const validateCoupon = async () => {
     try {
       const response = await axios.get(`http://localhost:2100/api/coupons/${couponCode}`);
@@ -62,13 +59,32 @@ const Checkout = () => {
         const discountPercentage = coupon.c_discount_price || 0;
         setDiscountedTotalAmount(cartTotalPrice - (cartTotalPrice * discountPercentage) / 100);
         setIsCouponValid(true);
+        setCouponDetails({ 
+          c_name: coupon.c_name,
+          c_discount_price: coupon.c_discount_price,
+          discountedTotalAmount,
+        });
         setCouponErrorMessage('');
         setCouponMessage('Coupon Applied');
+        const dataToSendToPayButton = {
+          couponDetails: {  
+            c_name: coupon.c_name,
+            c_discount_price: coupon.c_discount_price,
+            discountedTotalAmount,
+          },
+          cartItems: cartItems.map((cartItem) => ({
+            name: cartItem.name,
+            quantity: cartItem.quantity,
+          })),
+          discountedTotalAmount,
+        };
+        console.log('Data to send to PayButton:', dataToSendToPayButton);
       }
     } catch (error) {
       console.error('Coupon validation error:', error);
       setIsCouponValid(false);
       setDiscountedTotalAmount(cartTotalPrice);
+      setCouponDetails(null); 
       setCouponErrorMessage('Error validating coupon');
       setCouponMessage('');
     }
@@ -377,9 +393,10 @@ const Checkout = () => {
                       <div className="payment-method"></div>
                     </div>
                     <div className="place-order mt-25">
-                      <PayButton
+                    <PayButton
                         cartItems={cartItems}
                         billingAddress={billingAddress}
+                        couponDetails={couponDetails}
                       />
                     </div>
                   </div>
