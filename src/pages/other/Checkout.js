@@ -10,9 +10,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
-// import couponName from "../src/data/Coupons.js";
-// import axios from 'axios';
-
+import axios from 'axios';
 
 const Checkout = () => {
   const { t } = useTranslation();
@@ -24,7 +22,11 @@ const Checkout = () => {
   const [gstAmount, setGSTAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
   const [open, setOpen] = useState(false);
-
+  const [couponCode, setCouponCode] = useState('');
+  const [isCouponValid, setIsCouponValid] = useState(false);
+  const [discountedTotalAmount, setDiscountedTotalAmount] = useState(0);
+  const [couponErrorMessage, setCouponErrorMessage] = useState('');
+  const [couponMessage, setCouponMessage] = useState('');
   const [billingAddress, setBillingInfo] = useState({
     firstName: "",
     lastName: "",
@@ -46,13 +48,31 @@ const Checkout = () => {
   };
 
   
-  // useEffect(() => {
-  //   const calculatedGSTAmount = (cartTotalPrice * gstRate) / 100;
-  //   const calculatedTotalAmount = cartTotalPrice + calculatedGSTAmount;
-  //   setGSTAmount(calculatedGSTAmount);
-  //   setTotalAmount(calculatedTotalAmount);
-  // }, [cartTotalPrice, gstRate]);
 
+  const validateCoupon = async () => {
+    try {
+      const response = await axios.get(`http://localhost:2100/api/coupons/${couponCode}`);
+      const coupon = response.data;
+      if (!coupon) {
+        console.log('Coupon not found');
+        setIsCouponValid(false);
+        setCouponErrorMessage('Coupon not found or incorrect');
+        setCouponMessage('');
+      } else {
+        const discountPercentage = coupon.c_discount_price || 0;
+        setDiscountedTotalAmount(cartTotalPrice - (cartTotalPrice * discountPercentage) / 100);
+        setIsCouponValid(true);
+        setCouponErrorMessage('');
+        setCouponMessage('Coupon Applied');
+      }
+    } catch (error) {
+      console.error('Coupon validation error:', error);
+      setIsCouponValid(false);
+      setDiscountedTotalAmount(cartTotalPrice);
+      setCouponErrorMessage('Error validating coupon');
+      setCouponMessage('');
+    }
+  };
   return (
     <Fragment>
       <SEO
@@ -100,26 +120,6 @@ const Checkout = () => {
                             required
                           />
                         </div>
-                      </div>
-                      <div className="col-lg-12">
-                        {/* <div className="billing-info mb-20">
-                          <label>Company Name{t("Get In Touch")}</label>
-                          <input type="text" />
-                        </div> */}
-                      </div>
-                      <div className="col-lg-12">
-                        {/* ========country==========     */}
-                        {/* <div className="billing-select mb-20">
-                          <label>Country{t("Get In Touch")}</label>
-                          <select>
-                            <option>Select a country{t("Get In Touch")}</option>
-                            <option>Azerbaijan{t("Get In Touch")}</option>
-                            <option>Bahamas{t("Get In Touch")}</option>
-                            <option>Bahrain{t("Get In Touch")}</option>
-                            <option>Bangladesh{t("Get In Touch")}</option>
-                            <option>Barbados{t("Get In Touch")}</option>
-                          </select>
-                        </div> */}
                       </div>
                       <div className="col-lg-12">
                         <div className="billing-info mb-20">
@@ -213,20 +213,6 @@ const Checkout = () => {
                         </div>
                       </div>
                     </div>
-
-                    {/* =============additionalInfo==================== */}
-
-                    {/* <div className="additional-info-wrap">
-                      <h4>{t("Additional information")}</h4>
-                      <div className="additional-info">
-                        <label>{t("Order notes")}</label>
-                        <textarea
-                          placeholder="Notes about your order, e.g. special notes for delivery. "
-                          name="message"
-                          defaultValue={""}
-                        />
-                      </div>
-                    </div> */}
                   </div>
                 </div>
 
@@ -303,10 +289,12 @@ const Checkout = () => {
                               {currency.currencySymbol +
                                 cartTotalPrice.toFixed(2)}
                             </li>
-                          </ul>
+                          </ul>        
+
                           <ul>
                             <li>
-                              <Link style={{fontSize:'13px'}}
+                              <Link
+                                style={{ fontSize: '13px' }}
                                 onClick={() => setOpen(!open)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={open}
@@ -316,30 +304,31 @@ const Checkout = () => {
                               <Collapse in={open}>
                                 <div id="example-collapse-text">
                                   <div className="billing-info">
-                                    <label>{t("Rabattkode")}</label>
+                                    <label>{t('Rabattkode')}</label>
                                     <input
                                       style={{
-                                        outline: "1px solid lightgray",
-                                        borderRadius: "5px",
-                                        marginTop: "10px",
+                                        outline: '1px solid lightgray',
+                                        borderRadius: '5px',
+                                        marginTop: '10px',
                                       }}
                                       type="text"
-                                      // value={couponName}
-                                      // onChange={(e) => setCouponName(e.target.value)}                          
-                                      name="couponCode"                                      
-                                      placeholder="Rabattkode"                                    
+                                      value={couponCode}
+                                      onChange={(e) => setCouponCode(e.target.value)}
+                                      name="couponCode"
+                                      placeholder="Rabattkode"
                                       required
                                     />
                                     <Button
                                       variant="success"
                                       className="mt-3 justify-content-center"
                                       style={{
-                                        backgroundColor: "#044704",
-                                        borderRadius: "30px",
-                                        marginLeft: "80%",
-                                        paddingTop: "3px",
-                                        paddingBottom: "3px",
+                                        backgroundColor: '#044704',
+                                        borderRadius: '30px',
+                                        marginLeft: '80%',
+                                        paddingTop: '3px',
+                                        paddingBottom: '3px',
                                       }}
+                                      onClick={validateCoupon}
                                     >
                                       Verify
                                     </Button>
@@ -348,13 +337,19 @@ const Checkout = () => {
                               </Collapse>
                             </li>
                           </ul>
+                          {couponErrorMessage && (
+                              <div style={{ color: 'red', marginTop: '10px' }}>{couponErrorMessage}</div>
+                            )}
+                          {couponMessage && (
+                              <div style={{ color: 'green', marginTop: '10px' }}>{couponMessage}</div>
+                            )}
                           <ul>
-                            <li className="your-order-shipping">
-                              {t("Total")}
-                            </li>
+                            <li className="your-order-shipping">{t('Total')}</li>
                             <li>
                               {currency.currencySymbol +
-                                cartTotalPrice.toFixed(2)}
+                                (isCouponValid
+                                  ? discountedTotalAmount.toFixed(2)
+                                  : cartTotalPrice.toFixed(2))}
                             </li>
                           </ul>
                           {/* <ul>
@@ -386,7 +381,6 @@ const Checkout = () => {
                         cartItems={cartItems}
                         billingAddress={billingAddress}
                       />
-                      {/* <button className="btn-hover">{t("Place Order")}</button> */}
                     </div>
                   </div>
                 </div>
