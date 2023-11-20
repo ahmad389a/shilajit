@@ -49,7 +49,7 @@ const Checkout = () => {
   };
   const validateCoupon = async () => {
     try {
-      const response = await axios.get(`http://localhost:2100/api/coupons/${couponCode}`);
+      const response = await axios.get(`${url}/coupons/${couponName}`);
       const coupon = response.data;
       if (!coupon) {
         console.log('Coupon not found');
