@@ -29,6 +29,7 @@ const Checkout = () => {
   const [discountedTotalAmount, setDiscountedTotalAmount] = useState(0);
   const [couponErrorMessage, setCouponErrorMessage] = useState('');
   const [couponMessage, setCouponMessage] = useState('');
+  // const [billingErrors, setBillingErrors] =useState('');
   const [billingAddress, setBillingInfo] = useState({
     firstName: "",
     lastName: "",
@@ -65,7 +66,7 @@ const Checkout = () => {
           discountedTotalAmount,
         });
         setCouponErrorMessage('');
-        setCouponMessage('Coupon Applied');
+        setCouponMessage('Coupon verified! Discount granted!');
         const dataToSendToPayButton = {
           couponDetails: {  
             c_name: coupon.c_name,
@@ -123,6 +124,9 @@ const Checkout = () => {
                             required
                           />
                         </div>
+                        {/* {billingAddressError && (
+            <div style={{ color: "red" }}>{billingAddressError}</div>
+          )} */}
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
@@ -136,6 +140,7 @@ const Checkout = () => {
                             required
                           />
                         </div>
+     
                       </div>
                       <div className="col-lg-12">
                         <div className="billing-info mb-20">

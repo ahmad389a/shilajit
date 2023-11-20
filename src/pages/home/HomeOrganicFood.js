@@ -7,7 +7,7 @@ import FeatureBlog from "../../wrappers/feature-icon/Featureblog";
 import TabProductFour from "../../wrappers/product/TabProductFour";
 import BannerFive from "../../wrappers/banner/BannerFive";
 import CountDownTwo from "../../wrappers/countdown/CountDownTwo";
-import TestimonialOne from "../../wrappers/testimonial/TestimonialOne";
+// import TestimonialOne from "../../wrappers/testimonial/TestimonialOne";
 import NewsletterTwo from "../../wrappers/newsletter/NewsletterTwo";
 
 const HomeOrganicFood = () => {

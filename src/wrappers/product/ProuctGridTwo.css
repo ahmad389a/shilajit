@@ -1,7 +1,7 @@
 .centered-card {
     margin-left: 29%;   
   }
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 1031px){
     .centered-card {
       margin-left: 0%; 
     }
