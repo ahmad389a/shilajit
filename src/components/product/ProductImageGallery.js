@@ -64,7 +64,8 @@ const ProductImageGallery = ({ product }) => {
                   <img
                     src={process.env.PUBLIC_URL + single}
                     className="img-fluid"
-                    alt="shilajitP8"
+                    alt="shilajitP81"
+                    loading="lazy"
                   />
                 </div>
               </SwiperSlide>
@@ -90,6 +91,7 @@ const ProductImageGallery = ({ product }) => {
                     src={process.env.PUBLIC_URL + single}
                     className="img-fluid"
                     alt="shilajitP9"
+                    loading="lazy"
                   />
                 </div>
               </SwiperSlide>

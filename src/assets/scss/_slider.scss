@@ -599,8 +599,8 @@
         font-size: 30px;
       }
       @media #{$xs-layout} {
-        font-size: 25px;
-
+        font-size: 21px;
+        font-weight: 500 !important;
         margin: 6px 0 20px;
       }
     }

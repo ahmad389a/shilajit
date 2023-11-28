@@ -20,6 +20,7 @@ const About = lazy(() => import("./pages/other/About"));
 const Contact = lazy(() => import("./pages/other/Contact"));
 const MyAccount = lazy(() => import("./pages/other/MyAccount"));
 const LoginRegister = lazy(() => import("./pages/other/LoginRegister"));
+const PrivacyPolicy = lazy(() => import("./pages/blog/BlogNoSidebar"));
 
 const Cart = lazy(() => import("./pages/other/Cart"));
 const Wishlist = lazy(() => import("./pages/other/Wishlist"));
@@ -80,13 +81,17 @@ const App = () => {
                 element={<ProductFixedImage/>}
               /> 
               <Route
-                path={process.env.PUBLIC_URL + "/ProductBenefits"}
+                path={process.env.PUBLIC_URL + "/aboutshilajit"}
                 element={<ProductBenefits/>}
               /> 
                <Route
-                path={process.env.PUBLIC_URL + "/AboutMoringa"}
+                path={process.env.PUBLIC_URL + "/aboutmoringa"}
                 element={<AboutMoringa/>}
               /> 
+                 <Route
+                path={process.env.PUBLIC_URL + "/privacypolicy"}
+                element={<PrivacyPolicy/>}
+              />
                 <Route
                 path={process.env.PUBLIC_URL + "/order-status"}
                 element={<OrderStatus/>}
@@ -127,7 +132,7 @@ const App = () => {
                 element={<Checkout/>}
               /> 
                <Route
-                path={process.env.PUBLIC_URL + "/ReturnPolicy"}
+                path={process.env.PUBLIC_URL + "/returnpolicy"}
                 element={<ReturnPolicy/>}
               /> 
               <Route

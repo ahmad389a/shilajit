@@ -41,7 +41,7 @@ const ProductDescriptionInfo = ({
   
   return (
     <div className="product-details-content ml-70">
-      <h2>{product.name}</h2>
+      <h1 style={{fontSize:'28px'}}>{product.name}</h1>
       <div className="product-details-price">
         {discountedPrice !== null ? (
           <Fragment>
@@ -69,11 +69,11 @@ const ProductDescriptionInfo = ({
 
 <div>
       {product.name === 'Moringa 250g' ? (
-        <Link to={process.env.PUBLIC_URL + "/AboutMoringa"} style={{ color: '#047b04' }}>
+        <Link to={process.env.PUBLIC_URL + "/aboutmoringa"} style={{ color: '#047b04' }}>
           Read More
         </Link>
       ) : (
-        <Link to={process.env.PUBLIC_URL + "/ProductBenefits"} style={{ color: '#047b04' }}>
+        <Link to={process.env.PUBLIC_URL + "/aboutshilajit"} style={{ color: '#047b04' }}>
           Read More
         </Link>
       )}

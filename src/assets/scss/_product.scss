@@ -1407,12 +1407,18 @@
 
 .product-wrap-2 {
   position: relative;
-
   overflow: hidden;
   .product-img {
-    position: relative;
+    position: relative;   
     img {
       width: 100%;
+      height: auto;    
+    
+    
+      @media #{$xs-layout} {
+        width: 100% !important;
+      height: auto !important; 
+      }
     }
     span {
       font-size: 14px;

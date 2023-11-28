@@ -24,7 +24,7 @@ const ProductBenefits = () => {
     <Fragment>
       <SEO
         titleTemplate="om Shilajit"
-        description="Opplev bedre helse med ren Shilajit fra Himalaya! Få autentiske Shilajit-produkter for mer energi og velvære. Handle nå!"
+        description="Oppdag den naturlige eliksiren av vitalitet med vår førsteklasses Shilajit. Handle nå!"
       />
       <LayoutOne headerTop="visible">
          {/* breadcrumb */}
@@ -46,7 +46,7 @@ const ProductBenefits = () => {
   <div className="col-md-1 col-lg-1"></div>
 <div className="col-md-5 col-lg-5">
        <Card style={{ width: '100%' }}>
-      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-1.webp" alt="Pure-Shilajit-From-Himalayan-team-1" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter"/>
+      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-1.webp" alt="Pure-Shilajit-From-Himalayan-team-1" loading="lazy" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter"/>
       <Card.Body>
         <Card.Title><b>{t("Origin Of Pure Shilajit From Himalayan")}</b></Card.Title>
         <Card.Text>
@@ -61,7 +61,7 @@ const ProductBenefits = () => {
 {/* ------------------ */}
 <div className="col-md-5 col-lg-5">
 <Card style={{ width: '100%' }}>
-      <Card.Img variant="top" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-3.webp" alt="Pure-Shilajit-From-Himalayan-team-3" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter" />
+      <Card.Img variant="top" loading="lazy" src="/assets/img/team/Pure-Shilajit-From-Himalayan-team-3.webp" alt="Pure-Shilajit-From-Himalayan-team-3" data-tags="shilajit bruker for mannlige,shilajit bruker for kvinner,shilajit fordeler,ren shilajit fra Himalaya,shilajit benefits for female,shilajit uses,shilajit dosage,Pure shilajit from Himalaya,Naturensskatter" />
       <Card.Body>
         <Card.Title><b>{t("Ingredients In Pure Shilajit From Himalayan")}</b></Card.Title>
         <Card.Text>
@@ -81,37 +81,37 @@ const ProductBenefits = () => {
                 <div className="product-description">              
           <h3 style={{textAlign:'center'}}>{t("Benefits of Pure Shilajit From Himalayan")}</h3>
 
-  <h4>{t("Energy and Stamina")}:</h4>
+  <p className="heading">{t("Energy and Stamina")}:</p>
   <p>  <Link to={process.env.PUBLIC_URL + "/"} style={{color:'green'}}>
               {t("Pure Shilajit From Himalayan")}
             </Link> {t("has been used for centuries to increase physical stamina and energy levels")}. {t("It is thought to aid in the body's energy-producing activities")}, {t("especially through assisting with the metabolism of fats and carbohydrates")}. {t("Shilajit's possible energising benefits may be attributable to its involvement in assisting mitochondrial function")},{t("which is in charge of generating energy within cells")} .</p>
 
-  <h4>{t("Rich in Minerals and Fulvic Acid")}:</h4>
+  <p className="heading">{t("Rich in Minerals and Fulvic Acid")}:</p>
   <p>{t("Pure Shilajit From Himalayan is a food that is abundant in minerals and fulvic acid")}, {t("both of which are necessary for many body processes")}.{t("Magnesium")} , {t("iron")}, {t("zinc")}, {t("copper")},{t("and selenium are a few of these")} . {t("These minerals help with metabolic functions")},{t("immune system support")} ,{t("and bone health maintenance")} .{t("Shilajit contains fulvic acid")} , {t("a natural substance that is proven to improve the body's absorption of minerals and other nutrients")}.{t("It might improve these nutrients' bioavailability by assisting in their transit through cell membranes")} .</p>
 
-  <h4>{t("Anti-Aging Superstar")}:</h4>
+  <p className="heading">{t("Anti-Aging Superstar")}:</p>
   <p>{t("Pure Shilajit From Himalayan has an unrivalled ability to slow and reverse the ageing process")}. {t("It aids in the acceleration of protein and nucleic acid metabolism and accelerates energy-producing pathways")}.</p>
 
-  <h4>{t("Male Health")}:</h4>
+  <p className="heading">{t("Male Health")}:</p>
   <p>{t("Pure Shilajit From Himalayan has long been utilised to support the health of male reproduction")}.{t("It is thought to have favourable effects on testosterone levels")} , {t("which are essential for male reproductive health as well as muscle and bone density")}. {t("Shilajit intake may increase sperm count")},{t("motility")} ,{t("and fertility in males")} ,{t("according to some studies")} , {t("though more studies are required to completely understand these benefits")}.</p>
    
-  <h4>{t("Bone Wellness")}:</h4>
+  <p className="heading">{t("Bone Wellness")}:</p>
   <p>{t("Calcium and magnesium are two minerals found in shilajit that are crucial for supporting strong")},{t("healthy bones")}. {t("To avoid disorders like osteoporosis")}, {t("which results in weakening bones and an elevated risk of fractures")},{t("an adequate intake of these minerals is necessary")} .{t("Shilajit may support general bone health and density by supplying these minerals")} .</p>
    
-  <h4>{t("Shilajit For Skin Care")}:</h4>
+  <p className="heading">{t("Shilajit For Skin Care")}:</p>
   <p>{t("Acne and dull skin issues can be treated with Shilajit")}. {t("Shilajit's anti-inflammatory qualities aid in preventing the cellular harm brought on by free radicals")}. {t("It can be combined with your usual face packs to give you skin that is naturally glowing")}.</p>
   
-  <h4>{t("Stress Reliever")}:</h4>
+  <p className="heading">{t("Stress Reliever")}:</p>
   <p>{t("Because of the androgen-like qualities of Shilajit")},{t("it may help balance out stress-causing hormones")} , {t("making it simpler for both your mind and body to deal with stress signals in a healthier and calmer manner")}.</p>
 
-  <h4>{t("Other Benefits")}:</h4>
+  <p className="heading">{t("Other Benefits")}:</p>
   <p> <Link to="https://www.medicalnewstoday.com/articles/320318" target="_blank" style={{color:'green'}}>
               {t("Other Benefits of Pure Shilajit From Himalayan")}
             </Link> {t("is thought to have a number of advantages")}, {t("including being rich in minerals and fulvic acid")}, {t("which promote nutrient absorption and cellular function")}. {t("Antioxidants in it can fight off free radicals and promote cellular health")}.{t("It has long been used to increase energy and endurance")} , 
   {t("but it may also improve memory and focus while protecting brain cells")}, {t("which could enhance cognitive performance")}. {t("It could help with illnesses like arthritis because of its anti-inflammatory effects")}. {t("Shilajit's immuno-modulating properties may help the immune system function better")}.
   {t("Its nutrients and antioxidants support skin health by potentially having anti-aging benefits")} .{t("It might have a favourable effect on testosterone levels and sexual function in men")}. {t("The mineral content")}, {t("which includes calcium and magnesium")},{t("may help maintain healthy bones")} .</p>
   
-  <h4>{t("How to use Pure Shilajit From Himalayan")}?</h4>
+  <p className="heading">{t("How to use Pure Shilajit From Himalayan")}?</p>
   <p>{t("Dissolve with milk")}, {t("tea")} , {t("or warm")}, {t("non-chlorinated water to drink")}. {t("For general wellbeing")}, {t("we advise beginning with a rice grain to pea-sized quantity")}, {t("once day")}.{t("The dosage can be raised for more power and effect")} , {t("but it shouldn't go over 150-500 mg daily")}.
   {t("Pure Shilajit From Himalayan is known as the")} "{t("Nectar of God")}," {t("capable of curing all illnesses and maintaining youth due to its medicinal properties")}. {t("It is referred to as Amrit or the Fountain of Youth in ancient Chinese and Indian literature")}.
 </p><br/>
@@ -119,7 +119,7 @@ const ProductBenefits = () => {
 <hr/>
 {/* ===========Warnings============= */}
 
-<h3 style={{textAlign:'center'}}> <span style={{color:'red'}}>{t("Warning")}: </span>{t("Please be aware of the following before using shilajit")}</h3>
+<h4 style={{textAlign:'center', fontSize:'24px'}}> <span style={{color:'red'}}>{t("Warning")}: </span>{t("Please be aware of the following before using shilajit")}</h4>
 <br/>
 
 <p style={{textAlign:'center'}}>{t("Shilajit is a natural dietary supplement that has been used in traditional medicine for centuries")}. {t("Before you begin using shilajit")}, {t("Ensure that you purchase shilajit from reputable sources that test the product for purity and quality")}.

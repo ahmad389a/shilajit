@@ -1,5 +1,8 @@
 /*---- 17. Sidebar style  ------*/
-
+.heading{
+  font-size: 18px;
+  font-weight: 500;
+}
 .sidebar-style {
   @media #{$lg-layout} {
     &.mr-30 {

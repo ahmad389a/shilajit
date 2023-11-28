@@ -18,13 +18,13 @@ const MobileWidgets = () => {
         </div>
       </div>
       {/*Off Canvas Widget Social Start*/}
-      <div className="off-canvas-widget-social">
-        {/*<a href="//twitter.com" title="Twitter">
+      <div className="off-canvas-widget-social " style={{marginLeft:'18px'}}>
+        {/* <a href="//twitter.com" title="Twitter">
           <i className="fa fa-twitter"></i>
         </a>
         <a href="//pinterest.com" title="Pinterest">
           <i className="fa fa-pinterest"></i>
-        </a>*/}
+        </a> */}
         
         <a href="//instagram.com" title="Instagram">
           <i className="fa fa-instagram"></i>

@@ -23,6 +23,7 @@ const ProductImageFixed = ({ product }) => {
             src={process.env.PUBLIC_URL + product.image[0]}
             alt="shilajitpmain"
             className="img-fluid"
+            loading="lazy"
           />
         ) : (
           ""

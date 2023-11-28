@@ -36,12 +36,18 @@ const ProductGridSingleTwo = ({
               className="default-img"
               src={process.env.PUBLIC_URL + product.image[0]}
               alt="shilajitP7"
+              height={'350'}
+              width={'80'}
+              loading="lazy"
             />
             {product.image.length > 1 ? (
               <img
                 className="hover-img"
                 src={process.env.PUBLIC_URL + product.image[1]}
                 alt="shilajitP8"
+                height={'350'}
+              width={'80'}
+              loading="lazy"
               />
             ) : (
               ""

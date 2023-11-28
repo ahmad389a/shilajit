@@ -78,6 +78,7 @@ function ProductModal({ product, currency, discountedPrice, finalProductPrice, f
                           src={process.env.PUBLIC_URL + img}
                           className="img-fluid"
                           alt="Product"
+                          loading="lazy"
                         />
                       </div>
                     </SwiperSlide>
@@ -95,7 +96,8 @@ function ProductModal({ product, currency, discountedPrice, finalProductPrice, f
                         <img
                           src={process.env.PUBLIC_URL + img}
                           className="img-fluid"
-                          alt=""
+                          alt="ProductI"
+                          loading="lazy"
                         />
                       </div>
                     </SwiperSlide>

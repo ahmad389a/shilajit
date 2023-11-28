@@ -32,7 +32,7 @@ useEffect(() => {
     <Fragment>
       <SEO
         titleTemplate="bestillingssuksess"
-        description="Stay in the loop with your order status!"
+        description="Hold deg oppdatert med bestillingsstatusen din!"
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}

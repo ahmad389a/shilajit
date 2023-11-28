@@ -49,7 +49,7 @@ const Checkout = () => {
   };
   const validateCoupon = async () => {
     try {
-      const response = await axios.get(`${url}/coupons/${couponName}`);
+      const response = await axios.get(`${url}/coupons/${couponCode}`);
       const coupon = response.data;
       if (!coupon) {
         console.log('Coupon not found');
@@ -58,27 +58,34 @@ const Checkout = () => {
         setCouponMessage('');
       } else {
         const discountPercentage = coupon.c_discount_price || 0;
-        setDiscountedTotalAmount(cartTotalPrice - (cartTotalPrice * discountPercentage) / 100);
+        const calculatedDiscountedTotalAmount = cartTotalPrice - (cartTotalPrice * discountPercentage) / 100;
+  
         setIsCouponValid(true);
         setCouponDetails({ 
           c_name: coupon.c_name,
           c_discount_price: coupon.c_discount_price,
-          discountedTotalAmount,
+          discountedTotalAmount: calculatedDiscountedTotalAmount,
         });
+  
+        // Set the discountedTotalAmount directly
+        setDiscountedTotalAmount(calculatedDiscountedTotalAmount);
+  
         setCouponErrorMessage('');
         setCouponMessage('Coupon verified! Discount granted!');
+        
         const dataToSendToPayButton = {
           couponDetails: {  
             c_name: coupon.c_name,
             c_discount_price: coupon.c_discount_price,
-            discountedTotalAmount,
+            discountedTotalAmount: calculatedDiscountedTotalAmount,
           },
           cartItems: cartItems.map((cartItem) => ({
             name: cartItem.name,
             quantity: cartItem.quantity,
           })),
-          discountedTotalAmount,
+          discountedTotalAmount: calculatedDiscountedTotalAmount,
         };
+        
         console.log('Data to send to PayButton:', dataToSendToPayButton);
       }
     } catch (error) {
@@ -90,6 +97,7 @@ const Checkout = () => {
       setCouponMessage('');
     }
   };
+  
   return (
     <Fragment>
       <SEO
@@ -110,7 +118,7 @@ const Checkout = () => {
               <div className="row">
                 <div className="col-lg-7">
                   <div className="billing-info-wrap">
-                    <h3>{t("Billing Details")}</h3>
+                    <h1 style={{fontSize:'18px', fontWeight:'600'}}>{t("Billing Details")}</h1>
                     <div className="row">
                       <div className="col-lg-6 col-md-6">
                         <div className="billing-info mb-20">
@@ -241,9 +249,9 @@ const Checkout = () => {
 
                 <div className="col-lg-5">
                   <div className="your-order-area">
-                    <h1 style={{ fontSize: "18px", fontWeight: "600" }}>
+                    <h2 style={{ fontSize: "18px", fontWeight: "600" }}>
                       {t("Your order")}
-                    </h1>
+                    </h2>
                     <div className="your-order-wrap gray-bg-4">
                       <div className="your-order-product-info">
                         <div className="your-order-top">

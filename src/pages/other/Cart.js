@@ -39,7 +39,7 @@ const Cart = () => {
           <div className="container">
             {cartItems && cartItems.length >= 1 ? (
               <Fragment>
-                <h3 className="cart-page-title"> {t("Your cart items")}</h3>
+                <h2 className="cart-page-title"> {t("Your cart items")}</h2><br/>
                 <div className="row">
                   <div className="col-12">
                     <div className="table-content table-responsive cart-table-content">

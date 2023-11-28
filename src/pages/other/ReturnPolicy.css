@@ -29,6 +29,10 @@
     font-size: 15px;
     padding-bottom: 3%;
 }
+.headingR{
+    font-size: 17px;
+    font-weight: 500;
+}
 
 @media (max-width: 768px) {
     /* CSS rules for screens up to 768px */

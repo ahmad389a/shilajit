@@ -15,7 +15,7 @@ const LoginRegister = () => {
     <Fragment>
       <SEO
         titleTemplate="Login"
-        description="Login page of flone react minimalist eCommerce template."
+        description="Login to Naturensskatters"
       />
       <LayoutOne headerTop="visible">
         {/* breadcrumb */}

@@ -105,12 +105,12 @@ const FooterTwo = ({
               </li>
 
   <li>
-                <Link to={process.env.PUBLIC_URL + "/benefits"}>
+                <Link to={process.env.PUBLIC_URL + "/privacypolicy"}>
               {t("Privacy Policy")}
             </Link>
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/ReturnPolicy"}>
+            <Link to={process.env.PUBLIC_URL + "/returnpolicy"}>
               {t("Return Policy")}
             </Link>
           </li>

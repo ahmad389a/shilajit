@@ -6,7 +6,10 @@ const Logo = ({ imageUrl, logoClass }) => {
   return (
     <div className={clsx(logoClass)}>
       <Link to={process.env.PUBLIC_URL + "/"}>
-        <img alt="Shilajitlogo1" src={process.env.PUBLIC_URL + imageUrl} />
+        <img alt="Shilajitlogo1" src={process.env.PUBLIC_URL + imageUrl} 
+        loading="lazy"
+         height={40} width={180}
+        />
       </Link>
     </div>
   );

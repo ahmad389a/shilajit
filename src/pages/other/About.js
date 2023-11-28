@@ -33,7 +33,7 @@ const About = () => {
           ]} 
         />
         <div  className="container">
-          <img src="./assets/img/bg/About_hero.webp" alt="About-hero" className="AboutImage"/>
+          <img src="./assets/img/bg/About_hero.webp" alt="About-hero" className="AboutImage" loading="lazy"/>
         </div>
     
 
@@ -60,7 +60,7 @@ const About = () => {
   <Card className="Acard">
       <Card.Body>
      
-        <Card.Title className="Acard-title">{t("Our Mission")}</Card.Title>
+        <Card.Title className="Acard-title"><h2>{t("Our Mission")}</h2></Card.Title>
       
         <Card.Text className="Acardtext">
         {t("Our mission is clear")}: {t("to make healthy living easy and accessible")}. {t("We carefully select ingredients that are kind to your body")}, {t("and our eco-friendly approach ensures we're gentle on the environment too")}.

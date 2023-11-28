@@ -5,7 +5,7 @@ const MobileNavMenu = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="offcanvas-navigation" id="offcanvas-navigation">
+    <nav className="offcanvas-navigation " id="offcanvas-navigation" style={{marginTop:'-40px !important'}}>
       <ul>
         <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/"}>{t("home")}</Link>
@@ -434,12 +434,12 @@ const MobileNavMenu = () => {
               </li> */}
           
           <li>
-            <Link to={process.env.PUBLIC_URL + "/ProductBenefits"}>
+            <Link to={process.env.PUBLIC_URL + "/aboutshilajit"}>
               {t("About Shilajit")}
             </Link>
           </li>
           <li>
-                <Link to={process.env.PUBLIC_URL + "/AboutMoringa"}>
+                <Link to={process.env.PUBLIC_URL + "/aboutmoringa"}>
                   {t("About Moringa")}
                 </Link>
               </li>
