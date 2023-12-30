@@ -11,23 +11,30 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const OrderStatus = () => {
+  let { pathname,search } = useLocation();
+  const params = new URLSearchParams(search);
+  const orderNumberParam = params.get("orderNumber");
 
-  let { pathname } = useLocation();
   const { t } = useTranslation();
-  const [orderNumber, setOrderNumber] = useState(null);
-  const backendUrl = "http://localhost:3000";
-  const orderStatusRoute = "/order-status";
+  const [orderNumber, setOrderNumber] = useState(orderNumberParam);
+  const backendUrl = "https://backend.naturensskatter.com";
+  const orderStatusRoute = "order-status";
 
   useEffect(() => {
+    if (!orderNumberParam) {
+      window.location.href = process.env.PUBLIC_URL + "/";
+      return;
+    }
+
     axios
-      .get(backendUrl + orderStatusRoute)
+      .get(`${backendUrl}/${orderStatusRoute}?orderNumber=${orderNumberParam}`)
       .then((response) => {
         setOrderNumber(response.data.orderNumber);
       })
       .catch((error) => {
         console.error("Error fetching order status:", error);
       });
-  }, []);
+  }, [orderNumberParam]);
 
   return (
     <Fragment>
@@ -43,33 +50,19 @@ const OrderStatus = () => {
             { label: "Ordre status", path: process.env.PUBLIC_URL + pathname },
           ]}
         />
-        <Container>
-          <div
-            className="p-4"
-            style={{ textAlign: "center", color: "#047b04" }}
-          >
-            <div style={{ textAlign: "center" }}>
-              <img
-                src="../assets/img/icon-img/order-sucess.png"
-                alt="status imege"
-                height={100}
-                width={100}
-                style={{ display: "inline-block" }}
-              />
-            </div>
-            <br />
-            <h4>{t("ORDER PLACED SUCCESSFULLY")} !</h4>
-            <spam> {t("Order ID")} :</spam> <spam>{orderNumber}</spam>
-            <p>
-              {" "}
-              {t("Thank you for choosing our service")} ! <br />{" "}
-              {t(
-                "You will receive an order confirmation email shortly with expected delivery date for your item"
-              )}
-              .
-            </p>
-          </div>
-        </Container>
+          <Container >
+         
+         <div className="p-4" style={{textAlign:'center', color:'#047b04'}}>
+          <div style={{textAlign:'center'}}>
+            <img src="../assets/img/icon-img/order-sucess.png" alt="status imege" height={100} width={100} style={{display:'inline-block'}}/>
+          </div><br/>
+          <h4>{t("ORDER PLACED SUCCESSFULLY")} !</h4>
+          <span> {t("Order ID")} :</span> <span>#{orderNumberParam}</span>
+          <p> {t("Thank you for choosing our service")} ! <br/> {t("You will receive an order confirmation email shortly with expected delivery date for your item")}.</p>
+         </div>        
+       
+           </Container>
+        
       </LayoutOne>
     </Fragment>
   );
